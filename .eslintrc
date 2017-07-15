@@ -1,0 +1,20 @@
+{
+	"extends": "airbnb",
+	"parser": "babel-eslint",
+	"rules": {
+		"no-tabs": 0,
+		"class-methods-use-this": 1,
+		"indent": [2, "tab", {"SwitchCase": 1}],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-filename-extension": 0,
+		"import/no-named-as-default": 0,
+		"react/jsx-no-bind":1
+	},
+	"globals": {
+		"document": false,
+		"window": false,
+		"fetch": false,
+		"LOGGER": false,
+		"API_HOST": false
+	}
+}
