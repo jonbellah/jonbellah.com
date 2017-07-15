@@ -1,0 +1,41 @@
+{
+  "name": "jonbellah",
+  "description": "JonBellah.com - Lead Front-End Engineer @ 10up",
+  "version": "0.1.0",
+  "author": "Jon Bellah",
+  "dependencies": {
+    "gatsby": "^1.2.0",
+    "gatsby-link": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^1.0.1",
+	"gatsby-transformer-remark": "^1.1.0",
+	"gatsby-plugin-google-analytics": "^1.0.0",
+    "gatsby-plugin-manifest": "^1.0.0",
+    "gatsby-plugin-offline": "^1.0.0",
+    "gatsby-plugin-preact": "^1.0.0",
+    "gatsby-plugin-sharp": "^1.0.0",
+    "gatsby-remark-copy-linked-files": "^1.0.0",
+    "gatsby-remark-prismjs": "^1.0.0",
+    "gatsby-remark-responsive-iframe": "^1.0.0",
+    "gatsby-remark-images": "^1.0.0",
+    "gatsby-remark-smartypants": "^1.0.0",
+    "gatsby-source-filesystem": "^1.0.0",
+    "gatsby-transformer-sharp": "^1.0.0",
+    "lodash": "^4.17.4",
+    "unist-util-select": "^1.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
