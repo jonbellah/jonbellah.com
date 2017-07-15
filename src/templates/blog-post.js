@@ -14,11 +14,7 @@ class BlogPostTemplate extends React.Component {
 				<h1>
 					{post.frontmatter.title}
 				</h1>
-				<p
-					style={{
-						display: "block",
-					}}
-				>
+				<p>
 					{post.frontmatter.date}
 				</p>
 				<div dangerouslySetInnerHTML={{ __html: post.html }} />
