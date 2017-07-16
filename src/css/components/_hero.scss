@@ -1,0 +1,43 @@
+.hero__label {
+	color: $gold;
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.hero__title {
+	display: block;
+	font-size: 120px;
+	margin-bottom: 50px;
+}
+
+.hero__bio {
+	color: $mid-gray;
+	display: block;
+	font-size: 24px;
+	line-height: 1.5;
+	max-width: 650px;
+}
+
+.hero__link {
+	font-size: 24px;
+	line-height: 1;
+	padding: 0;
+	transition: all 0.25s linear;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: transparent;
+		border-bottom-color: $dark-gray;
+		color: $dark-gray;
+	}
+
+	svg {
+		height: 14px;
+		width: auto;
+	}
+}

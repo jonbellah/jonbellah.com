@@ -1,12 +1,22 @@
 /* Header
 ----------------------------*/
 .site-header {
+	background: #fff;
 	border-bottom: 1px solid $border-color;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 
 	.container {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&.shadow {
+		box-shadow: 0 1px 3px rgba(0,0,0,0.125);
 	}
 }
 
