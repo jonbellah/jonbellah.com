@@ -36,9 +36,9 @@ export default class Template extends Component {
 							</Link>
 						</nav>
 					</header>
-					<div className="site-content">
+					<main className="site-content">
 						{this.props.children()}
-					</div>
+					</main>
 					<footer id="colophon" className="site-footer">
 						footer
 					</footer>

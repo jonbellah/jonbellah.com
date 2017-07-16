@@ -1,6 +1,16 @@
-@import 'base/typography';
+// Global
+@import 'global/variables';
 
+// Base
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/code';
+
+// Layout
 @import 'layout/container';
 @import 'layout/header';
 @import 'layout/content';
 @import 'layout/footer';
+
+// Components
+@import 'components/post';
