@@ -11,18 +11,23 @@ class BlogPostTemplate extends Component {
 		const siteTitle = get(this.props, "data.site.siteMetadata.title")
 
 		return (
-			<div>
+			<article className="post">
 				<Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-				<h1 className="post__title">
-					{post.frontmatter.title}
-				</h1>
-				<p>
-					{post.frontmatter.date}
-				</p>
+
+				<header className="post__header">
+					<p className="post__meta">
+						<small>Posted on</small>
+						<time>{post.frontmatter.date}</time>
+					</p>
+					<h1 className="post__title">
+						{post.frontmatter.title}
+					</h1>
+				</header>
+
 				<div className="post__content" dangerouslySetInnerHTML={{ __html: post.html }} />
 
 				<Bio />
-			</div>
+			</article>
 		)
 	}
 }

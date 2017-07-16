@@ -45,8 +45,20 @@ template {
 }
 
 a {
-	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
+	background-color: transparent;
+	border-bottom: 3px solid $gold;
+	color: $gold;
+	padding: 0 5px;
+	text-decoration: none;
+	transition: all 0.25s linear;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $gold;
+		color: #fff;
+	}
 }
 
 a:active,
@@ -276,7 +288,7 @@ h1 {
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 2.25rem;
+	font-size: 2.5rem;
 	line-height: 2.9rem;
 }
 
@@ -293,7 +305,7 @@ h2 {
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 1.62671rem;
+	font-size: 2.25rem;
 	line-height: 2.175rem;
 }
 
@@ -310,8 +322,8 @@ h3 {
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 1.38316rem;
-	line-height: 2.175rem;
+	font-size: 2rem;
+	line-height: 1.4;
 }
 
 h4 {
@@ -322,7 +334,7 @@ h4 {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.45rem;
+	margin-bottom: 1.85rem;
 	color: inherit;
 	font-family: $serif;
 	font-weight: bold;

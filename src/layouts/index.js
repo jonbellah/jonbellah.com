@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import '../css/styles.scss';
 
 // Import Images
-import logo from '../images/logo.svg';
+import Logo from '../images/Logo';
 
 export default class Template extends Component {
 	static propTypes = {
@@ -27,7 +27,7 @@ export default class Template extends Component {
 				<div className="site">
 					<header id="header" className="site-header">
 						<Link to="/" className="site-header__link">
-							<img src={logo} alt="Logo" className="site-header__logo" />
+							<Logo className="site-header__logo" />
 						</Link>
 
 						<nav id="navigation" className="site-nav">
