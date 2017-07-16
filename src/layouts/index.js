@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import { NavLink } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 // Import Styles
@@ -32,15 +33,15 @@ export default class Template extends Component {
 							</Link>
 
 							<nav id="navigation" className="site-nav">
-								<Link to="/articles/" className="site-nav__item">
+								<NavLink to="/articles/" className="site-nav__item">
 									Articles
-								</Link>
-								<Link to="/speaking/" className="site-nav__item">
+								</NavLink>
+								<NavLink to="/speaking/" className="site-nav__item">
 									Speaking
-								</Link>
-								<Link to="/about/" className="site-nav__item">
+								</NavLink>
+								<NavLink to="/about/" className="site-nav__item">
 									About
-								</Link>
+								</NavLink>
 							</nav>
 						</div>
 					</header>

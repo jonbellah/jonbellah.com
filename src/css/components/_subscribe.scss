@@ -1,0 +1,91 @@
+/* Subscribe
+----------------------------*/
+.subscribe {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 30px 1em;
+}
+
+.subscribe__inner {
+	background-color: $dark-gray;
+	border-bottom-right-radius: 35px;
+	border-top-left-radius: 35px;
+	color: #fff;
+	padding: 20px 40px;
+
+	@include mq( $from: tablet ) {
+		padding: 25px 50px 50px;
+	}
+}
+
+.subscribe__mailchimp {
+	padding-top: 2em;
+
+
+	.email {
+		margin-top: -3px;
+	}
+
+	input {
+		background: $dark-gray;
+		border: 0;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		float: left;
+		margin-bottom: 0.5em;
+		outline: none;
+		padding: 11px 0;
+		width: 100%;
+	}
+}
+
+.subscribe__header {
+	padding: 0.5em 0;
+	text-align: center;
+	width: 100%;
+
+	h3 {
+		color: #fff;
+		line-height: 1;
+		margin: 0.5em 0 0.25em;
+	}
+}
+
+.subscribe__content {
+	color: rgba(255,255,255,0.75);
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.subscribe__email {
+	flex: 1;
+}
+
+.subscribe__button {
+	width: 160px;
+
+	.button {
+		background-color: $gold;
+		border-bottom: 0;
+		border-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		font-weight: bold;
+		transition: background-color 0.25s linear;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: darken( $gold, 15% );
+		}
+	}
+}
+
+.mc-field-group {
+	padding: 0 5px;
+}
+
+.subscribe__fields {
+	margin: 0 auto;
+	width: 80%;
+}

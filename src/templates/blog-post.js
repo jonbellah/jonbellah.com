@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 
 import Bio from '../components/Bio';
+import Subscribe from '../components/Subscribe';
 
 class BlogPostTemplate extends Component {
 	render() {
@@ -27,6 +28,7 @@ class BlogPostTemplate extends Component {
 				<div className="post__content container--narrow" dangerouslySetInnerHTML={{ __html: post.html }} />
 
 				<Bio />
+				<Subscribe />
 			</article>
 		)
 	}
