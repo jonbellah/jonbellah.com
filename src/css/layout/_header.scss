@@ -1,8 +1,7 @@
 /* Header
 ----------------------------*/
 .site-header {
-	border-bottom: 1px solid #dadada;
-	padding: 10px;
+	border-bottom: 1px solid $border-color;
 
 	.container {
 		align-items: center;
@@ -12,10 +11,11 @@
 }
 
 .site-header__link {
+	border-bottom: 0;
 	color: $dark-gray;
 	display: block;
 	line-height: 0;
-	border-bottom: 0;
+	padding: 0;
 	transition: color 0.25s linear;
 
 	&:hover,

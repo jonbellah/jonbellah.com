@@ -35,6 +35,12 @@ export default class Template extends Component {
 								<Link to="/articles/" className="site-nav__item">
 									Articles
 								</Link>
+								<Link to="/speaking/" className="site-nav__item">
+									Speaking
+								</Link>
+								<Link to="/about/" className="site-nav__item">
+									About
+								</Link>
 							</nav>
 						</div>
 					</header>

@@ -2,6 +2,12 @@
 ----------------------------*/
 .site-nav__item {
 	border-bottom: 0;
-	text-transform: uppercase;
 	color: #aaa;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-left: 20px;
+	padding: 10px 5px;
+	text-transform: uppercase;
 }
