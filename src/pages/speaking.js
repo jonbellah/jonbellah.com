@@ -10,8 +10,8 @@ export default class Speaking extends React.Component {
 					<h1 className="page__title">Current Talks</h1>
 				</header>
 
-				<div className="container--narrow">
-					<h4>Visual Regression Testing with PhantomCSS</h4>
+				<div className="page__content container--narrow">
+					<h3>Visual Regression Testing with PhantomCSS</h3>
 					You've spent months perfecting your site; building your components and checking them twice. You’ve gone through more QA than you can shake a stick at, and you’re now completely change blind... but you're finally ready to launch that site!
 
 					Suddenly, at the last minute, the client requires major changes to the a critical component (probably the legal department, it’s always the legal department).
@@ -27,7 +27,7 @@ export default class Speaking extends React.Component {
 					<strong>Where I've presented this talk</strong>
 					- <a href="https://jonbellah.com/talks/frontporch/">Front Porch Austin 2016</a>
 					- <a href="https://jonbellah.com/talks/js-summit/">JS Summit 2016</a>
-					<h3>Past Talks</h3>
+					<h2>Past Talks</h2>
 					<strong>Embracing Performance Optimization</strong>
 					- CSS Dev Conf 2014
 					- WordCamp DFW 2014

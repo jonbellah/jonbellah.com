@@ -1,0 +1,35 @@
+.feed__link {
+	border-bottom: 1px solid $border-color;
+	color: $mid-gray;
+	display: flex;
+	padding: 30px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $gold;
+		
+		.feed__title {
+			color: #fff;
+		}
+	}
+}
+
+.feed__title {
+	border-bottom: 0;
+	color: $dark-gray;
+	flex: 1;
+	font-weight: bold;
+	line-height: 1.35;
+	margin: 0;
+	max-width: calc(100% - 150px);
+	transition: color 0.25s linear;
+}
+
+.feed__time {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	width: 150px;
+}
+

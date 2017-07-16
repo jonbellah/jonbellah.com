@@ -7,7 +7,7 @@
 }
 
 .subscribe__inner {
-	background-color: $dark-gray;
+	background-color: $mid-gray;
 	border-bottom-right-radius: 35px;
 	border-top-left-radius: 35px;
 	color: #fff;
@@ -26,15 +26,16 @@
 		margin-top: -3px;
 		transition: border-bottom-color 0.25s linear;
 
-		&:focus {
+		&:focus,
+		&:hover {
 			border-bottom-color: $gold;
 		}
 	}
 
 	input {
-		background: $dark-gray;
+		background: $mid-gray;
 		border: 0;
-		border-bottom: 2px solid #fff;
+		border-bottom: 2px solid rgba(255,255,255,0.5);
 		color: #fff;
 		float: left;
 		margin-bottom: 0.5em;
@@ -81,7 +82,7 @@
 		&:hover,
 		&:active,
 		&:focus {
-			background-color: darken( $gold, 15% );
+			background-color: darken($gold,20%);
 		}
 	}
 }

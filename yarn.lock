@@ -3120,7 +3120,7 @@ gatsby-link@^1.0.1:
     prop-types "^15.5.8"
     ric "^1.3.0"
 
-gatsby-plugin-feed@^1.0.9:
+gatsby-plugin-feed@master:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-1.0.9.tgz#0e5ea4ea095e39e7bd12c0564525a094838889c6"
   dependencies:

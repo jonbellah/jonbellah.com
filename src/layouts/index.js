@@ -56,7 +56,7 @@ export default class Template extends Component {
 					<footer id="colophon" className="site-footer">
 						<div className="container flex">
 							<div className="site-footer__copyright">
-								&copy; JonBellah.com. Made in Colorado.
+								&copy; 2017 JonBellah.com. Made in Colorado.
 							</div>
 
 							<div className="site-footer__social">

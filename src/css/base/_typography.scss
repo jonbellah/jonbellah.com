@@ -50,6 +50,7 @@ a {
 	border-bottom: 3px solid $gold;
 	color: $gold;
 	padding: 0 5px;
+	outline: none;
 	text-decoration: none;
 	transition: all 0.25s linear;
 
@@ -145,6 +146,7 @@ select,
 textarea {
 	font: inherit;
 	margin: 0;
+	outline: none;
 }
 
 optgroup {
@@ -339,7 +341,7 @@ h4 {
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	line-height: 1.45rem;
 }
 

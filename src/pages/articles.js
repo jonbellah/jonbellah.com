@@ -7,15 +7,22 @@ export default class Articles extends Component {
 	render() {
 		const pageLinks = [];
 		const posts = get(this, "props.data.allMarkdownRemark.edges");
+		const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 		posts.forEach(post => {
 			if (post.node.path !== "/404/") {
-				const title = get(post, "node.frontmatter.title") || post.node.path
+				const title = get(post, "node.frontmatter.title") || post.node.path;
+				const date = new Date(post.node.frontmatter.date);
 				pageLinks.push(
-				<li key={post.node.frontmatter.path}>
-					<Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-						{post.node.frontmatter.title}
+				<article className="feed__item" key={post.node.frontmatter.path}>
+					<Link className="feed__link" to={post.node.frontmatter.path}>
+						<h4 className="feed__title">
+							{post.node.frontmatter.title}
+						</h4>
+						<time className="feed__time">
+							{`${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`}
+						</time>
 					</Link>
-				</li>
+				</article>
 				)
 			}
 		});
@@ -26,7 +33,7 @@ export default class Articles extends Component {
 					<h1 className="page__title">Articles</h1>
 				</header>
 
-				<div className="container--narrow">
+				<div className="feed container--narrow">
 					{pageLinks}
 				</div>
 			</div>
@@ -49,6 +56,7 @@ export const pageQuery = graphql`
 					}
 					frontmatter {
 						title
+						date
 					}
 				}
 			}
