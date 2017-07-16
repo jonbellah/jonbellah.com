@@ -16,13 +16,13 @@ class BlogPostTemplate extends Component {
 				<Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
 				<header className="post__header container">
+					<h1 className="post__title">
+						{post.frontmatter.title}
+					</h1>
 					<p className="post__meta">
 						Posted on
 						<time className="post__time">{post.frontmatter.date}</time>
 					</p>
-					<h1 className="post__title">
-						{post.frontmatter.title}
-					</h1>
 				</header>
 
 				<div className="post__content container--narrow" dangerouslySetInnerHTML={{ __html: post.html }} />

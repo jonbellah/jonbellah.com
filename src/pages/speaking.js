@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
-export default class Index extends React.Component {
+export default class Speaking extends React.Component {
 	render() {
 		return (
 			<div className="container">
