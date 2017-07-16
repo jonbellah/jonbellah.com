@@ -1,0 +1,30 @@
+/* Author
+----------------------------*/
+.author {
+	display: flex;
+}
+
+.author__avatar {
+	width: 90px;
+
+	.avatar {
+		border-radius: 50%;
+		float: left;
+		margin: 0 1em 0 0;
+	}
+}
+
+.author__info {
+	padding-left: 1.5em;
+	width: calc(100% - 90px);
+}
+
+.author__name {
+	display: block;
+}
+
+.author_bio {
+	color: #777;
+	font-size: 0.9em;
+	line-height: 1.4;
+}

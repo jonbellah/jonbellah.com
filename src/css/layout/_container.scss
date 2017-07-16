@@ -6,7 +6,12 @@
 	min-height: 100vh;
 }
 
-.wrap {
+.container {
 	margin: 0 auto;
 	max-width: 1200px;
+
+	&--narrow {
+		margin: 0 auto;
+		max-width: 800px;
+	}
 }

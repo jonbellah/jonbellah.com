@@ -26,7 +26,7 @@ export default class Template extends Component {
 				/>
 				<div className="site">
 					<header id="header" className="site-header">
-						<div className="wrap">
+						<div className="container">
 							<Link to="/" className="site-header__link">
 								<Logo className="site-header__logo" />
 							</Link>

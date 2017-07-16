@@ -14,7 +14,7 @@ class BlogPostTemplate extends Component {
 			<article className="post">
 				<Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
-				<header className="post__header wrap">
+				<header className="post__header container">
 					<p className="post__meta">
 						Posted on
 						<time className="post__time">{post.frontmatter.date}</time>
@@ -24,7 +24,7 @@ class BlogPostTemplate extends Component {
 					</h1>
 				</header>
 
-				<div className="post__content" dangerouslySetInnerHTML={{ __html: post.html }} />
+				<div className="post__content container--narrow" dangerouslySetInnerHTML={{ __html: post.html }} />
 
 				<Bio />
 			</article>
