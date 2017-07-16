@@ -1,6 +1,41 @@
 /* Footer
 ----------------------------*/
 .site-footer {
-	background-color: $dark-gray;
-	padding: 20px;
+	background-color: #fff;
+	padding: 30px 0;
+}
+
+
+.site-footer__social {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+
+	a {
+		border: 0;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: transparent;
+
+			svg {
+				color: $gold;
+			}
+		}
+	}
+
+	svg {
+		color: $mid-gray;
+		display: block;
+		height: 24px;
+		margin-left: 15px;
+		transition: color 0.25s linear;
+	}
+}
+
+.site-footer__copyright {
+	color: $mid-gray;
+	font-size: 0.9em;
+	width: 50%;
 }

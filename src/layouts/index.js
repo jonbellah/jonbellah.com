@@ -9,6 +9,9 @@ import '../css/styles.scss';
 
 // Import Images
 import Logo from '../images/Logo';
+import TwitterIcon from '../images/TwitterIcon';
+import GithubIcon from '../images/GithubIcon';
+import RssIcon from '../images/RssIcon';
 
 export default class Template extends Component {
 	static propTypes = {
@@ -39,7 +42,7 @@ export default class Template extends Component {
 								<NavLink to="/speaking/" className="site-nav__item">
 									Speaking
 								</NavLink>
-								<NavLink to="/contact" className="site-nav__item">
+								<NavLink to="/contact/" className="site-nav__item">
 									Contact
 								</NavLink>
 							</nav>
@@ -51,8 +54,24 @@ export default class Template extends Component {
 					</main>
 
 					<footer id="colophon" className="site-footer">
-						<div className="container">
-							footer
+						<div className="container flex">
+							<div className="site-footer__copyright">
+								&copy; JonBellah.com. Made in Colorado.
+							</div>
+
+							<div className="site-footer__social">
+								<Link to="https://twitter.com/jonbellah">
+									<TwitterIcon />
+								</Link>
+
+								<Link to="https://github.com/jonbellah">
+									<GithubIcon />
+								</Link>
+
+								<Link to="#">
+									<RssIcon />
+								</Link>
+							</div>
 						</div>
 					</footer>
 				</div>

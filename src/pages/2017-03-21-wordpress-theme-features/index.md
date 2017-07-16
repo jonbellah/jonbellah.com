@@ -56,4 +56,8 @@ function theme_supports() {
 
 ### Final Thoughts
 
-If you've ever ramped up on a new WordPress multisite project, you probably understand how difficult it can be to discern where all of the code you're working on is being used, particularly if features are being enabled as standalone plugins; so often test cases get missed and bugs get shipped. By enabling and disabling features programmatically, we can more easily determine which sites on a network are utilizing a particular feature. I believe this architecture provides a clean code structure and clear separation of concerns, making future maintenance a much less daunting task. Now, when needing to do maintenance on a feature in six months, it will be easy to discern which sites a particular feature is enabled on just by searching the project directory - as opposed having to hunt through each site to see if the feature plugin is enabled.
+If you've ever ramped up on a new WordPress multisite project, you probably understand how difficult it can be to discern where all of the code you're working on is being used, particularly if features are being enabled as standalone plugins; so often test cases get missed and bugs get shipped.
+
+By enabling and disabling features programmatically, we can more easily determine which sites on a network are utilizing a particular feature. I believe this architecture provides a clean code structure and clear separation of concerns, making future maintenance a much less daunting task.
+
+Now, when needing to do maintenance on a feature in six months, it will be easy to discern which sites a particular feature is enabled on just by searching the project directory - as opposed having to hunt through each site to see if the feature plugin is enabled.

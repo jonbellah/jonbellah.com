@@ -25,7 +25,10 @@ export default class Articles extends Component {
 				<header className="page__header">
 					<h1 className="page__title">Articles</h1>
 				</header>
-				{pageLinks}
+
+				<div className="container--narrow">
+					{pageLinks}
+				</div>
 			</div>
 		);
 	}
