@@ -39,8 +39,8 @@ export default class Template extends Component {
 								<NavLink to="/speaking/" className="site-nav__item">
 									Speaking
 								</NavLink>
-								<NavLink to="/about/" className="site-nav__item">
-									About
+								<NavLink to="/contact" className="site-nav__item">
+									Contact
 								</NavLink>
 							</nav>
 						</div>
@@ -51,7 +51,9 @@ export default class Template extends Component {
 					</main>
 
 					<footer id="colophon" className="site-footer">
-						footer
+						<div className="container">
+							footer
+						</div>
 					</footer>
 				</div>
 			</div>

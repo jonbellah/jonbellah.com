@@ -22,7 +22,9 @@ export default class Articles extends Component {
 	
 		return (
 			<div className="container">
-				<h1>Articles</h1>
+				<header className="page__header">
+					<h1 className="page__title">Articles</h1>
+				</header>
 				{pageLinks}
 			</div>
 		);

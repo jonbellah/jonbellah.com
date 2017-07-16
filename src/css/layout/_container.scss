@@ -9,9 +9,11 @@
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
+	width: 92%;
 
 	&--narrow {
 		margin: 0 auto;
 		max-width: 800px;
+		width: 75%;
 	}
 }

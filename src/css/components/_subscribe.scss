@@ -24,10 +24,15 @@
 
 	.email {
 		margin-top: -3px;
+		transition: border-bottom-color 0.25s linear;
+
+		&:focus {
+			border-bottom-color: $gold;
+		}
 	}
 
 	input {
-		background: $dark-gray;
+		background: transparent;
 		border: 0;
 		border-bottom: 2px solid #fff;
 		color: #fff;

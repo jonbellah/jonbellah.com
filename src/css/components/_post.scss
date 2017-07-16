@@ -4,12 +4,14 @@
 	padding: 25px 0;
 }
 
-.post__header {
+.post__header,
+.page__header {
 	padding: 50px 0;
 	text-align: center;
 }
 
-.post__title {
+.post__title,
+.page__title {
 	font-size: 60px;
 	line-height: 1.2;
 	margin: 0;
