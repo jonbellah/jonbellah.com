@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends Component {
 	render() {
 		const post = this.props.data.markdownRemark
 		const siteTitle = get(this.props, "data.site.siteMetadata.title")

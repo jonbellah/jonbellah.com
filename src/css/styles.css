@@ -1,0 +1,33 @@
+/* Container
+----------------------------*/
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Header
+----------------------------*/
+.site-header {
+	align-items: center;
+	border-bottom: 1px solid #dadada;
+	display: flex;
+	padding: 10px;
+}
+
+.site-header__link {
+	display: block;
+	line-height: 0;
+}
+
+.site-header__logo {
+	height: auto;
+	margin-bottom: 0;
+	width: 30px;
+}
+
+/* Content
+----------------------------*/
+.site-content {
+	flex: 1;
+}
