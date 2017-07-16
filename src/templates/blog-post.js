@@ -14,10 +14,10 @@ class BlogPostTemplate extends Component {
 			<article className="post">
 				<Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
-				<header className="post__header">
+				<header className="post__header wrap">
 					<p className="post__meta">
-						<small>Posted on</small>
-						<time>{post.frontmatter.date}</time>
+						Posted on
+						<time className="post__time">{post.frontmatter.date}</time>
 					</p>
 					<h1 className="post__title">
 						{post.frontmatter.title}

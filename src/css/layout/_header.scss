@@ -1,15 +1,29 @@
 /* Header
 ----------------------------*/
 .site-header {
-	align-items: center;
 	border-bottom: 1px solid #dadada;
-	display: flex;
 	padding: 10px;
+
+	.wrap {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .site-header__link {
+	color: $dark-gray;
 	display: block;
 	line-height: 0;
+	border-bottom: 0;
+	transition: color 0.25s linear;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $gold;
+		background-color: transparent;
+	}
 }
 
 .site-header__logo {

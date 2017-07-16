@@ -26,19 +26,23 @@ export default class Template extends Component {
 				/>
 				<div className="site">
 					<header id="header" className="site-header">
-						<Link to="/" className="site-header__link">
-							<Logo className="site-header__logo" />
-						</Link>
-
-						<nav id="navigation" className="site-nav">
-							<Link to="/articles/">
-								Articles
+						<div className="wrap">
+							<Link to="/" className="site-header__link">
+								<Logo className="site-header__logo" />
 							</Link>
-						</nav>
+
+							<nav id="navigation" className="site-nav">
+								<Link to="/articles/" className="site-nav__item">
+									Articles
+								</Link>
+							</nav>
+						</div>
 					</header>
+
 					<main className="site-content">
 						{this.props.children()}
 					</main>
+
 					<footer id="colophon" className="site-footer">
 						footer
 					</footer>
