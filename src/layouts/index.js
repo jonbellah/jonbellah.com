@@ -4,8 +4,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
 // Import Styles
-import '../css/styles.css';
-import '../css/typography.css';
+import '../css/styles.scss';
 
 // Import Images
 import logo from '../images/logo.svg';
