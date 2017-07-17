@@ -60,17 +60,17 @@ export default class Template extends Component {
 							</div>
 
 							<div className="site-footer__social">
-								<Link to="https://twitter.com/jonbellah">
+								<a href="https://twitter.com/jonbellah">
 									<TwitterIcon />
-								</Link>
+								</a>
 
-								<Link to="https://github.com/jonbellah">
+								<a href="https://github.com/jonbellah">
 									<GithubIcon />
-								</Link>
+								</a>
 
-								<Link to="#">
+								<a href="#">
 									<RssIcon />
-								</Link>
+								</a>
 							</div>
 						</div>
 					</footer>

@@ -1,3 +1,7 @@
+.feed {
+	padding-bottom: 50px;
+}
+
 .feed__link {
 	border-bottom: 1px solid $border-color;
 	color: $mid-gray;
@@ -7,17 +11,16 @@
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: $gold;
+		border-bottom-color: $gold;
+		background-color: transparent;
 		
 		.feed__title {
-			color: #fff;
+			color: $gold;
 		}
-	}
-}
 
-.feed__item:nth-last-of-type(1) {
-	.feed__link {
-		border-bottom: 0;
+		.feed__time {
+			color: $mid-gray;
+		}
 	}
 }
 
@@ -34,8 +37,9 @@
 
 .feed__time {
 	align-items: center;
+	color: $mid-gray;
 	display: flex;
 	justify-content: flex-end;
-	width: 150px;
+	width: 160px;
 }
 

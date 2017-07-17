@@ -12,7 +12,7 @@ export default class Index extends React.Component {
 					<span className="hero__label">Hello, my name is</span>
 					<h1 className="hero__title">Jon Bellah</h1>
 					<p className="hero__bio">I am a full-stack web developer, speaker, and occasional writer living in the beautiful city of Denver, Colorado.</p>
-					<Link to="/articles/" className="hero__link">Read my mind <RightArrow /></Link>
+					<Link to="/articles/" className="hero__link">Check out my articles <RightArrow /></Link>
 				</div>
 			</div>
 		)
