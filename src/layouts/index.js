@@ -29,7 +29,7 @@ export default class Template extends Component {
 					]}
 				/>
 				<div className="site">
-					<header id="header" className="site-header">
+					<header id="header" className="site-header animated fadeInDown">
 						<div className="container">
 							<Link to="/" className="site-header__link">
 								<Logo className="site-header__logo" />
@@ -53,7 +53,7 @@ export default class Template extends Component {
 						{this.props.children()}
 					</main>
 
-					<footer id="colophon" className="site-footer">
+					<footer id="colophon" className="site-footer animated fadeInUp">
 						<div className="container flex">
 							<div className="site-footer__copyright">
 								&copy; 2017 JonBellah.com. Made in Colorado.

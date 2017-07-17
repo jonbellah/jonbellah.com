@@ -8,7 +8,7 @@ export default class Index extends React.Component {
 	render() {
 		return (
 			<div className="container flex flex-hor-center">
-				<div className="hero">
+				<div className="hero animated fadeIn">
 					<span className="hero__label">Hello, my name is</span>
 					<h1 className="hero__title">Jon Bellah</h1>
 					<p className="hero__bio">I am a full-stack web developer, speaker, and occasional writer living in the beautiful city of Denver, Colorado.</p>
