@@ -43,7 +43,47 @@ module.exports = {
 				//trackingId: `ADD YOUR TRACKING ID HERE`,
 			},
 		},
-		`gatsby-plugin-feed`,
+		{
+			resolve: `gatsby-plugin-feed`,
+			options: {
+				query: `
+					{
+						site {
+							siteMetadata {
+								title
+								description
+								siteUrl
+							}
+						}
+					}
+				`,
+				feeds: [
+					{
+						query: `
+							{
+								allMarkdownRemark(
+									limit: 1000,
+									sort: { order: DESC, fields: [frontmatter___date] }
+								) {
+									edges {
+										node {
+											id
+											html
+											fields { slug }
+											frontmatter {
+												title
+												date
+											}
+										}
+									}
+								}
+							}
+						`,
+						output: '/rss.xml'
+					}
+				]
+			}
+		},
 		`gatsby-plugin-offline`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-sass`,
