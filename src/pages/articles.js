@@ -6,8 +6,13 @@ import get from 'lodash/get';
 export default class Articles extends Component {
 	render() {
 		const pageLinks = [];
-		const posts = get(this, "props.data.allMarkdownRemark.edges");
 		const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		
+		let posts = get(this, "props.data.allMarkdownRemark.edges");
+		posts = posts.sort(function(a,b) {
+			return new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date);
+		});
+		
 		posts.forEach(post => {
 			if (post.node.path !== "/404/") {
 				const title = get(post, "node.frontmatter.title") || post.node.path;
