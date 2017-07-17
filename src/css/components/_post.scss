@@ -54,4 +54,12 @@
 		color: $dark-gray;
 		margin-top: 60px;
 	}
+
+	&--contact {
+		text-align: center;
+
+		h3 {
+			margin-top: 0;
+		}
+	}
 }
