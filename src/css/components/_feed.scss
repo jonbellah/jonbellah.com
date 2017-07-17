@@ -15,6 +15,12 @@
 	}
 }
 
+.feed__item:nth-last-of-type(1) {
+	.feed__link {
+		border-bottom: 0;
+	}
+}
+
 .feed__title {
 	border-bottom: 0;
 	color: $dark-gray;

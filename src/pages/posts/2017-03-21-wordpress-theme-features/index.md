@@ -8,7 +8,7 @@ Lately I've found myself working with an ever increasing number of WordPress mul
 
 Before going much further, I should point out that in my particular use cases, the individual sites on each of the networks generally share common designs, templates, general features, etc.
 
-There are, however, minor customizations to each site - an additional widget here, additional templates there, and so on and so forth. If you've worked with WordPress in the past, you may be familiar with add_theme_support(); it's used to register support for things like post thumbnails, title tags, custom headers, etc.
+There are, however, minor customizations to each site - an additional widget here, additional templates there, and so on and so forth. If you've worked with WordPress in the past, you may be familiar with `add_theme_support();` it's used to register support for things like post thumbnails, title tags, custom headers, etc.
 
 You may not be familiar with `current_theme_supports()`, though. `current_theme_supports()`, in conjunction with `add_theme_support()` and `remove_theme_supports()`, make up the Theme Features API and provide developers with an excellent API that, in practice, allows us to bundle features in a modular way that can easily be enabled or disabled programmatically, on a site-by-site basis.
 
@@ -30,7 +30,7 @@ if ( current_theme_supports( 'my-plugin', 'popular-posts' ) ) {
 
 In most of my own use cases, the sites on the network shared some sort of common design elements. In these cases, it made sense for us to have a parent theme that we could use as a starting point for each site, then extend and customize as needed.
 
-If the sites on your multisite network do not have these commonalities, you can skip the parent theme. If the sites on your multisite network _do _share similarities, then leveraging a parent theme makes a lot of sense. Another great thing about leveraging a parent theme is that when you need to customize it for a particular site, you can write your own hooks with `apply_filters()` or `do_action()` and then extend those customizations in your child theme. That way each site on the network can display the same piece of functionality in many different ways.
+If the sites on your multisite network do not have these commonalities, you can skip the parent theme. If the sites on your multisite network _do_ share similarities, then leveraging a parent theme makes a lot of sense. Another great thing about leveraging a parent theme is that when you need to customize it for a particular site, you can write your own hooks with `apply_filters()` or `do_action()` and then extend those customizations in your child theme. That way each site on the network can display the same piece of functionality in many different ways.
 
 Let's say, for example, that on **Site A** you label the popular posts feature "Popular Posts", but on **Site B** you label it "Most Popular". In places where you're outputting the title of your popular posts widget, you can use:
 
