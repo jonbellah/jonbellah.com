@@ -7,9 +7,13 @@
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 1200px;
-	width: 92%;
+	width: 100%;
+
+	@include mq( $from: tabLarge ) {
+		margin: 0 auto;
+		max-width: 1200px;
+		width: 92%;
+	}
 }
 
 .container--narrow {

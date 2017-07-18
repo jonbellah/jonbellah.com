@@ -285,13 +285,18 @@ h1 {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.45rem;
 	color: inherit;
+	margin-bottom: 1rem;
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 2.5rem;
-	line-height: 2.9rem;
+	font-size: 1.75rem;
+	line-height: 1.2;
+
+	@include mq($from: tablet) {
+		font-size: 2.5rem;
+		margin-bottom: 1.45rem;
+	}
 }
 
 h2 {
@@ -302,13 +307,18 @@ h2 {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.45rem;
+	margin-bottom: 1rem;
 	color: inherit;
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 2.25rem;
-	line-height: 2.175rem;
+	font-size: 1.5rem;
+	line-height: 1.2;
+
+	@include mq($from: tablet) {
+		font-size: 2.25rem;
+		margin-bottom: 1.45rem;
+	}
 }
 
 h3 {
@@ -319,13 +329,18 @@ h3 {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.45rem;
+	margin-bottom: 1rem;
 	color: inherit;
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 2rem;
-	line-height: 1.4;
+	font-size: 1.25rem;
+	line-height: 1.2;
+
+	@include mq($from: tablet) {
+		font-size: 2rem;
+		margin-bottom: 1.45rem;
+	}
 }
 
 h4 {
@@ -336,13 +351,18 @@ h4 {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.85rem;
+	margin-bottom: 1rem;
 	color: inherit;
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 1.4rem;
-	line-height: 1.45rem;
+	font-size: 1rem;
+	line-height: 1.4;
+
+	@include mq($from: tablet) {
+		font-size: 1.75rem;
+		margin-bottom: 1.85rem;
+	}
 }
 
 h5 {
@@ -359,7 +379,7 @@ h5 {
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 	font-size: 0.85028rem;
-	line-height: 1.45rem;
+	line-height: 1.2;
 }
 
 h6 {
@@ -644,8 +664,12 @@ li > p {
 }
 
 code {
-	font-size: 1rem;
-	line-height: 1.45rem;
+	font-size: 0.9rem;
+	line-height: 1.45;
+
+	@include mq($from:tablet) {
+		font-size: 1rem;
+	}
 }
 
 kbd {
@@ -704,7 +728,7 @@ td:last-child {
 
 tt,
 code {
-	background-color: hsla(0, 0%, 0%, 0.04);
+	background-color: hsla(0, 0%, 0%, 0.06);
 	border-radius: 3px;
 	font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
 		"Liberation Mono", Menlo, Courier, monospace;

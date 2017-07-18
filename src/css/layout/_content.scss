@@ -3,5 +3,9 @@
 .site-content {
 	display: flex;
 	flex: 1;
-	padding-top: 50px;
+	padding: 2em 0.75em 0;
+
+	@include mq($from: tablet) {
+		padding-top: 2em;
+	}
 }

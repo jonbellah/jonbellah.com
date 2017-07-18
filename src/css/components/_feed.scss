@@ -5,13 +5,17 @@
 .feed__link {
 	border-bottom: 1px solid $border-color;
 	color: $mid-gray;
-	display: flex;
-	padding: 30px;
+	display: block;
+	padding: 1.25em 0;
+
+	@include mq($from:tablet) {
+		display: flex;
+		padding: 1.75em;
+	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		border-bottom-color: $gold;
 		background-color: transparent;
 		
 		.feed__title {
@@ -31,15 +35,23 @@
 	font-weight: bold;
 	line-height: 1.35;
 	margin: 0;
-	max-width: calc(100% - 150px);
+	width: 100%;
 	transition: color 0.25s linear;
+
+	@include mq($from: tablet) {
+		max-width: calc(100% - 150px);
+	}
 }
 
 .feed__time {
-	align-items: center;
 	color: $mid-gray;
-	display: flex;
-	justify-content: flex-end;
-	width: 160px;
+	width: 100%;
+
+	@include mq($from: tablet) {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+		width: 160px;
+	}
 }
 

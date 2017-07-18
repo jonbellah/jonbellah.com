@@ -2,29 +2,47 @@
 ----------------------------*/
 .post {
 	margin: 0 auto;
+	padding: 0 1em;
 	width: 100%;
+
+	@include mq($from: tabLarge) {
+		padding: 0;
+	}
 }
 
 .post__header,
 .page__header {
-	padding: 50px 0;
-	text-align: center;
+	padding: 2em 0;
+
+	@include mq($from: tabLarge) {
+		padding: 3.75em 0;
+		text-align: center;
+	}
 
 	&:after {
 		background-color: $gold;
 		content: "";
 		display: block;
-		height: 4px;
-		margin: 50px auto 0;
-		width: 120px;
+		height: 0.25em;
+		margin: 0.5em 0;
+		width: 4em;
+
+		@include mq($from: tablet) {
+			margin: 2.75em auto 0;
+			width: 6em;
+		}
 	}
 }
 
 .post__title,
 .page__title {
-	font-size: 60px;
+	font-size: 2.5em;
 	line-height: 1.2;
 	margin: 0;
+
+	@include mq($from: tablet) {
+		font-size: 3.5em;
+	}
 }
 
 .post__meta {
@@ -41,9 +59,13 @@
 .post__content,
 .page__content {
 	color: $mid-gray;
-	font-size: 24px;
-	line-height: 36px;
-	padding-bottom: 30px;
+	font-size: 1.1em;
+	line-height: 1.5;
+	padding-bottom: 2em;
+
+	@include mq($from: tablet) {
+		font-size: 1.35em;
+	}
 
 	h1,
 	h2,
@@ -52,7 +74,7 @@
 	h5,
 	h6 {
 		color: $dark-gray;
-		margin-top: 60px;
+		margin-top: 2em;
 	}
 
 	&--contact {

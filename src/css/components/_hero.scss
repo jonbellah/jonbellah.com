@@ -14,8 +14,14 @@
 
 .hero__title {
 	display: block;
-	font-size: 120px;
-	margin-bottom: 50px;
+	font-size: 5em;
+	line-height: 1;
+	margin-bottom: 1rem;
+	
+	@include mq($from: tablet) {
+		font-size: 120px;
+		margin-bottom: 50px;
+	}
 }
 
 .hero__bio {

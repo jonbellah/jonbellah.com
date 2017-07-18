@@ -8,7 +8,11 @@
 }
 
 .author__avatar {
-	width: 80px;
+	width: 60px;
+
+	@include mq($from: tablet) {
+		width: 80px;
+	}
 
 	.avatar {
 		border-radius: 50%;
@@ -19,7 +23,11 @@
 
 .author__info {
 	padding-left: 1.5em;
-	width: calc(100% - 80px);
+	width: calc(100% - 60px);
+
+	@include mq($from: tablet) {
+		width: calc(100% - 80px);
+	}
 }
 
 .author__name {
@@ -31,6 +39,10 @@
 
 .author__bio {
 	color: $mid-gray;
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 1.5;
+
+	@include mq($from: tablet) {
+		font-size: 1.1em;
+	}
 }
