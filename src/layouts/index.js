@@ -19,7 +19,25 @@ export default class Template extends Component {
 		children: PropTypes.func,
 	}
 
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			mobileMenuOpen: false,
+		};
+
+		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+	}
+
+	toggleMobileMenu(event) {
+		this.setState({
+			mobileMenuOpen: !this.state.mobileMenuOpen
+		});
+	}
+
 	render() {
+		const menuClass = this.state.mobileMenuOpen ? 'active' : '';
+
 		return (
 			<div>
 				<Helmet
@@ -39,14 +57,13 @@ export default class Template extends Component {
 							<Link to="/" className="site-header__link">
 								<Logo className="site-header__logo" />
 							</Link>
-
-							<nav id="navigation" className="site-nav">
-								<button id="js-menu-toggle" className="toggle-icon" aria-controls="primary-menu" aria-expanded="false">
+							<button className={`toggle-icon ${menuClass}`} onClick={this.toggleMobileMenu}>
 									<span className="line line-1" />
 									<span className="line line-2" />
 									<span className="line line-3" />
 								</button>
 
+							<nav id="navigation" className={`site-nav ${menuClass}`}>
 								<NavLink to="/articles/" className="site-nav__item">
 									Articles
 								</NavLink>

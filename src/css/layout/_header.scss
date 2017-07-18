@@ -10,8 +10,11 @@
 	z-index: 10;
 
 	@include mq($from: tablet) {
-		padding: 0;
 		position: fixed;
+	}
+
+	@include mq($from: tabLarge) {
+		padding: 0;
 	}
 
 	.container {

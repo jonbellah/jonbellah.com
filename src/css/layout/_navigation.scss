@@ -1,5 +1,25 @@
 /* Navigation
 ----------------------------*/
+.site-nav {
+	@include mq($until: tablet) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		background: $dark-gray;
+		opacity: 0.9;
+		flex-direction: column;
+
+		&.active {
+			display: flex;
+		}
+	}
+}
+
 .site-nav__item {
 	border-bottom: 3px solid transparent;
 	color: $mid-gray;
@@ -68,6 +88,10 @@
 	}
 
 	&.active {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+
 		.line {
 			background: #fff;
 		}
