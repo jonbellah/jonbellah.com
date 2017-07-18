@@ -2,19 +2,14 @@
 ----------------------------*/
 .post {
 	margin: 0 auto;
-	padding: 0 1em;
 	width: 100%;
-
-	@include mq($from: tabLarge) {
-		padding: 0;
-	}
 }
 
 .post__header,
 .page__header {
-	padding: 2em 0;
+	padding: 1.5em 0;
 
-	@include mq($from: tabLarge) {
+	@include mq($from: tablet) {
 		padding: 3.75em 0;
 		text-align: center;
 	}
@@ -36,7 +31,7 @@
 
 .post__title,
 .page__title {
-	font-size: 2.5em;
+	font-size: 1.75em;
 	line-height: 1.2;
 	margin: 0;
 
@@ -48,7 +43,11 @@
 .post__meta {
 	color: $mid-gray;
 	line-height: 1;
-	margin-top: 30px;
+	margin-top: 1em;
+
+	@include mq($from: tablet) {
+		margin-top: 1.5em;
+	}
 }
 
 .post__time {
@@ -78,7 +77,9 @@
 	}
 
 	&--contact {
-		text-align: center;
+		@include mq($from: tablet) {
+			text-align: center;
+		}
 
 		h3 {
 			margin-top: 0;

@@ -356,7 +356,7 @@ h4 {
 	font-family: $serif;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.4;
 
 	@include mq($from: tablet) {

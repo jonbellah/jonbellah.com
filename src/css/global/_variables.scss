@@ -19,3 +19,12 @@ $mq-breakpoints: (
 	wide:     1300px,
 );
 $mq-static-breakpoint: desktop;
+
+// Toggle icon
+$height-icon: 15px;
+$width-line: 28px;
+$height-line: 3px;
+$transition-time: 0.25s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;

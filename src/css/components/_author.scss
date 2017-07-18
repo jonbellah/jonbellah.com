@@ -3,8 +3,11 @@
 .author {
 	border-bottom: 1px solid $border-color;
 	border-top: 1px solid $border-color;
-	display: flex;
 	padding: 30px 0;
+
+	@include mq($from: tablet) {
+		display: flex;
+	}
 }
 
 .author__avatar {
@@ -22,10 +25,10 @@
 }
 
 .author__info {
-	padding-left: 1.5em;
-	width: calc(100% - 60px);
+	width: 100%;
 
 	@include mq($from: tablet) {
+		padding-left: 1.5em;
 		width: calc(100% - 80px);
 	}
 }

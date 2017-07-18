@@ -41,6 +41,12 @@ export default class Template extends Component {
 							</Link>
 
 							<nav id="navigation" className="site-nav">
+								<button id="js-menu-toggle" className="toggle-icon" aria-controls="primary-menu" aria-expanded="false">
+									<span className="line line-1" />
+									<span className="line line-2" />
+									<span className="line line-3" />
+								</button>
+
 								<NavLink to="/articles/" className="site-nav__item">
 									Articles
 								</NavLink>

@@ -3,7 +3,7 @@
 .site-content {
 	display: flex;
 	flex: 1;
-	padding: 2em 0.75em 0;
+	padding: 0 0.75em;
 
 	@include mq($from: tablet) {
 		padding-top: 2em;

@@ -4,10 +4,15 @@
 	background: #fff;
 	border-bottom: 1px solid $border-color;
 	left: 0;
-	position: fixed;
+	padding: 0 0.75rem;
 	top: 0;
 	width: 100%;
 	z-index: 10;
+
+	@include mq($from: tablet) {
+		padding: 0;
+		position: fixed;
+	}
 
 	.container {
 		align-items: center;

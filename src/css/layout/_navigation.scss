@@ -20,3 +20,72 @@
 		color: $gold;
 	}
 }
+
+.toggle-icon {
+	background: transparent;
+	border: 0;
+	display: block;
+	float: right;
+	height: $height-icon;
+	outline: none;
+	margin-top: 0.5em;
+	position: relative;
+	width: $width-line;
+	z-index: 10;
+
+	@include mq( $from: tablet ) {
+		display: none;
+	}
+
+	&:hover,
+	&:active {
+		outline: none;
+	}
+
+	.line {
+		background: $dark-gray;
+		border-radius: 0;
+		display: block;
+		height: $height-line;
+		left: 0;
+		position: absolute;
+		width: $width-line;
+		transition: all $transition-time;
+		-webkit-transition: all $transition-time;
+		-moz-transition: all $transition-time;
+
+		&.line-1 {
+			top:0;
+		}
+
+		&.line-2 {
+			top:50%;
+		}
+
+		&.line-3 {
+			top:100%;
+		}
+	}
+
+	&.active {
+		.line {
+			background: #fff;
+		}
+
+		.line-1 {
+			transform: translateY($translateY) translateX($translateX) rotate($rotation);
+			-webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+			-moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+		}
+
+		.line-2 {
+			opacity:0;
+		}
+
+		.line-3 {
+			transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+			-webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+			-moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+		}
+	}
+}

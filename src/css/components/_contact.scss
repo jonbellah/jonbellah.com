@@ -1,8 +1,13 @@
 .contact__link {
 	border-bottom: 0;
 	display: inline-block;
-	font-size: 40px;
+	font-size: 24px;
 	font-weight: bold;
-	margin-top: 30px;
-	padding: 6px;
+	padding: 0;
+
+	@include mq($from: tablet) {
+		font-size: 40px;
+		margin-top: 30px;
+		padding: 6px;
+	}
 }

@@ -10,7 +10,7 @@ const Speaking = () => {
 			</header>
 
 			<div className="page__content container--narrow">
-				<h3>Visual Regression Testing with PhantomCSS</h3>
+				<h3 className="no-margin-top">Visual Regression Testing with PhantomCSS</h3>
 				<p>You've spent months perfecting your site; building your components and checking them twice. You’ve gone through more QA than you can shake a stick at, and you’re now completely change blind... but you're finally ready to launch that site!</p>
 
 				<p>Suddenly, at the last minute, the client requires major changes to the a critical component (probably the legal department, it’s always the legal department).</p>
