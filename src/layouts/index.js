@@ -8,6 +8,7 @@ import Helmet from 'react-helmet';
 import '../css/styles.scss';
 
 // Import Images
+import favicon from '../images/favicon.ico';
 import Logo from '../images/Logo';
 import TwitterIcon from '../images/TwitterIcon';
 import GithubIcon from '../images/GithubIcon';
@@ -24,10 +25,14 @@ export default class Template extends Component {
 				<Helmet
 					title="JonBellah.com"
 					meta={[
-						{ name: "description", content: "Sample" },
-						{ name: "keywords", content: "sample, something" },
+						{ name: "description", content: "Jon is a full-stack web developer, speaker, and occasional writer" },
 					]}
-				/>
+				>
+					<link rel="icon" href={favicon} type="x-icon/image" />
+					<meta property="og:locale" content="en_US" />
+					<meta property="og:type" content="website" />
+					<meta property="og:site_name" content="Jon Bellah" />
+				</Helmet>
 				<div className="site">
 					<header id="header" className="site-header animated fadeInDown">
 						<div className="container">
@@ -68,7 +73,7 @@ export default class Template extends Component {
 									<GithubIcon />
 								</a>
 
-								<a href="#">
+								<a href="/rss.xml">
 									<RssIcon />
 								</a>
 							</div>
