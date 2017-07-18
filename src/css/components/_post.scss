@@ -18,9 +18,9 @@
 		background-color: $gold;
 		content: "";
 		display: block;
-		height: 0.25em;
+		height: 0.2em;
 		margin: 0.5em 0;
-		width: 4em;
+		width: 3.5em;
 
 		@include mq($from: tablet) {
 			margin: 2.75em auto 0;

@@ -4,12 +4,14 @@
 	background: #fff;
 	border-bottom: 1px solid $border-color;
 	left: 0;
-	padding: 0 0.75rem;
+	padding: 8px 0.75rem;
 	top: 0;
 	width: 100%;
 	z-index: 10;
 
 	@include mq($from: tablet) {
+		padding-top: 0;
+		padding-bottom: 0;
 		position: fixed;
 	}
 
