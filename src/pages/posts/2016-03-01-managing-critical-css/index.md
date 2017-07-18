@@ -16,7 +16,7 @@ Any styles that are displayed 'above the fold' (I know, I know... bear with me) 
 
 I am a big fan of using [grunt-criticalcss](https://github.com/filamentgroup/grunt-criticalcss) for managing critical CSS. In the past, critical CSS was difficult to manage, because if you made a change, for example, to the header then you would need to also make those changes in your critical CSS. What grunt-criticalcss does, is it uses [PhantomJS](http://phantomjs.org/) (a headless browser) to pull up your site and actually see which styles are shown in the viewport you define.
 
-~~Here on this site, I use grunt-criticalcss to manage my critical styles.~~ (This site has been updating and now uses [GatsbyJS](https://gatsbyjs.org), which does it's own CSS management).
+~~Here on this site, I use grunt-criticalcss to manage my critical styles.~~ (This site has been updated and now uses [GatsbyJS](https://gatsbyjs.org), which does it's own CSS management).
 
 The first thing we should do is define our grunt-criticalcss task in our `Gruntfile.js`. My task looks like:
 
