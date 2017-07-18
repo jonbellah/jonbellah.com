@@ -1,0 +1,15 @@
+{
+	// Required
+	"manifest_version": 1,
+	"name": "JonBellah.com",
+	"version": "20170718.0",
+
+	// Recommended
+	"default_locale": "en",
+	"description": "Lead Front-End Engineer at 10up",
+
+	// Optional
+	"author": "Jon Bellah",
+
+	"homepage_url": "https://jonbellah.com"
+}

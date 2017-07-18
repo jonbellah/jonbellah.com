@@ -50,7 +50,7 @@ export default class Template extends Component {
 				<Helmet
 					title="JonBellah.com"
 					meta={[
-						{ name: "description", content: "Jon is a full-stack web developer, speaker, and occasional writer" },
+						{ name: "description", content: "Jon is a full-stack web developer, speaker, and occasional writer" }
 					]}
 				>
 					<link rel="icon" href={favicon} type="x-icon/image" />

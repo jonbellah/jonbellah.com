@@ -71,4 +71,5 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.onPostBuild = function() {
 	Shell.execSync('cp src/_redirects public');
 	Shell.execSync('cp src/_headers public');
+	Shell.execSync('cp src/manifest.json public');
 }
