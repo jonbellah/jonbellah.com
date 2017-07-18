@@ -10,7 +10,7 @@
 
 	@include mq($from:tablet) {
 		display: flex;
-		padding: 1.75em;
+		padding: 1.5em;
 	}
 
 	&:hover,
@@ -39,6 +39,7 @@
 	transition: color 0.25s linear;
 
 	@include mq($from: tablet) {
+		font-size: 1.5rem;
 		max-width: calc(100% - 150px);
 	}
 }

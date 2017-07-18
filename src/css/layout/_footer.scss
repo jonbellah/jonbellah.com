@@ -63,6 +63,7 @@
 
 	@include mq($from: tablet) {
 		order: 1;
+		text-align: left;
 		width: 50%;
 	}
 }

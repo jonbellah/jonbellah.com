@@ -3,7 +3,10 @@
 .subscribe {
 	margin-top: 20px;
 	margin-bottom: 60px;
-	padding: 30px 1em;
+
+	@include mq($from: tablet) {
+		padding: 30px 1em;
+	}
 }
 
 .subscribe__inner {
@@ -11,7 +14,7 @@
 	border-bottom-right-radius: 35px;
 	border-top-left-radius: 35px;
 	color: #fff;
-	padding: 20px 40px;
+	padding: 1em;
 
 	@include mq( $from: tablet ) {
 		padding: 25px 50px 50px;
@@ -19,8 +22,11 @@
 }
 
 .subscribe__mailchimp {
-	padding-top: 2em;
+	padding-top: 1em;
 
+	@include mq($from: tablet) {
+		padding-top: 2em;
+	}
 
 	.email {
 		margin-top: -3px;
@@ -32,13 +38,17 @@
 		}
 	}
 
+	form {
+		margin-bottom: 0;
+	}
+
 	input {
 		background: $mid-gray;
 		border: 0;
 		border-bottom: 2px solid rgba(255,255,255,0.5);
 		color: #fff;
 		float: left;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.75em;
 		outline: none;
 		padding: 11px 0;
 		width: 100%;
@@ -53,14 +63,23 @@
 	h3 {
 		color: #fff;
 		line-height: 1;
+		font-size: 1.5rem;
 		margin: 0.5em 0 0.25em;
+
+		@include mq($from: tablet) {
+			font-size: 1.75rem;
+		}
 	}
 }
 
 .subscribe__content {
 	color: rgba(255,255,255,0.75);
-	font-size: 1.1em;
+	font-size: 1em;
 	text-align: center;
+
+	@include mq($from: tablet) {
+		font-size: 1.1em;
+	}
 }
 
 .subscribe__email {
@@ -68,7 +87,11 @@
 }
 
 .subscribe__button {
-	width: 160px;
+	width: 100%;
+
+	@include mq($from: tablet) {
+		width: 160px;
+	}
 
 	.button {
 		background-color: $gold;
@@ -92,6 +115,12 @@
 }
 
 .subscribe__fields {
+	flex-direction: column;
 	margin: 0 auto;
-	width: 80%;
+	width: 92%;
+
+	@include mq($from: tablet) {
+		flex-direction: row;
+		width: 80%;
+	}
 }

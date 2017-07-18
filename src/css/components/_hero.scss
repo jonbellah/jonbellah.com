@@ -5,40 +5,51 @@
 .hero__label {
 	color: $gold;
 	display: block;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	margin-bottom: 30px;
 	text-transform: uppercase;
+
+	@include mq($from: tablet) {
+		font-size: 22px;
+	}
 }
 
 .hero__title {
 	display: block;
-	font-size: 5em;
+	font-size: 3.5em;
 	line-height: 1;
-	margin-bottom: 1rem;
+	margin-bottom: 0.25rem;
 	
 	@include mq($from: tablet) {
 		font-size: 120px;
-		margin-bottom: 50px;
+		margin-bottom: 15px;
 	}
 }
 
 .hero__bio {
 	color: $mid-gray;
 	display: block;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.5;
 	max-width: 650px;
+
+	@include mq($from: tablet) {
+		font-size: 24px;
+	}
 }
 
 .hero__link {
 	display: block;
-	font-size: 24px;
+	font-size: 20px;
 	float: left;
 	line-height: 1;
 	padding: 0;
 	transition: all 0.25s linear;
+
+	@include mq($from: tablet) {
+		font-size: 24px;
+	}
 
 	&:hover,
 	&:focus,
@@ -49,7 +60,11 @@
 	}
 
 	svg {
-		height: 12px;
+		height: 10px;
 		width: auto;
+
+		@include mq($from: tablet) {
+			height: 12px;
+		}
 	}
 }

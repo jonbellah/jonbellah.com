@@ -25,8 +25,12 @@ const Speaking = () => {
 
 				<strong>Where I've presented this talk</strong>
 				<ul>
-					<li><a href="https://jonbellah.com/talks/frontporch/">Front Porch Austin 2016</a></li>
-					<li><a href="https://jonbellah.com/talks/js-summit/">JS Summit 2016</a></li>
+					<li>
+						<Link to="/talks/frontporch/">Front Porch Austin 2016</Link>
+					</li>
+					<li>
+						<Link to="/talks/js-summit/">JS Summit 2016</Link>
+					</li>
 				</ul>
 
 				<h3>Past Talks</h3>
