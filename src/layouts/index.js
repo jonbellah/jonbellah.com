@@ -27,11 +27,18 @@ export default class Template extends Component {
 		};
 
 		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+		this.closeMobileMenu = this.closeMobileMenu.bind(this);
 	}
 
 	toggleMobileMenu(event) {
 		this.setState({
 			mobileMenuOpen: !this.state.mobileMenuOpen
+		});
+	}
+
+	closeMobileMenu() {
+		this.setState({
+			mobileMenuOpen: false,
 		});
 	}
 
@@ -64,13 +71,13 @@ export default class Template extends Component {
 								</button>
 
 							<nav id="navigation" className={`site-nav ${menuClass}`}>
-								<NavLink to="/articles/" className="site-nav__item">
+								<NavLink to="/articles/" className="site-nav__item" onClick={this.closeMobileMenu}>
 									Articles
 								</NavLink>
-								<NavLink to="/speaking/" className="site-nav__item">
+								<NavLink to="/speaking/" className="site-nav__item" onClick={this.closeMobileMenu}>
 									Speaking
 								</NavLink>
-								<NavLink to="/contact/" className="site-nav__item">
+								<NavLink to="/contact/" className="site-nav__item" onClick={this.closeMobileMenu}>
 									Contact
 								</NavLink>
 							</nav>

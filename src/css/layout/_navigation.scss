@@ -2,17 +2,18 @@
 ----------------------------*/
 .site-nav {
 	@include mq($until: tablet) {
+		align-items: center;
+		background: $dark-gray;
+		display: none;
+		flex-direction: column;
+		font-weight: bold;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		opacity: 0.95;
 		position: absolute;
 		top: 0;
-		left: 0;
-		height: 100%;
 		width: 100%;
-		display: none;
-		align-items: center;
-		justify-content: center;
-		background: $dark-gray;
-		opacity: 0.9;
-		flex-direction: column;
 
 		&.active {
 			display: flex;
@@ -21,20 +22,20 @@
 }
 
 .site-nav__item {
-	color: #fff;
-	font-size: 32px;
 	border-bottom-color: transparent;
-	margin-bottom: 30px;
+	color: #fff;
 	display: inline-block;
+	font-size: 32px;
 	letter-spacing: 1px;
+	margin-bottom: 40px;
 	transition: all 0.25s linear;
 
 	@include mq($from: tablet) {
 		border-bottom: 3px solid transparent;
 		color: $mid-gray;
 		font-size: 14px;
-		margin-left: 20px;
 		margin-bottom: 0;
+		margin-left: 20px;
 		padding: 10px 5px 7px;
 		text-transform: uppercase;
 	}
@@ -86,10 +87,8 @@
 		height: $height-line;
 		left: 0;
 		position: absolute;
-		width: $width-line;
 		transition: all $transition-time;
-		-webkit-transition: all $transition-time;
-		-moz-transition: all $transition-time;
+		width: $width-line;
 
 		&.line-1 {
 			top:0;

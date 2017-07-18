@@ -526,10 +526,15 @@ fieldset {
 
 blockquote {
 	background: #f9f9f9;
-	border-left: 10px solid #ccc;
-	margin: 1.5em 10px;
+	border-left: 6px solid #ccc;
+	margin: 1.5em 0;
 	padding: 0.5em 10px;
 	quotes: "\201C""\201D""\2018""\2019";
+
+	@include mq($from: tablet) {
+		margin: 1.5em 10px;
+		border-left-width: 10px;
+	}
 }
 
 blockquote:before {
