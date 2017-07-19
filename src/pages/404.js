@@ -9,7 +9,7 @@ const NotFound = () => {
 			</header>
 
 			<div className="page__content page__content--notfound container--narrow">
-				<p>Sorry, the page you're looking for does not exist. Try taking a look through the <Link to="/articles/">archives</Link></p>
+				<p>Sorry, the page you're looking for does not exist. Try taking a look through the <Link to="/articles/">archives</Link>.</p>
 			</div>
 		</div>
 	);
