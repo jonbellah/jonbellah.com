@@ -76,7 +76,8 @@
 		margin-top: 2em;
 	}
 
-	&--contact {
+	&--contact,
+	&--notfound {
 		@include mq($from: tablet) {
 			text-align: center;
 		}

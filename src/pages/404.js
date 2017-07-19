@@ -1,10 +1,16 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 const NotFound = () => {
 	return (
 		<div className="container">
-			<h1>NOT FOUND</h1>
-			<p>You just hit a route that doesn't exist... the sadness.</p>
+			<header className="page__header">
+				<h1 className="page__title">Not Found</h1>
+			</header>
+
+			<div className="page__content page__content--notfound container--narrow">
+				<p>Sorry, the page you're looking for does not exist. Try taking a look through the <Link to="/articles/">archives</Link></p>
+			</div>
 		</div>
 	);
 };
