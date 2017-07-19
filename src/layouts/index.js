@@ -56,6 +56,7 @@ export default class Template extends Component {
 					<meta property="og:locale" content="en_US" />
 					<meta property="og:type" content="website" />
 					<meta property="og:site_name" content="Jon Bellah" />
+					<meta name="theme-color" content="#EAB75C" />
 					<link rel="icon" href={favicon} type="x-icon/image" />
 					<link rel="manifest" href="/manifest.json" />
 				</Helmet>
