@@ -31,7 +31,7 @@ class BlogPostTemplate extends Component {
 				<Subscribe />
 
 				<div className="comments container--narrow">
-					Have a question, comment, or concern? Please feel free to open an issue on <a href="https://github.com/jonbellah/jonbellah.com-gatsby">GitHub</a>.
+					Have a question, comment, or concern? Please feel free to open an issue on <a href="https://github.com/jonbellah/jonbellah.com">GitHub</a>.
 				</div>
 			</article>
 		)

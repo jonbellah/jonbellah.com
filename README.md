@@ -1,7 +1,8 @@
-# gatsby-starter-default
-The default Gatsby starter
+# JonBellah.com
+Powered by [GatsbyJS](https://gatsbyjs.org)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+To run this locally, clone this repo and run
 ```
-gatsby new gatsby-example-site
+$ yarn
+$ gatsby develop
 ```
