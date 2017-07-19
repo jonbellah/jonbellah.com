@@ -7,5 +7,6 @@
 	"description": "Lead Front-End Engineer at 10up",
 	"theme_color": "#283339",
 	"author": "Jon Bellah",
-	"homepage_url": "https://jonbellah.com"
+	"homepage_url": "https://jonbellah.com",
+	"start_url": "/"
 }
