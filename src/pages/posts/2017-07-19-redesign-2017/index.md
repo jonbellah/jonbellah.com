@@ -1,7 +1,7 @@
 ---
 title: Introducing a Fresh New Look
-date: "2017-07-18T07:00:00.000Z"
-path: "/articles/redesign-2017/"
+date: "2017-07-19T04:11:28.533Z"
+path: "/articles/fresh-new-look/"
 ---
 
 Welcome to the new digs!
