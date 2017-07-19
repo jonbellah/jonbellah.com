@@ -53,10 +53,11 @@ export default class Template extends Component {
 						{ name: "description", content: "Jon is a full-stack web developer, speaker, and occasional writer" }
 					]}
 				>
-					<link rel="icon" href={favicon} type="x-icon/image" />
 					<meta property="og:locale" content="en_US" />
 					<meta property="og:type" content="website" />
 					<meta property="og:site_name" content="Jon Bellah" />
+					<link rel="icon" href={favicon} type="x-icon/image" />
+					<link rel="manifest" href="/manifest.json" />
 				</Helmet>
 				<div className="site">
 					<header id="header" className="site-header animated fadeInDown">
