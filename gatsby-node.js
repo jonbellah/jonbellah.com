@@ -72,4 +72,5 @@ exports.onPostBuild = function() {
 	Shell.execSync('cp src/_redirects public');
 	Shell.execSync('cp src/_headers public');
 	Shell.execSync('cp src/manifest.json public');
+	Shell.execSync('cp -R src/images/icons public/icons');
 }
