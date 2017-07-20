@@ -8,15 +8,9 @@ class Html extends Component {
 				<head>
 					{this.props.headComponents}
 					<meta charSet="utf-8" />
-					<meta
-						name="description"
-						content="Jon is a full-stack web developer, speaker, and occasional writer"
-					/>
+					<meta name="description" content="Jon is a full-stack web developer, speaker, and occasional writer" />
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1.0"
-					/>
+					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>JonBellah.com</title>
 				</head>
 				<body>
@@ -35,4 +29,4 @@ Html.propTypes = {
 	body: PropTypes.string,
 };
 
-module.exports = Html;
+export default Html;
