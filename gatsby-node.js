@@ -66,7 +66,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 	})
 }
 
-
 // Copy redirects on build
 exports.onPostBuild = function() {
 	Shell.execSync('cp src/_redirects public');
