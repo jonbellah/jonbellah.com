@@ -1,6 +1,5 @@
 const Shell = require('child_process');
 const path = require('path');
-const helmet = require('react-helmet');
 
 exports.onCreateNode = function ({ node, boundActionCreators, getNode }) {
 	const { createNodeField } = boundActionCreators
@@ -65,15 +64,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 			})
 		)
 	})
-}
-
-// Set title
-exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
-  setHeadComponents([
-    helmet.title.toComponent(),
-    helmet.meta.toComponent(),
-    helmet.link.toComponent(),
-  ])
 }
 
 // Copy redirects on build
