@@ -72,5 +72,4 @@ exports.onPostBuild = function() {
 	Shell.execSync('cp src/_headers public');
 	Shell.execSync('cp src/manifest.json public');
 	Shell.execSync('cp -R src/images/icons public/icons');
-	Shell.execSync('find public/ | grep -r -l . | xargs sed -i "" -e "s/<title>Gatsby.js/<title>JonBellah.com/g"')
-}
+	}
