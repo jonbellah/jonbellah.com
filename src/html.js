@@ -10,7 +10,6 @@ export default class HTML extends Component {
 		return (
 			<html lang="en">
 				<head>
-					<title>JonBellah.com</title>
 					{this.props.headComponents}
 					<meta charSet="utf-8" />
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
