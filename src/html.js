@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Html = (props) => {
+const HTML = (props) => {
 	return(
 		<html lang="en">
 			<head>
@@ -18,9 +18,4 @@ const Html = (props) => {
 	)
 };
 
-Html.propTypes = {
-	body: PropTypes.string,
-};
-
-
-export default Html;
+export default HTML;
