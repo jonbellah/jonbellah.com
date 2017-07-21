@@ -1,14 +1,33 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+
+import favicon from './images/favicon.ico';
+
+let stylesStr;
+if (process.env.NODE_ENV === 'production') {
+	try {
+		stylesStr = require(`!raw-loader!../public/styles.css`);
+	} catch (e) {
+		console.log(e);
+	}
+}
+
 const propTypes = {
 	headComponents: PropTypes.node.isRequired,
 	body: PropTypes.node.isRequired,
 	postBodyComponents: PropTypes.node.isRequired,
-}
+};
 
 class Html extends Component {
 	render() {
+		let css;
+		if (process.env.NODE_ENV === `production`) {
+			css = (
+				<style id="gatsby-inlined-css" dangerouslySetInnerHTML={{ __html: stylesStr }} />
+			)
+		}
+
 		return (
 			<html lang="en">
 				<head>
@@ -16,14 +35,13 @@ class Html extends Component {
 					<meta charSet="utf-8" />
 					<meta name="description" content="JonBellah.com - Lead Front-End Engineer @ 10up" />
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+					<link rel="icon" href={favicon} type="x-icon/image" />
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>JonBellah.com</title>
+					{css}
 				</head>
 				<body>
-					<div
-						id="___gatsby"
-						dangerouslySetInnerHTML={{ __html: this.props.body }}
-					/>
+					<div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
 					{this.props.postBodyComponents}
 				</body>
 			</html>
