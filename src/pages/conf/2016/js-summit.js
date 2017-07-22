@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import Slides from '../../components/Slides';
+import Slides from '../../../components/Slides';
 
 const JsSummit = () => {
 	return (
