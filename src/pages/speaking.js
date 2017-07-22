@@ -12,7 +12,7 @@ const Speaking = () => {
 			</header>
 
 			<div className="page__content container--narrow">
-				If you're interested in having me speak at your event, please get in touch at <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;</a>.
+				I provide talks and workshops on web design and development. These days, I primarly focus on JavaScript, with a particular focus on React and its surrounding ecosystem. If you're interested in having me speak at your event, please get in touch at <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;</a>.
 				<h3>Past Talks</h3>
 
 				<Accordion title="Visual Regression Testing with PhantomCSS">

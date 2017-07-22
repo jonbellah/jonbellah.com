@@ -525,7 +525,7 @@ fieldset {
 }
 
 blockquote {
-	border-left: 6px solid $gold;
+	border-left: 4px solid $gold;
 	font-style: italic;
 	margin: 1.5em 0;
 	padding: 30px 0 10px 30px;
@@ -540,11 +540,11 @@ blockquote {
 blockquote:before {
 	color: $gold;
 	content: open-quote;
-	font-size: 4em;
+	font-size: 3.5em;
 	left: 10px;
 	line-height: 0.1em;
 	position: absolute;
-	top: 30px;
+	top: 32px;
 	vertical-align: -0.4em;
 }
 
@@ -748,9 +748,9 @@ code {
 	border-radius: 3px;
 	font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
 		"Liberation Mono", Menlo, Courier, monospace;
-	padding: 0;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
+	padding: 0.2em;
+	margin: 0 3px;
+	border: 1px solid rgba(0,0,0,0.09);
 }
 
 pre code {
@@ -759,8 +759,6 @@ pre code {
 	line-height: 1.42;
 }
 
-code:before,
-code:after,
 tt:before,
 tt:after {
 	letter-spacing: -0.2em;
