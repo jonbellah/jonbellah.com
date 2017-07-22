@@ -1,0 +1,30 @@
+.talks {
+	@include mq($from: tablet) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+
+	span {
+		display: block;
+		font-size: 18px;
+	}
+
+	a {
+		margin-right: 12px;
+		font-size: 18px;
+	}
+}
+
+.talk {
+	margin-bottom: 30px;
+
+	@include mq($from: tablet) {
+		margin-bottom: 0;
+	}
+}
+
+.talk__title {
+	font-style: italic;
+}
