@@ -16,17 +16,14 @@ const Speaking = () => {
 
 			<div className="page__content container--narrow">
 				<p className="page__subhead">
-					I provide talks and workshops on web design and development. These days, I primarly focus on JavaScript, with a particular focus on React and its surrounding ecosystem. If you're interested in having me speak at your event, please get in touch at <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;</a>.
+					I am an enthusiastic and experienced speaker who enjoys presenting talks and workshops on web development. These days, I primarily focus on JavaScript with a particular interest in React, Redux, and Jest. If you're interested in having me speak at your event, please <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">get in touch</a>.
 				</p>
 
 				<h3>Biography</h3>
-				<p>Jon began writing code at an early age, when his parents bought their first family computer. His interest grew out of a desire to build websites for his various gaming interests (mostly StarCraft), so with the help of Geocities, Microsoft FrontPage, and some HTML Goodies, he started on the journey that eventually led him to WordPress.</p>
+				<p>Jon is a Lead Front-End Engineer at <a href="https://10up.com">10up</a>. He began writing code when he was 10 years old, soon after his parents bought their first family computer. With the help of Geocities, Microsoft FrontPage, and a little bit of HTML Goodies, he started on the journey that’s led him to where he is today.</p>
 
-				<p>Jon has been working with WordPress for several years now. In that time, he has worked with a variety of clients ranging from small, Mom and Pop businesses to Fortune 500 enterprises.</p>
+				<p>Over the last 15+ years, Jon has published countless lines of code that has been seen or encountered by millions. He is passionate about high performance, accessible websites that deliver rich experiences to their users.</p>
 
-				<p>Prior to joining 10up, Jon was Director of Web Development at a boutique advertising agency near Dallas, TX. In early 2014, Jon launched a small premium theme shop that he’s since sold to the crew at UpThemes.</p>
-
-				<p>In addition to WordPress, Jon has also spent time tinkering with Ruby on Rails, Node, Backbone, and Angular projects over the last few years.</p>
 				<h3>Previous Talks</h3>
 				<div className="talks">
 					{talkList}
