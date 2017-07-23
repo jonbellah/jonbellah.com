@@ -20,7 +20,7 @@ const Speaking = () => {
 				</p>
 
 				<h3>Biography</h3>
-				<p>Jon is a Lead Front-End Engineer at <a href="https://10up.com">10up</a>. He began writing code when he was 10 years old, soon after his parents bought their first family computer. With the help of Geocities, Microsoft FrontPage, and a little bit of HTML Goodies, he started on the journey that’s led him to where he is today.</p>
+				<p>Jon is a Lead Front-End Engineer at <a href="https://10up.com">10up</a>, living in the beautiful city of Denver, Colorado. He began writing code when he was 10 years old, soon after his parents bought their first family computer. With the help of Geocities, Microsoft FrontPage, and a little bit of HTML Goodies, he started on the journey that’s led him to where he is today.</p>
 
 				<p>Over the last 15+ years, Jon has published countless lines of code that has been seen or encountered by millions. He is passionate about high performance, accessible websites that deliver rich experiences to their users.</p>
 
