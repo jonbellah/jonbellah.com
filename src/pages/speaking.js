@@ -1,45 +1,33 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import talks from '../data/talks';
+
+import Talk from '../components/Talk';
+
 const Speaking = () => {
+	const talkList = talks.map(item => <Talk key={item.index} {...item} />);
+
 	return (
 		<div className="container">
 			<header className="page__header">
-				<h1 className="page__title">Current Talks</h1>
+				<h1 className="page__title">Speaking</h1>
 			</header>
 
 			<div className="page__content container--narrow">
-				<h3 className="no-margin-top">Visual Regression Testing with PhantomCSS</h3>
-				<p>You've spent months perfecting your site; building your components and checking them twice. You’ve gone through more QA than you can shake a stick at, and you’re now completely change blind... but you're finally ready to launch that site!</p>
+				<p className="page__subhead">
+					I am an enthusiastic and experienced speaker who enjoys presenting talks and workshops on front-end web development. These days, I primarily focus on JavaScript with a particular interest in React, Redux, and Jest. If you're interested in having me speak at your event, please <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">get in touch</a>.
+				</p>
 
-				<p>Suddenly, at the last minute, the client requires major changes to the a critical component (probably the legal department, it’s always the legal department).</p>
+				<h3>Biography</h3>
+				<p>Jon is a Lead Front-End Engineer at 10up, living in the beautiful city of Denver, Colorado. He began writing code when he was 10 years old; with the help of Geocities, Microsoft FrontPage, and a little bit of HTML Goodies, he started on the journey that’s led him to where he is today.</p>
 
-				<p>You make the changes and launch the site.</p>
+				<p>Over the last 15+ years, Jon has published countless lines of code that has been seen or encountered by millions. He is passionate about high performance, accessible websites that deliver rich experiences to their users.</p>
 
-				<p>But wait, oh no! The client has reported some issues on a template you didn't think to check!</p>
-
-				<p>In the past, catching these visual regressions was a manual process. One where everyone is responsible for paying attention to what their code is doing and (hopefully) what else it may affect, with occasional passes through the site for overall QA. But we're human, mistakes happen… sometimes frequently.</p>
-
-				<p>Automated visual regression testing is an excellent way to build yourself a safety net. With PhantomCSS, you can create a test suite that automagically runs through your site after changes have been made, compares visual diffs, and alerts you of any changes.</p>
-
-				<strong>Where I've presented this talk</strong>
-				<ul>
-					<li>
-						<Link to="/talks/frontporch/">Front Porch Austin 2016</Link>
-					</li>
-					<li>
-						<Link to="/talks/js-summit/">JS Summit 2016</Link>
-					</li>
-				</ul>
-
-				<h3>Past Talks</h3>
-				<strong>Embracing Performance Optimization</strong>
-				<ul>
-					<li>CSS Dev Conf 2014</li>
-					<li>WordCamp DFW 2014</li>
-					<li><a href="http://www.youtube.com/embed/RsaYR8wMDRk">Front Porch 2013</a></li>
-				</ul>
+				<h3>Previous Talks</h3>
+				<div className="talks">
+					{talkList}
+				</div>
 			</div>
 		</div>
 	)
