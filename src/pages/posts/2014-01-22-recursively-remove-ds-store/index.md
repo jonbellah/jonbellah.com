@@ -2,6 +2,7 @@
 title: How to Recursively Remove .DS_Store
 date: "2014-01-22T07:00:00.000Z"
 path: "/articles/recursively-remove-ds-store/"
+excerpt: "Lately, I've been doing a lot of theme development with plans to place themes on the WordPress.org repo, ThemeForest and other marketplaces. With that comes a lot of use of the Theme-Check plugin."
 ---
 
 Lately, I've been doing a lot of theme development with plans to place themes on the WordPress.org repo, ThemeForest and other marketplaces. With that comes a lot of use of the Theme-Check plugin.

@@ -2,6 +2,7 @@
 title: Load Random Images with PHP
 date: "2013-04-25T07:00:00.000Z"
 path: "/articles/load-random-images-with-php/"
+excerpt: "Todays snippet is a quick and easy one. While developing a new site for the agency where I work, I decided to display a random set of gifs on the 404 page. There are 7 images and I only wanted to display one per page load."
 ---
 
 Todays snippet is a quick and easy one. While developing a new site for the agency where I work, I decided to display a random set of gifs on the 404 page. There are 7 images and I only wanted to display one per page load.

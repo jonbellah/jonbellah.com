@@ -2,6 +2,7 @@
 title: 2014 Year in Review
 date: "2014-12-29T07:00:00.000Z"
 path: "/articles/2014-year-review/"
+excerpt: "I'll start off by saying that 2014 has been the best year of my life in so many ways. When I sat down to think back on all that has happened, there are three dates this year that really stick out to me."
 ---
 
 For the last few weeks, Facebook has been shoving their version of what they think my year looked like in my face. Rather than share what their [shitty, soulless algorithm](http://meyerweb.com/eric/thoughts/2014/12/24/inadvertent-algorithmic-cruelty/) thinks about how 2014 was for me, I wanted to put it in my own words and pictures; because that's the only way to adequately capture it.

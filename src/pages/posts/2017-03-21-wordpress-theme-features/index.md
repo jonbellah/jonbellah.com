@@ -2,6 +2,7 @@
 title: WordPress Multisite Architecture with the Theme Features API
 date: "2017-03-21T13:06:00.000Z"
 path: "/articles/wordpress-theme-features/"
+excerpt: "Lately I've found myself working with an ever increasing number of WordPress multisite installations, each built with a slightly different approach than the others. As a result, I've spent a lot of time thinking about how to architect these networks to maximize code clarity and maintainability."
 ---
 
 Lately I've found myself working with an ever increasing number of WordPress multisite installations, each built with a slightly different approach than the others. As a result, I've spent a lot of time thinking about how to architect these networks to maximize code clarity and maintainability.
