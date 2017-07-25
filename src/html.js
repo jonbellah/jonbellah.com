@@ -32,12 +32,11 @@ class Html extends Component {
 			<html lang="en">
 				<head>
 					{this.props.headComponents}
+
 					<meta charSet="utf-8" />
-					<meta name="description" content="JonBellah.com - Lead Front-End Engineer @ 10up" />
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-					<link rel="icon" href={favicon} type="x-icon/image" />
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-					<title>JonBellah.com</title>
+					<link rel="icon" href={favicon} type="x-icon/image" />
 					{css}
 				</head>
 				<body>

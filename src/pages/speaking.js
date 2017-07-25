@@ -30,7 +30,7 @@ const Speaking = () => {
 				</div>
 			</div>
 		</div>
-	)
+	);
 };
 
 export default Speaking;

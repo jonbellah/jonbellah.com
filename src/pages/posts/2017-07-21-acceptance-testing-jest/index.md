@@ -2,9 +2,10 @@
 title: Acceptance Testing React Applications with Jest and Enzyme
 date: "2017-07-21T04:11:28.533Z"
 path: "/articles/acceptance-testing-react/"
+excerpt: "Unit, integration, and functional testing are all important in building upon each other to ensure that individual functions and features behave properly, but acceptance testing is where the rubber really meets the road."
 ---
 
-Acceptance testing is, in my opinion, one of the most interesting test layers in the software engineering stack. Unit, integration, and functional testing are all important in building upon each other to ensure that individual functions and features behave properly, but acceptance testing is where we really dig in where the rubber meets the road.
+Acceptance testing is, in my opinion, one of the most interesting test layers in the software engineering stack. Unit, integration, and functional testing are all important in building upon each other to ensure that individual functions and features behave properly, but acceptance testing is where the rubber really meets the road.
 
 Acceptance tests are the highest level of functional testing in a system. They represent a series of tests against the full system, simulating the interactions of users against that system. 
 

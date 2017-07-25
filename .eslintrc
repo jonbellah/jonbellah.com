@@ -9,7 +9,8 @@
 		"react/jsx-filename-extension": 0,
 		"import/no-named-as-default": 0,
 		"react/jsx-no-bind":1,
-		"import/no-extraneous-dependencies": 0
+		"import/no-extraneous-dependencies": 0,
+		"max-len": 0
 	},
 	"globals": {
 		"document": false,

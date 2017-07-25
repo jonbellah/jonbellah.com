@@ -8,12 +8,17 @@ import Subscribe from '../components/Subscribe';
 
 class BlogPostTemplate extends Component {
 	render() {
-		const post = this.props.data.markdownRemark
-		const siteTitle = get(this.props, "data.site.siteMetadata.title")
+		const post = this.props.data.markdownRemark;
+		const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 
 		return (
 			<article className="post">
-				<Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+				<Helmet
+					title={`${post.frontmatter.title} | ${siteTitle}`}
+					meta={[
+						{ name: 'description', content: `${post.frontmatter.excerpt}` },
+					]}
+				/>
 
 				<header className="post__header container">
 					<h1 className="post__title">
@@ -34,7 +39,7 @@ class BlogPostTemplate extends Component {
 					Have a question, comment, or concern? Please feel free to open an issue on <a href="https://github.com/jonbellah/jonbellah.com">GitHub</a>.
 				</div>
 			</article>
-		)
+		);
 	}
 }
 
@@ -54,6 +59,7 @@ export const pageQuery = graphql`
 			frontmatter {
 				title
 				date(formatString: "MMMM DD, YYYY")
+				excerpt
 			}
 		}
 	}
