@@ -10,6 +10,13 @@ const Speaking = () => {
 
 	return (
 		<div className="container">
+			<Helmet
+				title="Speaking | JonBellah.com"
+				meta={[
+					{ name: 'description', content: 'Jon is an enthusiastic and experienced speaker who enjoys presenting talks and workshops on front-end web development.' }
+				]}
+			/>
+
 			<header className="page__header">
 				<h1 className="page__title">Speaking</h1>
 			</header>

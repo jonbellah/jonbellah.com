@@ -6,6 +6,12 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<div className="container">
+				<Helmet
+					title="Contact | JonBellah.com"
+					meta={[
+						{ name: 'description', content: 'Get in touch!' }
+					]}
+				/>
 				<header className="page__header">
 					<h1 className="page__title">Contact</h1>
 				</header>
