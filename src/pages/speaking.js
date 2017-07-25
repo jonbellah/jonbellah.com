@@ -13,7 +13,7 @@ const Speaking = () => {
 			<Helmet
 				title="Speaking | JonBellah.com"
 				meta={[
-					{ name: 'description', content: 'Jon is an enthusiastic and experienced speaker who enjoys presenting talks and workshops on front-end web development.' }
+					{ name: 'description', content: 'Jon is an enthusiastic and experienced speaker who enjoys presenting talks and workshops on front-end web development.' },
 				]}
 			/>
 

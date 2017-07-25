@@ -4,9 +4,16 @@ import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
 export default class Articles extends Component {
-	render() {
-		const pageLinks = [];
+	constructor(props) {
+		super(props);
+
+		this.buildPostLinks = this.buildPostLinks.bind(this);
+	}
+
+	buildPostLinks() {
+		const postLinks = [];
 		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 
 		let posts = get(this, 'props.data.allMarkdownRemark.edges');
 		posts = posts.sort((a, b) => (
@@ -16,7 +23,7 @@ export default class Articles extends Component {
 		posts.forEach((post) => {
 			if (post.node.path !== '/404/') {
 				const date = new Date(post.node.frontmatter.date);
-				pageLinks.push(
+				postLinks.push(
 					<article className="feed__item" key={post.node.frontmatter.path}>
 						<Link className="feed__link" to={post.node.frontmatter.path}>
 							<h4 className="feed__title">
@@ -31,6 +38,10 @@ export default class Articles extends Component {
 			}
 		});
 
+		return postLinks;
+	}
+
+	render() {
 		return (
 			<div className="container">
 				<Helmet
@@ -44,7 +55,7 @@ export default class Articles extends Component {
 				</header>
 
 				<div className="feed container--narrow">
-					{pageLinks}
+					{this.buildPostLinks()}
 				</div>
 			</div>
 		);
