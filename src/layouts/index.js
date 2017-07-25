@@ -30,9 +30,9 @@ export default class Template extends Component {
 		this.closeMobileMenu = this.closeMobileMenu.bind(this);
 	}
 
-	toggleMobileMenu(event) {
+	toggleMobileMenu() {
 		this.setState({
-			mobileMenuOpen: !this.state.mobileMenuOpen
+			mobileMenuOpen: !this.state.mobileMenuOpen,
 		});
 	}
 
@@ -50,7 +50,7 @@ export default class Template extends Component {
 				<Helmet
 					title="JonBellah.com"
 					meta={[
-						{ name: "description", content: "Jon is a full-stack web developer, speaker, and occasional writer" }
+						{ name: 'description', content: 'Jon is a full-stack web developer, speaker, and occasional writer' },
 					]}
 				>
 					<meta property="og:locale" content="en_US" />
@@ -113,6 +113,6 @@ export default class Template extends Component {
 					</footer>
 				</div>
 			</div>
-		)
+		);
 	}
 }

@@ -2,6 +2,7 @@
 title: Turning Passions Into Side Projects
 date: "2016-03-07T07:00:00.000Z"
 path: "/articles/turning-passions-side-projects/"
+excerpt: "Up until recently, I've never been great at launching my side projects, though... they were always something I just toiled away with until I had the knowledge I wanted, then I'd ditch them."
 ---
 
 I'm a big fan of side projects, they're my favorite way to teach myself new things, like trying a new language or framework. Up until recently, I've never been great at launching my side projects, though... they were always something I just toiled away with until I had the knowledge I wanted, then I'd ditch them.

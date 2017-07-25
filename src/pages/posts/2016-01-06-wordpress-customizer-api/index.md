@@ -2,6 +2,7 @@
 title: Building Better WordPress Themes with the Customizer API
 date: "2016-01-06T07:00:00.000Z"
 path: "/articles/wordpress-customizer-api/"
+excerpt: "There have been a ton of great features added to WordPress over the last few years, but undoubtedly my favorite is the Customizer API. Leveraging the Customizer is my go-to for any settings that a client may need to change or update."
 ---
 
 There have been a ton of great features added to WordPress over the last few years, but undoubtedly my favorite is the Customizer API. Leveraging the Customizer is my go-to for any settings that a client may need to change or update.
