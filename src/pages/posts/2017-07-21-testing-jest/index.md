@@ -5,7 +5,15 @@ path: "/articles/testing-react-jest-enzyme/"
 excerpt: "tbd"
 ---
 
-If you happen to have tried Jest in the past, prior to version 15, you may have been turned off by the fact that Jest auto-mocked modules by default. Fortunately, this is no longer the case. Coupled with incredible performance boosts over the last couple of years, Jest has become a force to be reckoned with in the JavaScript testing space.
+Testing is a topic that I've always been particularly interested in. I've done a few [talks](https://jonbellah.com/speaking/) and [articles](https://css-tricks.com/visual-regression-testing-with-phantomcss/) on the topic in the past.
+
+When I picked up React a couple years ago, one of the first things I did was dig into some of the testing options. If you happen to have tried Jest in the past, prior to version 15, you may have been turned off, as I was, by the fact that Jest auto-mocked modules by default. Not to mention the fact that it was rather slow.
+
+Fortunately, that's is no longer the case. Coupled with some incredible performance boosts over the last couple of years, Jest has become a real force to be reckoned with in the JavaScript testing space.
+
+### Why Jest?
+
+There are a few reasons that I think Jest is an excellent choice for your test framework: incredibly simple configuration (it works out-of-the-box for React projects), it's fast (parallelizes tests across workers), and snapshots solve a lot of the problems that were virtually unsolveable with visual regression testing.
 
 ### Enter Jest and Enzyme
 
