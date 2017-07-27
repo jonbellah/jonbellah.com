@@ -13,6 +13,8 @@ Fortunately, that's is no longer the case.
 
 Coupled with some incredible performance boosts over the last couple of years, Jest has become a real force to be reckoned with in the JavaScript testing space.
 
+React testing (and JS testing, in general) is a broad topic with a lot of nuance. In this post, I want to just cover some of the basic "what's" and "why's", as well as a few general best practices for testing React components. 
+
 ### Why Jest?
 
 There are a few reasons that I think Jest is an excellent choice for your test framework:
@@ -30,10 +32,19 @@ Enzyme is great because it provides a super simple API for DOM manipulation and 
 
 Without Enzyme (or other similar testing utility), we would be using the built-in React TestUtils, which include cool methods like `scryRenderDOMComponentsWithClass()` and `findRenderedDOMComponentWithClass()`.
 
-Enzyme allows us to mount or shallow render our React components and make assertions about what the contents and behaviors of that component *should* and *should not* be. With that rendered component, we can test the props that our React component receives, we can simulate clicks or other DOM interactions, and a host of other useful scenarios.
+Enzyme allows us to render our React components in memory and make assertions about what the contents and behaviors of that component *should* and *should not* be. With the rendered component, we can test the props that our React component receives, we can simulate clicks or other DOM interactions, and a host of other useful scenarios.
 
 ### Getting Started
 
-So what kind of things can we actually *test*?
+As mentioned before, Jest and Enzyme give us the ability to render not only particular routes (through the Enzyme `mount` method), but individual components by themselves through what's called shallow rendering.
 
-Well, Jest and Enzyme give us the ability to render not only particular routes, but individual components by themselves through what's called shallow rendering. Combining shallow rendering with actual route rendering, we can test how a component behaves on its own, as well as how it integrates with the other components around it in real world scenarios.
+By combining shallow rendering with actual route rendering, we can test how a component behaves on its own, as well as how it integrates with the other components around it in real world user scenarios.
+
+> Tests are executable documentation. What we've started doing is moving tests and the results to the documentation, so you can verify the examples you show in documentation are exactly the code that runs.
+> <cite>[Max Stoiber](https://www.youtube.com/watch?v=59Ndb3YkLKA)</cite>
+
+At present, the React core team [recommends using shallow rendering](https://discuss.reactjs.org/t/whats-the-prefered-way-to-test-react-js-components/26/2) to test components.
+
+### Shallow Rendering
+
+Shallow rendering allows you to render a component "one level deep" and make assertions about that component. 
