@@ -26,13 +26,11 @@ Jest's assertion library is well thought-out and is generally similar to what yo
 
 [Enzyme](http://airbnb.io/enzyme/) is a JavaScript testing utility built by the team at Airbnb. It's specifically targeted at React, but can be used with a handful of different test frameworks -- meaning it's not specific to Jest.
 
-Enzyme allows us to mount or shallow render our React components and make assertions about what the contents and behaviors of that component *should* and *should not* be.
-
 Enzyme is great because it provides a super simple API for DOM manipulation and traversal. The Enzyme API may look familiar, because it actually mimics the jQuery API.
 
 Without Enzyme (or other similar testing utility), we would be using the built-in React TestUtils, which include cool methods like `scryRenderDOMComponentsWithClass()` and `findRenderedDOMComponentWithClass()`.
 
-When we combine these, Jest will be our test runner, we will write tests in Jest format, but use Enzyme as a layer on top to allow us to mount our React components, traverse the DOM, and make assertions about the contents of those components.
+Enzyme allows us to mount or shallow render our React components and make assertions about what the contents and behaviors of that component *should* and *should not* be. With that rendered component, we can test the props that our React component receives, we can simulate clicks or other DOM interactions, and a host of other useful scenarios.
 
 ### Getting Started
 
