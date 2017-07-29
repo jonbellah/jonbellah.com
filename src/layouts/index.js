@@ -66,11 +66,12 @@ export default class Template extends Component {
 							<Link to="/" className="site-header__link">
 								<Logo className="site-header__logo" />
 							</Link>
-							<button className={`toggle-icon ${menuClass}`} onClick={this.toggleMobileMenu}>
-									<span className="line line-1" />
-									<span className="line line-2" />
-									<span className="line line-3" />
-								</button>
+							<button id="mobile-toggle" className={`toggle-icon ${menuClass}`} aria-label="Mobile menu" onClick={this.toggleMobileMenu}>
+								<span className="screen-reader-text">Menu</span>
+								<span className="line line-1" />
+								<span className="line line-2" />
+								<span className="line line-3" />
+							</button>
 
 							<nav id="navigation" className={`site-nav ${menuClass}`}>
 								<NavLink to="/articles/" className="site-nav__item" onClick={this.closeMobileMenu}>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-
 import favicon from './images/favicon.ico';
 
 let stylesStr;
@@ -25,7 +24,7 @@ class Html extends Component {
 		if (process.env.NODE_ENV === `production`) {
 			css = (
 				<style id="gatsby-inlined-css" dangerouslySetInnerHTML={{ __html: stylesStr }} />
-			)
+			);
 		}
 
 		return (
@@ -44,7 +43,7 @@ class Html extends Component {
 					{this.props.postBodyComponents}
 				</body>
 			</html>
-		)
+		);
 	}
 }
 
