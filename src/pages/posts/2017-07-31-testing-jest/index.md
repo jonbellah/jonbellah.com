@@ -7,9 +7,7 @@ excerpt: "React testing (and JS testing, in general) is an incredibly broad topi
 
 Automated testing is something that I've always found particularly interesting. In fact, it's a topic that I've even done a few [talks](https://jonbellah.com/speaking/) and written a few [articles](https://css-tricks.com/visual-regression-testing-with-phantomcss/) on in the past.
 
-React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. It's impossible to cover the breadth of test scenarios and methdologies, in addition to every Jest feature, in a single post. 
-
-So, in this post, I'd primarily like to focus on exploring some of the basic "what's" and "why's" of testing React applications with Jest, then finish off with a few best practices.
+React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. So, in this post, I'd primarily like to focus on exploring some of the basic "what's" and "why's" of testing React applications with Jest, then finish off with a few best practices.
 
 ### Why Jest?
 
@@ -18,15 +16,15 @@ If you happen to have tried Jest in the past, particularly prior to version 15, 
 Fortunately, thanks to a ton of hard work from hundreds of contributors, that's no longer the case.
 
 There are a few reasons that I think Jest is an excellent choice for your test framework:
-- **Incredibly simple configuration** - it works out-of-the-box for React projects
+- **Simple configuration** - it works out-of-the-box for React projects
 - **It's fast** - Jest parallelizes tests across workers, spinning up workers asynchronously to read the filesystem and executing them synchronously
 - **Snapshots** - even though we don't cover them in this post, I'm a big fan of snapshots. I think snapshots solve a lot of the problems that were virtually unsolveable with visual regression testing (such as false positives from things like sub-pixel differences between machines, OS's, and browsers)
 
 ### Jest with Enzyme
 
-[Enzyme](http://airbnb.io/enzyme/) is a JavaScript testing utility built by the team at Airbnb. It's specifically built for React, relying on React TestUtils under-the-hood, but is not specific to Jest; it also works with other test runners like Chai and Jasmine.
+[Enzyme](http://airbnb.io/enzyme/) is a JavaScript testing utility built by the team at Airbnb. It's specifically built for React, relying on React TestUtils under-the-hood, but is not specific to Jest; in fact, it also works with other test frameworks like Mocha, Tape, and Karma.
 
-Enzyme isn't required, but without it we would be using the built-in React TestUtils, which include super memorable methods like `scryRenderDOMComponentsWithClass()` and `findRenderedDOMComponentWithClass()`.
+Enzyme isn't a requirement for working with Jest, but without it we would be using the built-in React TestUtils, which include super memorable methods like `scryRenderDOMComponentsWithClass()` and `findRenderedDOMComponentWithClass()`.
 
 Enzyme allows us to test our components in a few different ways, using `mount()`, `shallow()`, and `render()`.
 
@@ -97,7 +95,7 @@ describe('<Foo />', () => {
 
 By going this route, you can separate your functional/acceptance test from your unit test. You can first test that a function has been called, then separately test that the called function returns expected values.
 
-Sinon can also be used to provide DOM interaction testing with shallow rendering, where it would otherwise require you to use `mount()`.
+Sinon can also be used to provide DOM interaction testing with shallow rendering, where you would otherwise be required to use `mount()` and simulate interactions with jsdom.
 
 ```js
 import { shallow } from 'enzyme';
