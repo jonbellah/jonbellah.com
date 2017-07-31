@@ -1,6 +1,6 @@
 ---
 title: Intro to Testing React Applications with Jest and Enzyme
-date: "2017-07-31T04:11:28.533Z"
+date: "2017-07-31T13:51:03.719Z"
 path: "/articles/intro-react-testing/"
 excerpt: "React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. In this post, I primarily want to focus on exploring some of the basic what's and why's of, as well as a few best practices for, testing React applications."
 ---
