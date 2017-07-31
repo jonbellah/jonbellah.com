@@ -1,13 +1,15 @@
 ---
-title: Testing React Applications with Jest and Enzyme
-date: "2017-07-21T04:11:28.533Z"
-path: "/articles/testing-react-jest-enzyme/"
-excerpt: "tbd"
+title: Intro to Testing React Applications with Jest and Enzyme
+date: "2017-07-31T04:11:28.533Z"
+path: "/articles/intro-react-testing/"
+excerpt: "React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. In this post, I primarily want to focus on exploring some of the basic what's and why's of, as well as a few best practices for, testing React applications."
 ---
 
-Automated testing is something that I've always found particularly interesting. In fact, I've even done a few [talks](https://jonbellah.com/speaking/) and written a few [articles](https://css-tricks.com/visual-regression-testing-with-phantomcss/) on the topic in the past.
+Automated testing is something that I've always found particularly interesting. In fact, it's a topic that I've even done a few [talks](https://jonbellah.com/speaking/) and written a few [articles](https://css-tricks.com/visual-regression-testing-with-phantomcss/) on in the past.
 
-React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. In this post, I primarily want to focus on exploring some of the basic "what's" and "why's" of, as well as a few best practices for, testing React applications.
+React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. It's impossible to cover the breadth of test scenarios and methdologies, in addition to every Jest feature, in a single post. 
+
+So, in this post, I'd primarily like to focus on exploring some of the basic "what's" and "why's" of testing React applications with Jest, then finish off with a few best practices.
 
 ### Why Jest?
 
@@ -18,7 +20,7 @@ Fortunately, thanks to a ton of hard work from hundreds of contributors, that's 
 There are a few reasons that I think Jest is an excellent choice for your test framework:
 - **Incredibly simple configuration** - it works out-of-the-box for React projects
 - **It's fast** - Jest parallelizes tests across workers, spinning up workers asynchronously to read the filesystem and executing them synchronously
-- **Snapshots** - snapshots solve a lot of the problems that were virtually unsolveable with visual regression testing (such as false positives from things like sub-pixel differences between machines, OS's, and browsers).
+- **Snapshots** - even though we don't cover them in this post, I'm a big fan of snapshots. I think snapshots solve a lot of the problems that were virtually unsolveable with visual regression testing (such as false positives from things like sub-pixel differences between machines, OS's, and browsers)
 
 ### Jest with Enzyme
 
@@ -61,7 +63,7 @@ One thing worth noting is that since shallow rendering is such an inexpensive pr
 
 ### Testing DOM Interactions
 
-There are a couple of ways to go about testing DOM interactions. The first is to use a library like [sinon](http://sinonjs.org/) to add spies to your test suite, which allow you to test whether a function was called during a particular interaction. 
+To test DOM interactions, I would recommend using a library like [sinon](http://sinonjs.org/) to add spies to your test suite, which allow you to test whether a function was called during a particular interaction. 
 
 ```js
 import { mount } from 'enzyme';
@@ -93,7 +95,7 @@ describe('<Foo />', () => {
 });
 ```
 
-By going this route, you can separate your functional/acceptance test from your unit test. You can first test that a function has been called, then that called function returns expected values.
+By going this route, you can separate your functional/acceptance test from your unit test. You can first test that a function has been called, then separately test that the called function returns expected values.
 
 Sinon can also be used to provide DOM interaction testing with shallow rendering, where it would otherwise require you to use `mount()`.
 
@@ -111,8 +113,10 @@ describe('<SampleComponent />', () => {
 });
 ```
 
-The above two code sample come from the Enzyme docs and should be taken as the recommended way of testing DOM interactions.
+The above two code samples come from the [Enzyme docs](https://github.com/airbnb/enzyme), which I highly recommend taking a read through.
 
-That said, another way that I have used in the past is to use `mount()` and then test the DOM itself with jsdom. So, for example:
+### Summary
 
+Jest and Enzyme make testing React applications an absolute breeze... but we've only really scratched the surface of what they can do. We've not yet covered unit testing, snapshot testing, full DOM testing, or any of a handful of other tools and methodologies that we have at our disposal.
 
+Next time you spin up a new React project, be sure to consider Jest for your test framework.
