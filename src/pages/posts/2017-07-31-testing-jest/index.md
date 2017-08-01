@@ -32,7 +32,7 @@ Enzyme allows us to test our components in a few different ways, using `mount()`
 
 The two most important, in my opinion, are the `mount()` method, which renders our React components in memory using [jsdom](https://github.com/tmpvar/jsdom), or the `shallow()` method, which allows you to render components "one level deep".
 
-Enzyme and Jest allow us to do things like simulate clicks or other DOM interactions, test Redux actions, inspect the properties that our React components receive, and a host of other useful things.
+Enzyme and Jest allow us to do things like simulate clicks or other DOM interactions, test Redux actions, inspect the props that our React components receive, and a host of other useful things.
 
 ### Shallow Rendering
 
