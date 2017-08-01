@@ -9,9 +9,11 @@ Automated testing is something that I've always found particularly interesting. 
 
 React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. So, in this post, I'd primarily like to focus on exploring some of the basic "what's" and "why's" of testing React applications with Jest, then finish off with a few best practices.
 
+While this post is an introduction, it does assume that you have some familiarity with React and general testing procedures.
+
 ### Why Jest?
 
-If you happen to have tried Jest in the past, particularly prior to version 15, you may have been turned off by the fact that it auto-mocked modules by default; or that it was rather slow once a test suite reached a decent size.
+If you happen to have tried Jest in the past, particularly prior to version 15, you may have been turned off by the fact that it auto-mocked modules by default (meaning Jest automatically stubbed out functionality with mock data); or that it was rather slow once a test suite reached a decent size.
 
 Fortunately, thanks to a ton of hard work from hundreds of contributors, that's no longer the case.
 
@@ -30,7 +32,7 @@ Enzyme allows us to test our components in a few different ways, using `mount()`
 
 The two most important, in my opinion, are the `mount()` method, which renders our React components in memory using [jsdom](https://github.com/tmpvar/jsdom), or the `shallow()` method, which allows you to render components "one level deep".
 
-Enzyme and Jest also allow us to test other helpful things: the props that our React components receive, we can simulate clicks or other DOM interactions, we can test Redux actions, and a host of other useful things.
+Enzyme and Jest allow us to do things like simulate clicks or other DOM interactions, test Redux actions, inspect the properties that our React components receive, and a host of other useful things.
 
 ### Shallow Rendering
 

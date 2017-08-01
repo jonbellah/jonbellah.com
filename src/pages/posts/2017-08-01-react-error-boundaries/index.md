@@ -56,7 +56,7 @@ First, in `componentDidCatch`, you'll notice the pseudo-method `logErrorToMyServ
 
 Second, our `render()` method is a pretty straightforward passthrough. If the `hasError` state is false, we return `this.props.children`, which would be everything between our `<ErrorBoundary></ErrorBoundary>` wrapper.
 
-If the `hasError` state is true, we just return an error message. Otherwise, we just pass the children through and render as usual.
+If the `hasError` state is true, we just return an error message.
 
 To implement an error boundary, all you need to do is wrap your component with the newly created `ErrorBoundary` component like so:
 
