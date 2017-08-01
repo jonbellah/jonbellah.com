@@ -1,6 +1,6 @@
 ---
 title: Improved Error Handling in React 16 with Error Boundaries
-date: "2017-07-31T04:11:28.533Z"
+date: "2017-08-01T12:34:08.393Z"
 path: "/articles/react-error-boundary/"
 excerpt: "React 16 has entered the beta phase and with it comes with two of my favorite additions in a long time: returning arrays in the render() method and improved support for error boundaries."
 ---
