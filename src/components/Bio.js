@@ -14,7 +14,7 @@ const Bio = () => (
 				Jon Bellah
 			</span>
 			<div className="author__bio" itemProp="description">
-				I am a full-stack web developer, speaker, and occasional writer. I live in the beautiful city of Denver, Colorado. I am currently employed as a Lead Front-End Engineer at <Link to="https://10up.com">10up</Link>. You can follow me on Twitter at <Link to="https://twitter.com/jonbellah">@jonbellah</Link>.
+				I am a full-stack web developer, speaker, and occasional writer. I live in the beautiful city of Denver, Colorado. I am currently employed as a Lead Front-End Engineer at <a href="https://10up.com">10up</a>. You can follow me on Twitter at <a href="https://twitter.com/jonbellah">@jonbellah</a>.
 			</div>
 		</div>
 	</div>
