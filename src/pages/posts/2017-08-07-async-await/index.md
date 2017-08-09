@@ -1,6 +1,6 @@
 ---
 title: A Look at Async/Await in ES2017
-date: "2017-08-09T03:31:25.448Z"
+date: "2017-08-09T14:17:39.475Z"
 path: "/articles/async-await/"
 excerpt: ""
 ---
