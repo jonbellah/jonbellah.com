@@ -12,8 +12,7 @@ In order for your theme to pass the Theme-Check plugin review, you need to remov
 ### Recursively Remove .DS_Store
 
 *   Open up Terminal
-*   In the command line, type: `cd`
-*   Drag and drop the folder you wish to delete .DS_Store files from, in this case our theme folder. Press enter.
+*   In the command line, `cd to/your/directory`
 *   Finally, in the command line, type: `find . -name '.DS_Store' -type f -delete`. Press enter.
 
 **Warning: Never use a wildcard (*) with this command, unless you know what you're doing. Bad things can happen if you don't.**
