@@ -69,7 +69,7 @@ Here we're using an async function to fetch some JSON from a file, parse that fi
 
 In async functions, errors are handled with `try...catch` blocks. In the sample above, if our Promise is rejected we just log the error to the console.
 
-It's important to note that if your async function does not declare a `catch`, errors will be swallowed, meaning that errors will be silently disposed of unless explicitly (and manually) handled.
+It's important to note that if your async function does not declare a `catch`, errors will be swallowed, meaning they will be silently disposed of unless explicitly handled.
 
 ### Stuff worth noting
 
