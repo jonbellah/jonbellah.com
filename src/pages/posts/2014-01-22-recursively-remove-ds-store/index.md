@@ -9,6 +9,7 @@ Lately, I've been doing a lot of theme development with plans to place themes on
 
 In order for your theme to pass the Theme-Check plugin review, you need to remove .DS_Store files from the theme folder. Doing that by hand is really boring, painful, and repetitive. Enter that awesome thing we call the command line.
 
+
 ### Recursively Remove .DS_Store
 
 *   Open up Terminal
