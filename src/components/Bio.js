@@ -12,7 +12,7 @@ const Bio = () => (
 				Jon Bellah
 			</span>
 			<div className="author__bio" itemProp="description">
-				I am a full-stack web developer, speaker, and occasional writer. I live in the beautiful city of Denver, Colorado. You can follow me on Twitter at <a href="https://twitter.com/jonbellah">@jonbellah</a>.
+				I am a full-stack web developer, speaker, and occasional writer. I currently work with the amazing team at <a href="https://ted.com">TED</a> as a front-end engineer. I live in the beautiful city of Denver, Colorado. You can follow me on Twitter at <a href="https://twitter.com/jonbellah">@jonbellah</a>.
 			</div>
 		</div>
 	</div>

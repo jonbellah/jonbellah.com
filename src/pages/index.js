@@ -7,7 +7,7 @@ import RightArrow from '../images/RightArrow';
 const Index = () => (
 	<div className="container flex flex-hor-center">
 		<Helmet
-			title="JonBellah.com - Lead Front-End Engineer at 10up"
+			title="JonBellah.com"
 			meta={[
 				{ name: 'description', content: 'Jon is a full-stack web developer, speaker, and occasional writer living in the beautiful city of Denver, Colorado.' },
 			]}
