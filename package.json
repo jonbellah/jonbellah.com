@@ -1,7 +1,7 @@
 {
   "name": "jonbellah",
-  "description": "JonBellah.com - Lead Front-End Engineer @ 10up",
-  "version": "0.1.0",
+  "description": "JonBellah.com - Front-End Engineer @ TED",
+  "version": "0.2.0",
   "author": "Jon Bellah",
   "dependencies": {
     "babel-eslint": "^8.0.1",
