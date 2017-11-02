@@ -12,7 +12,8 @@ As web developers, we're often building websites and applications on expensive m
 
 When this topic comes up, inevitably the first question is "how can we go offline first if connectivity is required to access our application?"
 
-It's an understandable question, but misses the point of offline first a bit. Offline first does not mean 
+It's an understandable question, but misses the point of offline first a bit. Offline first does not mean that applications should be accessible offline first. It means that when we, as developers, build applications, we should think about the offline experience as we work.
+
 
 Android currently runs on more than [2 billion devices](https://qz.com/986042/google-goog-designed-android-go-to-win-over-the-next-billion-smartphone-users-in-the-developing-world/) and is adding more every second. While smartphone penetration in the US sits around [80%](https://www.comscore.com/Insights/Blog/US-Smartphone-Penetration-Surpassed-80-Percent-in-2016), it's only around [30%](https://qz.com/608005/india-has-overtaken-the-us-to-become-the-worlds-second-largest-smartphone-market/) in India. Approximately 9 out of every 10 smartphone devices shipped across the world today use Android.
 
