@@ -9,7 +9,7 @@ Have you ever tried to check your email while riding the subway in New York? Che
 
 If so, you're probably familiar with the problems of poor connectivity.
 
-It took more than 25 years for the first three billion people to come online. Over the next decate, that number is [expected to double](http://next3b.com/the-next-3-billion/). The vast majority of these people will be coming online in under-developed countries, using under-powered devices, and browsing the internet over low-bandwidth connections.
+It took more than 25 years for the first three billion people to come online, but over the next decade that number is [expected to double](http://next3b.com/the-next-3-billion/). The vast majority of these people will be coming online in under-developed countries, using under-powered devices, and browsing the internet over low-bandwidth connections.
 
 In order to build websites and applications that are accessible and attractive to these new users, we must think about the offline experience. Much the same way that we now take a mobile first approach to front-end development, we need to start thinking in terms of offline first for application development.
 
