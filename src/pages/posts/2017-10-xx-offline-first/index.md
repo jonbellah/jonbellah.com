@@ -1,28 +1,43 @@
-# Offline First
+---
+title: Offline First
+date: "2017-11-01T12:32:24.389Z"
+path: "/articles/offline-first/"
+excerpt: "tbd"
+---
 
-Have you ever tried to check your email from the subway in New York? Checked your Twitter feed while stopped in a rural area? Tried to pull up a map while traveling in a foreign country?
+Have you ever tried to check your email while riding the subway in New York? Checked your Twitter feed over airplane wifi? Tried to pull up a map while traveling in a foreign country?
 
 If so, you're probably familiar with the problems of poor connectivity.
 
-It took 22 years for the first two billion people to come online. Over the next several years, that number is expected to more than double. The vast majority of these people will be coming online in under-developed countries, using under-powered devices, and browsing the internet over low-bandwidth connections.
+It took more than 25 years for the first three billion people to come online. Over the next decate, that number is [expected to double](http://next3b.com/the-next-3-billion/). The vast majority of these people will be coming online in under-developed countries, using under-powered devices, and browsing the internet over low-bandwidth connections.
 
-As web developers, we're often building websites and applications on expensive machines connected to high-bandwidth networks. It's understandable that we have a tough time keeping these new users in mind, but it's long past time that we do. The same way that we now take a mobile first approach to front-end development, we should start thinking in terms of offline first for application development.
+In order to build websites and applications that are accessible and attractive to these new users, we must think about the offline experience. Much the same way that we now take a mobile first approach to front-end development, we need to start thinking in terms of offline first for application development.
 
 ### What does it mean to take an offline first approach?
 
-When this topic comes up, inevitably the first question is "how can we go offline first if connectivity is required to access our application?"
+Whenever this topic comes up, inevitably the first question I hear is "how can we go offline first if connectivity is required to access our application?"
 
-It's an understandable question, but misses the point of offline first a bit. Offline first does not mean that applications should be accessible offline first. It means that when we, as developers, build applications, we should think about the offline experience as we work.
+It's a compeletely legitimate and understandable question -- and certainly indicates that the concept of "offline first" could be better named, a bit like "serverless" or "the cloud" -- but ultimately shows a bit of a misunderstanding of the idea. Offline first does not mean that users should be able to reach your site on their first visit without an internet connection. It means that when we, as developers, build applications, we should consider the experience of slow and intermittent connectivity.
 
+Through a combination of tools and technologies such as [Service Workers](http://www.w3.org/TR/service-workers/) and [IndexedDB](http://www.w3.org/TR/IndexedDB/), we can create applications that cache important assets locally once the user has visited the site for the first time. Then, if and when they lose connectivity, they can still interact with the site.
+
+For example, [Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. This is a very thoughtful feature that I've personally taken advantage of when sitting in an airport waiting to board a flight, I was able to save a handful of articles prior to turning on airplane mode... giving me plenty to read without having to pay for in-flight wifi.
+
+Let's say, as another example, that you have an application that supports live chat between users. By taking an offline first approach, you can build your application such that if a user loses connectivity during the act of sending a message, those messages can be saved and queued up locally so that as soon as they have a connection again, those messages can be sent out.
+
+In fact, this approach serves as one of the pillars of what Google has termed [progressive web apps](https://developers.google.com/web/progressive-web-apps/).
+
+### Progressive Web Apps
 
 Android currently runs on more than [2 billion devices](https://qz.com/986042/google-goog-designed-android-go-to-win-over-the-next-billion-smartphone-users-in-the-developing-world/) and is adding more every second. While smartphone penetration in the US sits around [80%](https://www.comscore.com/Insights/Blog/US-Smartphone-Penetration-Surpassed-80-Percent-in-2016), it's only around [30%](https://qz.com/608005/india-has-overtaken-the-us-to-become-the-worlds-second-largest-smartphone-market/) in India. Approximately 9 out of every 10 smartphone devices shipped across the world today use Android.
 
-It was partially with this in mind that Google recently introduced the concept of and support for [progressive web apps](https://developers.google.com/web/progressive-web-apps/), applications built upon three core principals: reliable, fast, and engaging. 
+Remember our statistic about the next three billion users?
 
-Today, I'd like to focus in on the *reliable* tenant.
+Google has defined three core tenants of progressive web apps, applications must be: reliable, fast, and engaging. 
 
 > When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.
 > <cite>[Google](https://developers.google.com/web/progressive-web-apps/#reliable)</cite>
+
 
 
 ----------
@@ -63,6 +78,7 @@ Today, I'd like to focus in on the *reliable* tenant.
 - "Watch out for CDNs if you are restricting fetch handling to your origin. When constructing my first service worker, I forgot that my hosting provider sharded assets (images and scripts) onto its CDN, so that they no were no longer served from my website’s origin (lyza.com). Whoops! That didn’t work. I ended up disabling the CDN for the affected assets (but optimizing those assets, of course!)."
 - "When a new version of the Service Worker is deployed, the browser will automatically detect byte differences and activate the worker version on next visit."
 - "We use offline and online events to detect changes in connectivity and display the banner when users go offline."
+
 ```js
 bindEvents () {
   window.addEventListener('offline', this.onOfflineStatus)
@@ -77,6 +93,7 @@ onOnlineStatus () {
   this.hideOfflineBanner()
 }
 ```
+
 - [Immediate Claim](https://serviceworke.rs/immediate-claim.html) - This recipe shows how to have the service worker immediately take control of the page without waiting for a navigation event. Basic service worker registration requires a navigation event to occur before the service worker starts working. This recipe illustrates a trick you can use for the service worker to immediately start working upon install.
 - "Once installed and activated, a ServiceWorker can programmatically determine how to respond to requests for resources from your origin, even when the browser is offline. ServiceWorker can be used to power the so-called "Offline First" web."
 - "Given the fact that you can implement this stuff in a progressive enhancement style (doesn't affect unsupported browsers), it's a great opportunity to get ahead of the pack."
