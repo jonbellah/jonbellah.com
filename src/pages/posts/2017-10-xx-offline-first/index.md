@@ -1,5 +1,5 @@
 ---
-title: Offline First
+title: Taking an Offline First Approach
 date: "2017-11-01T12:32:24.389Z"
 path: "/articles/offline-first/"
 excerpt: "tbd"
@@ -19,8 +19,6 @@ Whenever this topic comes up, inevitably the first question I hear is "how can w
 
 It's a compeletely legitimate and understandable question -- and certainly indicates that the concept of "offline first" could be better named, a bit like "serverless" or "the cloud" -- but ultimately shows a bit of a misunderstanding of the idea. Offline first does not mean that users should be able to reach your site on their first visit without an internet connection. It means that when we, as developers, build applications, we should consider the experience of slow and intermittent connectivity.
 
-Through a combination of tools and technologies such as [Service Workers](http://www.w3.org/TR/service-workers/) and [IndexedDB](http://www.w3.org/TR/IndexedDB/), we can create applications that cache important assets locally once the user has visited the site for the first time. Then, if and when they lose connectivity, they can still interact with the site.
-
 For example, [Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. This is a very thoughtful feature that I've personally taken advantage of when sitting in an airport waiting to board a flight, I was able to save a handful of articles prior to turning on airplane mode... giving me plenty to read without having to pay for in-flight wifi.
 
 Let's say, as another example, that you have an application that supports live chat between users. By taking an offline first approach, you can build your application such that if a user loses connectivity during the act of sending a message, those messages can be saved and queued up locally so that as soon as they have a connection again, those messages can be sent out.
@@ -33,12 +31,16 @@ Android currently runs on more than [2 billion devices](https://qz.com/986042/go
 
 Remember our statistic about the next three billion users?
 
-Google has defined three core tenants of progressive web apps, applications must be: reliable, fast, and engaging. 
+Google has defined three core tenants of progressive web apps, applications must be: reliable, fast, and engaging.
 
 > When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.
 > <cite>[Google](https://developers.google.com/web/progressive-web-apps/#reliable)</cite>
 
+Through a combination of tools and technologies such as [Service Workers](http://www.w3.org/TR/service-workers/) and [IndexedDB](http://www.w3.org/TR/IndexedDB/), we can create applications that cache important assets locally once the user has visited the site for the first time. Then, if and when they lose connectivity, they can still interact with the site.
 
+### Service Workers
+
+A service worker is a script that browsers run in the background, which open the door for features that do not require user interaction to operate. In fact, service workers can't directly access the DOM, instead they interact through `postMessage`.
 
 ----------
 
@@ -47,8 +49,6 @@ Google has defined three core tenants of progressive web apps, applications must
 - enables background syncing
 - enables push notifications
 - "A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction"
-- "The reason this is such an exciting API is that it allows you to support offline experiences, giving developers complete control over the experience."
-- Service workers can't access the DOM directly, instead interact via postMessage.
 - Service workers make extensive use of promises.
 - "It's terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's onfetch and onmessage handlers. If there is information that you need to persist and reuse across restarts, service workers do have access to the IndexedDB API."
 - To install a service worker, you need to register it.
