@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'JonBellah.com',
 		author: 'Jon Bellah',
-		description: 'Lead Front-End Engineer at 10up',
+		description: 'Front-End Engineer at TED',
 		siteUrl: 'https://jonbellah.com',
 	},
 	plugins: [
