@@ -21,20 +21,42 @@ For example, [Una Kravetz](https://una.im/save-offline/) has implemented a "save
 
 [HospitalRun](http://hospitalrun.io/) is an offline first application for managing hospitals in the developing world, places where intermittent connectivity is just a fact of life. It allows records to be carried to remote clinics, where there may be no internet, and then syncs those records when there is.
 
-Offline first applications are driven by two key components: [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and some form of client-side, offline-capable storage (such as [PouchDB](https://pouchdb.com/) or [localForage](https://localforage.github.io/localForage/)). We won't dive into the storage piece too much in this post, but let's take a look at the star of the show: service workers.
+Offline first applications are driven by two key components: [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and some form of client-side, offline-capable storage (such as [PouchDB](https://pouchdb.com/) or [localForage](https://localforage.github.io/localForage/)).
 
-### What is a service worker?
+We won't dive too much into the storage aspect of things with this post, but let's go ahead and take a look at the star of the show: service workers.
 
-A service worker is an event-driven script that browsers run in the background. This background processing opens the door for features that do not require user interaction to operate. In fact, service workers can't directly access the DOM and instead interact with the client through `postMessage`.
+### Service Workers
 
-A service worker can intercept and modifying navigation and resource requests, giving you complete control over how your app behaves in various situations.
+A service worker is an event-driven script that browsers run in the background. Since service workers are run in a worker context, they can't directly access the DOM. Instead, they interact with the client through `postMessage`.
 
-Service worker code should be stateless, since the worker is shut down and loses state whenever it isn't in use.
+A service worker can intercept and modify navigation and resource requests, giving you complete control over how your app behaves in various situations. This is one of the most powerful features of service workers... you can cache good responses from API requests and your worker can respond with that data if the user goes offline.
 
-JavaScript in a service worker must not block, meaning you need to use asynchronous APIs. For example, you cannot use `localStorage` in a service worker (`localStorage` is a synchronous API).
 
+#### Lifecycle
+
+A service worker goes through six phases during its lifecycle:
+
+- install
+- activate
+- fetch
+- message
+- sync
+- push
+
+We will only focus on the first three in this post, as they serve as the backbone of offline-first support.
+
+#### Gotchas
+
+Service workers can be a bit of a pain. There are definitely some _gotchas_ to be aware of when you get started.
+
+First, service workers require you to use HTTPS. Allowing a script to run in the background on the client, asynchronously fetching data and images, opens the door to malicious exploitation by [man-in-the-middle attacks](https://www.veracode.com/security/man-middle-attack). 
+
+Your code should be stateless, since the worker is shut down and loses state whenever it isn't in use. JavaScript in a service worker must not block, meaning you need to use asynchronous APIs. For example, you cannot use `localStorage` in a service worker (`localStorage` is a synchronous API).
+
+Debugging service workers can be tricky, since the console is preserved.
 
 ### Further Reading
 - [Offline-first](https://github.com/pazguille/offline-first) - Repository listing virtually every resource you could ever need to deep dive into offline first.
 - [Designing Offline-First Web Apps](https://alistapart.com/article/offline-first)
 - [Service Worker, what are you?](https://medium.com/@kosamari/service-worker-what-are-you-ca0f8df92b65)
+- [Service worker examples](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker) - Google has a great public repository of examples that I highly recommend taking a look at, they go a long way towards demystifying some of the trickier parts of service workers.
