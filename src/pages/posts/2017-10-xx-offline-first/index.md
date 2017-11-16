@@ -46,7 +46,7 @@ As I mentioned in the last section, service workers are event-driven scripts. A 
 
 In this post, we're only going to focus on the first three event types, as they're the most minimum components necessary to set up offline first support.
 
-Let's take a look at our `sw.js` file and break down each event.
+Let's take a look at our `sw.js` file and break down each piece. The first thing we should do is set up our cache keys and precache routes.
 
 ```js
 const PRECACHE = 'precache-v1';
@@ -59,7 +59,11 @@ const PRECACHE_URLS = [
 ];
 ```
 
-Next we'll take a look at the `install` event.
+In the code above, we name this our precache bucket `precache-v1` and our runtime bucket `runtime`. The reason we split these into two separate caches is so that we can easily invalidate our runtime cache without dumping out our precached files and routes.
+
+In the `PRECACHE_URLS` constant, we define an array of files that we want to precache. In this example, we're only caching the index, stylesheet, and primary javascript file, but this is a great place to preload data and assets for commonly-visited pages in your application. 
+
+Next, let's take a look at the `install` event.
 
 ```js
 // The install handler takes care of precaching the resources we always need.
@@ -125,7 +129,7 @@ Service workers are still a bit raw and can be a real pain sometimes. There are 
 
 First, service workers require you to use HTTPS. Allowing a script to run in the background on the client, asynchronously fetching data and images, opens the door to malicious exploitation by [man-in-the-middle attacks](https://www.veracode.com/security/man-middle-attack). 
 
-Be careful with the way that you handle cache keys with service workers, you should keep the file name consistent and trigger new
+Be careful with the way that you handle file naming and cache keys with service workers. You should keep the file name consistent and trigger new installs by changing the cache key in the `sw.js` file itself. [Alexander Pope](https://www.youtube.com/watch?v=CPP9ew4Co0M) has an excellent talk about what can happen if you, instead, put the cache key on the service worker file itself.
 
 Your code should be stateless, since the worker is shut down and loses state whenever it isn't in use. JavaScript in a service worker must not block, meaning you need to use asynchronous APIs. For example, you cannot use `localStorage` in a service worker (`localStorage` is a synchronous API).
 
