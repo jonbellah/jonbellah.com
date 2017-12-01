@@ -7,7 +7,7 @@ excerpt: "tbd"
 
 Have you ever tried reading your email while riding the subway? Checked your Twitter feed while connected to in-flight wifi? Attempted to pull up a map while wandering around in a foreign country?
 
-If so, you're probably familiar with the problems of poor connectivity.
+If so, you're probably familiar with the problem of poor connectivity.
 
 It took more than 25 years for the first three billion people to come online, but over the next decade that number is [expected to double](http://next3b.com/the-next-3-billion/). The vast majority of these new users will be coming online in under-developed countries, using under-powered devices, and browsing the internet over low-bandwidth connections.
 
@@ -17,9 +17,9 @@ It's with these people and problems in mind that developers have shifted to an o
 
 Before we dig any deeper, I should clarify that offline first doesn't mean that users should be able to reach your site on their first visit without an internet connection. It means that when we, as developers, build applications, we should consider the experience of slow and intermittent connectivity. A user being offline [should not be treated as an error condition](https://alistapart.com/article/offline-first#section5).
 
-For example, [Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. This is a very thoughtful feature that I've personally taken advantage of when sitting in an airport waiting to board a flight, I was able to save a handful of articles prior to turning on airplane mode... giving me plenty to read without having to pay for in-flight wifi.
+For example, [HospitalRun](http://hospitalrun.io/) is an offline first application for managing hospitals in the developing world, places where intermittent connectivity is just a fact of life. It allows records to be carried to remote clinics, where there may be no internet, and then syncs those records when there is.
 
-[HospitalRun](http://hospitalrun.io/) is an offline first application for managing hospitals in the developing world, places where intermittent connectivity is just a fact of life. It allows records to be carried to remote clinics, where there may be no internet, and then syncs those records when there is.
+[Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. This is a very useful and thoughtful feature that I've personally taken advantage of while sitting at the airport, waiting to board a flight. I was able to save a handful of articles prior to turning on airplane mode, which gave me plenty to read without having to pay for in-flight wifi.
 
 Offline first applications are driven by two key components: [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and some form of client-side, offline-capable storage (such as [PouchDB](https://pouchdb.com/) or [localForage](https://localforage.github.io/localForage/)).
 
@@ -29,13 +29,13 @@ We won't dive too much into the storage aspect of things with this post, but let
 
 A service worker is an event-driven script that browsers run in a separate thread, known as a worker context. Since service workers are run in a worker context, they can't directly access the DOM. Instead, they interact with the client through `postMessage`.
 
-A service worker can intercept and modify navigation and resource requests, giving you complete control over how your app behaves in various situations. This is one of the most powerful features of service workers... allowing you to cache good responses from API requests and having your worker respond with that data if the user goes offline.
+A service worker can intercept and modify navigation and resource requests, giving you complete control over how your app behaves in various situations. This is one of the most powerful features of service workers -- allowing you to cache good responses from API requests and having your worker respond with that data if the user goes offline.
 
-*As an aside, service workers enable a whole host of other features that are worth noting, such as background syncing and push notifications. Features that will help bridge the gap between native and web apps.*
+*As an aside, service workers enable a whole host of other features that are worth noting, such as background syncing and push notifications. Features that will help bridge the gap between native and web apps. Those features are out of the scope of this post, though.*
 
 #### Lifecycle
 
-As I mentioned in the last section, service workers are event-driven scripts. A service worker lifecycle includes six distinct events:
+As I mentioned in the last section, service workers are event-driven scripts. A service worker lifecycle can contain any or all of six distinct events:
 
 - Install
 - Activate
@@ -44,7 +44,7 @@ As I mentioned in the last section, service workers are event-driven scripts. A 
 - Sync
 - Push
 
-In this post, we're only going to focus on the first three event types, as they're the most minimum components necessary to set up offline first support.
+In this post, we're only going to focus on the first three event types, as they're the basic pieces necessary to set up offline first support.
 
 Let's take a look at our `sw.js` file and break down each piece. The first thing we should do is set up our cache keys and precache routes.
 
@@ -59,9 +59,9 @@ const PRECACHE_URLS = [
 ];
 ```
 
-In the code above, we name this our precache bucket `precache-v1` and our runtime bucket `runtime`. The reason we split these into two separate caches is so that we can easily invalidate our runtime cache without dumping out our precached files and routes.
+In the code above, we name this our precache bucket `precache-v1` and our runtime bucket `runtime`. The reason we split these into two separate caches is so that we can easily invalidate our runtime cache without dumping out our precached files and routes or vice versa.
 
-In the `PRECACHE_URLS` constant, we define an array of files that we want to precache. In this example, we're only caching the index, stylesheet, and primary javascript file, but this is a great place to preload data and assets for commonly-visited pages in your application. 
+In the `PRECACHE_URLS` constant, we define an array of files that we want to precache. In this example, we're only caching the index, stylesheet, and primary javascript file -- typically what you'd expect with a single page application. This is also a great place to preload data and assets for commonly-visited pages in your application. 
 
 Next, let's take a look at the `install` event.
 
