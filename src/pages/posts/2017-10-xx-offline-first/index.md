@@ -1,5 +1,5 @@
 ---
-title: Taking an Offline First Approach
+title: Building Offline-First Applications
 date: "2017-11-01T12:32:24.389Z"
 path: "/articles/offline-first/"
 excerpt: "tbd"
@@ -31,7 +31,7 @@ A service worker is an event-driven script that browsers run in a separate threa
 
 A service worker can intercept and modify navigation and resource requests, giving you complete control over how your app behaves in various situations. This is one of the most powerful features of service workers -- allowing you to cache good responses from API requests and having your worker respond with that data if the user goes offline.
 
-*As an aside, service workers enable a whole host of other features that are worth noting, such as background syncing and push notifications. Features that will help bridge the gap between native and web apps. Those features are out of the scope of this post, though.*
+*As an aside, service workers provide access to a few other features worth noting, such as channel messaging, background syncing, and push notifications. Features that will help bridge the gap between native and web apps. Those features are out of the scope of this post, though.*
 
 #### Lifecycle
 
@@ -65,6 +65,10 @@ In the `PRECACHE_URLS` constant, we define an array of files that we want to pre
 
 Next, let's take a look at the `install` event.
 
+The first event a service worker runs through during it's lifecycle is `install`, which is triggered as soon as the worker executes and is only called once per service worker. The install event is where we should cache all the assets we'll need before being able to control the client.
+
+The promise that is passed to `event.waitUntil()` tells the browser when your install completes, and whether or not it was successful. If the promise rejects, the install fails, and the browser discards the service worker.
+
 ```js
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
@@ -94,14 +98,13 @@ self.addEventListener('activate', event => {
 });
 ```
 
-Finally, let's look at the `fetch` event.
+Once the service worker is installed and ready to take control of clients, we'll get an `activate` event. Here we'll clean up any caches that may be left over from old service workers.
+
+Finally, let's look at the `fetch` event, where the magic really starts happening. The `fetch` event acts as an intermediary between a client request and the servers response, it contains important information about the request being made. For example:
+
 
 ```js
-// The fetch handler serves responses for same-origin resources from a cache.
-// If no response is found, it populates the runtime cache with the response
-// from the network before returning it to the page.
 self.addEventListener('fetch', event => {
-  // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
       caches.match(event.request).then(cachedResponse => {
@@ -123,6 +126,10 @@ self.addEventListener('fetch', event => {
 });
 ```
 
+This `fetch` handler first checks to see if the request is for the same-origin, filtering out cross-origin requests to services like Google Analytics, and serves responses from our cache. If no response is found, it populates the runtime cache with the response from the network before returning it.
+
+There are a lot of other ways we can fine-tune our `fetch` responses; for example, we could change our handler so that it only responds to `GET` requests by checking the `event.request.method` before `event.respondWith()`. 
+
 #### Gotchas
 
 Service workers are still a bit raw and can be a real pain sometimes. There are definitely some _gotchas_ to be aware of when you get started.
@@ -136,6 +143,8 @@ Your code should be stateless, since the worker is shut down and loses state whe
 Debugging service workers can be tricky, since the console is preserved.
 
 ### Further Reading
+There are tons of great resources out there to learn more about service workers and the offline-first push. Here are a few that I found particularly enlightening:
+
 - [Offline first](https://github.com/pazguille/offline-first) - Repository listing virtually every resource you could ever need to deep dive into offline first.
 - [Designing Offline-First Web Apps](https://alistapart.com/article/offline-first)
 - [Service Worker, what are you?](https://medium.com/@kosamari/service-worker-what-are-you-ca0f8df92b65)
