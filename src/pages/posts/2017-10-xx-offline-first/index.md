@@ -1,8 +1,8 @@
 ---
-title: Building Offline-First Applications
-date: "2017-11-01T12:32:24.389Z"
+title: Building Offline First Applications
+date: "2017-12-09T05:59:58.846Z"
 path: "/articles/offline-first/"
-excerpt: "tbd"
+excerpt: "It took more than 25 years for the first three billion people to come online, but over the next decade that number is expected to double. It's with these people and problems in mind that developers have begun shifting towards an offline first approach for websites and applications."
 ---
 
 Have you ever tried reading your email while riding the subway? Checked your Twitter feed while connected to in-flight wifi? Attempted to pull up a map while wandering around in a foreign country?
@@ -11,7 +11,7 @@ If so, you're probably familiar with the problem of poor connectivity.
 
 It took more than 25 years for the first three billion people to come online, but over the next decade that number is [expected to double](http://next3b.com/the-next-3-billion/). The vast majority of these new users will be coming online in under-developed countries, using under-powered devices, and browsing the internet over low-bandwidth connections.
 
-It's with these people and problems in mind that developers have shifted to an offline first approach for websites and applications.
+It's with these people and problems in mind that developers have begun shifting towards an offline first approach for websites and applications.
 
 ### What does offline first mean?
 
@@ -19,7 +19,7 @@ Before we dig any deeper, I should clarify that offline first doesn't mean that 
 
 For example, [HospitalRun](http://hospitalrun.io/) is an offline first application for managing hospitals in the developing world, places where intermittent connectivity is just a fact of life. It allows records to be carried to remote clinics, where there may be no internet, and then syncs those records when there is.
 
-[Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. This is a very useful and thoughtful feature that I've personally taken advantage of while sitting at the airport, waiting to board a flight. I was able to save a handful of articles prior to turning on airplane mode, which gave me plenty to read without having to pay for in-flight wifi.
+[Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. It's a very useful and thoughtful feature that I've personally taken advantage of while sitting at the airport, waiting to board a flight. I was able to save a handful of articles prior to turning on airplane mode, giving me plenty to read without having to pay for in-flight wifi.
 
 Offline first applications are driven by two key components: [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and some form of client-side, offline-capable storage (such as [PouchDB](https://pouchdb.com/) or [localForage](https://localforage.github.io/localForage/)).
 
@@ -31,11 +31,11 @@ A service worker is an event-driven script that browsers run in a separate threa
 
 A service worker can intercept and modify navigation and resource requests, giving you complete control over how your app behaves in various situations. This is one of the most powerful features of service workers -- allowing you to cache good responses from API requests and having your worker respond with that data if the user goes offline.
 
-*As an aside, service workers provide access to a few other features worth noting, such as channel messaging, background syncing, and push notifications. Features that will help bridge the gap between native and web apps. Those features are out of the scope of this post, though.*
+*As an aside, service workers provide access to a few other features worth noting, such as channel messaging, background syncing, and push notifications -- features that will help bridge the gap between native and web apps. However, those features are out of the scope of this post.*
 
 #### Lifecycle
 
-As I mentioned in the last section, service workers are event-driven scripts. A service worker lifecycle can contain any or all of six distinct events:
+As I mentioned in the last section, service workers are event-driven scripts. A service worker lifecycle contains six distinct events:
 
 - Install
 - Activate
@@ -67,8 +67,6 @@ Next, let's take a look at the `install` event.
 
 The first event a service worker runs through during it's lifecycle is `install`, which is triggered as soon as the worker executes and is only called once per service worker. The install event is where we should cache all the assets we'll need before being able to control the client.
 
-The promise that is passed to `event.waitUntil()` tells the browser when your install completes, and whether or not it was successful. If the promise rejects, the install fails, and the browser discards the service worker.
-
 ```js
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
@@ -79,6 +77,8 @@ self.addEventListener('install', event => {
   );
 });
 ```
+
+The promise that is passed to `event.waitUntil()` tells the browser when your install completes, and whether or not it was successful. If the promise rejects, the install fails, and the browser discards the service worker.
 
 Now let's take a look at the `activate` event.
 
@@ -100,7 +100,7 @@ self.addEventListener('activate', event => {
 
 Once the service worker is installed and ready to take control of clients, we'll get an `activate` event. Here we'll clean up any caches that may be left over from old service workers.
 
-Finally, let's look at the `fetch` event, where the magic really starts happening. The `fetch` event acts as an intermediary between a client request and the servers response, it contains important information about the request being made. For example:
+Finally, let's look at the `fetch` event, where the magic really starts happening. The `fetch` event acts as an intermediary between a client request and the servers response. For example:
 
 
 ```js
