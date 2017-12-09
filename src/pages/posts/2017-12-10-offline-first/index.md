@@ -1,6 +1,6 @@
 ---
 title: Building Offline First Applications
-date: "2017-12-09T05:59:58.846Z"
+date: "2017-12-10T15:00:03.149Z"
 path: "/articles/offline-first/"
 excerpt: "It took more than 25 years for the first three billion people to come online, but over the next decade that number is expected to double. It's with these people and problems in mind that developers have begun shifting towards an offline first approach for websites and applications."
 ---
@@ -21,7 +21,7 @@ For example, [HospitalRun](http://hospitalrun.io/) is an offline first applicati
 
 [Una Kravetz](https://una.im/save-offline/) has implemented a "save for offline" feature for the articles on her site. It's a very useful and thoughtful feature that I've personally taken advantage of while sitting at the airport, waiting to board a flight. I was able to save a handful of articles prior to turning on airplane mode, giving me plenty to read without having to pay for in-flight wifi.
 
-Offline first applications are driven by two key components: [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and some form of client-side, offline-capable storage (such as [PouchDB](https://pouchdb.com/) or [localForage](https://localforage.github.io/localForage/)).
+Offline first applications are driven by two key components: [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and some form of client-side, offline-capable storage (such as [PouchDB](https://pouchdb.com/), [hood.ie](https://hood.ie), or [localForage](https://localforage.github.io/localForage/)).
 
 We won't dive too much into the storage aspect of things with this post, but let's go ahead and take a look at the star of the show: service workers.
 
