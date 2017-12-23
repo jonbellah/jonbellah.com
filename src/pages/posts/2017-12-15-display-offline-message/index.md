@@ -13,9 +13,7 @@ For many purposes, though, `navigator.onLine` may be good enough to suit your ne
 
 ### Basic Detection
 
-Let's say, for example, we want to display a message to our users when they're offline. The simplest option would be to use `navigator.onLine` for detection.
-
-To implement our status message, we could write:
+Let's say, for example, we want to display a message to our users when they're offline. To implement our status message, we could write:
 
 ```js
 function updateOnlineStatus() {
@@ -47,3 +45,25 @@ Nick Stevens put together a great wrapper around `is-online` for use with Redux,
 ### Implementation
 
 So now we know _why_ `navigator.onLine` is unreliable and _what_ we need to do to build more reliable detection, so let's take a look at _how_ to put it all together.
+
+For simplicity sake, we'll reimplement our above feature -- displaying our connectivity status in an element called `status`. To tackle it, we'll break our feature into two distinct pieces: detecting when a user goes offline, and then when that user regains connectivity.
+
+#### Offline detection
+
+
+#### Online detection
+
+
+### Building Better Experiences
+
+So now we've looked at detection of online and offline states, but only in the context of showing a status message. How can we use this newfound power to build even better experiences for our users?
+
+[Offline.js](http://github.hubspot.com/offline/) from HubSpot takes the approach we outlined above, but it goes a step further than the other libraries I've mentioned so far. Once Offline.js detects that a user has gone offline, it immediately begins polling for a random asset, waiting for the user to regain connectivity. At the same time, though, it begins capturing AJAX requests that occur while a user is offline and remakes then once the user has come back online.
+
+
+
+
+
+
+### Further Reading
+- [Navigator.onLine Docs (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine)
