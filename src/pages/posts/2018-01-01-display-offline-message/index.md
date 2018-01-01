@@ -5,7 +5,7 @@ path: "/articles/online-offline-events/"
 excerpt: "Let's say we want to display a message to our users when they're offline. Unfortunately, navigator.onLine is considered an unreliable API."
 ---
 
-In my last post, I wrote about [building offline first applications](https://jonbellah.com/offline-first/). One thing I did not cover was how to detect when a user is online or offline, so that your application can respond accordingly -- such as when you need to display connectivity status to a user or check whether a user is online before performing an action in your application.
+In my last post, I wrote about [building offline first applications](https://jonbellah.com/articles/offline-first/). One thing I did not cover was how to detect when a user is online or offline, so that your application can respond accordingly -- such as when you need to display connectivity status to a user or check whether a user is online before performing an action in your application.
 
 Going all the way back to IE8, JavaScript has provided access to `navigator.onLine`, which is a simple little API that returns a boolean where `true` means the user is online, `false` meaning offline. Unfortunately, though, `navigator.onLine` is considered an [unreliable API](https://html.spec.whatwg.org/dev/offline.html#browser-state). In Chrome and Safari it only determines whether a device has connection to a network, not whether or not that network can actually reach the internet. 
 
