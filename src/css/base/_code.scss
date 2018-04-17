@@ -161,3 +161,14 @@ pre[data-line] .line-highlight[data-end]:after {
 	top: auto;
 	bottom: .4em;
 }
+
+.post__content code[class="language-text"] {
+  background-color: hsla(0, 0%, 0%, 0.04);
+  box-shadow: none;
+  color: #455158;
+  font-size: 1rem;
+	border-radius: 3px;
+	padding: 0.2em;
+	margin: 0 3px;
+	border: 1px solid rgba(0,0,0,0.09);
+}

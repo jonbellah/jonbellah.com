@@ -743,7 +743,8 @@ td:last-child {
 }
 
 tt,
-code {
+code,
+code[class="language-text"] {
 	background-color: hsla(0, 0%, 0%, 0.04);
 	border-radius: 3px;
 	font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
