@@ -1,6 +1,6 @@
 ---
 title: Debugging Issues with HTML Download Attribute
-date: "2018-04-20T04:31:08.212Z"
+date: "2018-04-19T12:31:08.212Z"
 path: "/articles/download-attribute/"
 excerpt: "Earlier today I spent the better part of a couple of hours scratching my head over a seemingly simple issue, so I thought I’d share the problem I encountered and the resolution I finally found."
 ---
