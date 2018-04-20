@@ -44,6 +44,7 @@ export default class Template extends Component {
 
 	render() {
 		const menuClass = this.state.mobileMenuOpen ? 'active' : '';
+		const currentYear = new Date().getFullYear();
 
 		return (
 			<div>
@@ -94,7 +95,7 @@ export default class Template extends Component {
 					<footer id="colophon" className="site-footer animated fadeInUp">
 						<div className="container flex">
 							<div className="site-footer__copyright">
-								&copy; 2017 JonBellah.com. Made in Colorado.
+								&copy; {currentYear} JonBellah.com. Made in Colorado.
 							</div>
 
 							<div className="site-footer__social">
