@@ -7,7 +7,7 @@ excerpt: "Earlier today I spent the better part of a couple of hours scratching 
 
 Earlier today I spent the better part of a couple of hours scratching my head over a seemingly simple issue, so I thought I’d share the problem I encountered and the resolution I finally found.
 
-When linking to a file using the `<a download>` attribute, I was having trouble getting the actual file to download. The app that I was working on has been using the `download` attribute for a few years and never had any issues with.
+When linking to a file using the `<a download>` attribute, I was having trouble getting the actual file to download. The app that I was working on has been using the `download` attribute for a few years and never had any issues.
 
 Recently, though, when users click on the link to download the asset, the file is opened in a new tab rather than being downloaded.
 
