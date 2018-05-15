@@ -25,7 +25,7 @@ So much research has gone into _how_ to build good online courses -- trying to l
 
 Then there's the matter of _how_ to record and produce high quality videos. The microphone, the recording software, the editing software, the tempo, etc. etc.
 
-I’ve even built my own LMS, despite the fact that there are lots of great off-the-shelf LMS options out there. There are a few reasons I decided to go this route, but the biggest reason is: I want to own every part of the experience my students have when dealing with my courses to ensure the best possible experience — I don’t want to shoehorn random features into bloated frameworks.
+I’ve even built my own LMS (learning management system), despite the fact that there are lots of great off-the-shelf LMS options out there. There are a few reasons I decided to go this route, but the biggest reason is: I want to own every part of the experience my students have when dealing with my courses to ensure the best possible experience — I don’t want to shoehorn random features into bloated frameworks.
 
 And to top it all off, there's the marketing side -- the emails, the outreach, the landing page, and so on.
 
