@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import { NavLink } from 'react-router-dom';
 
 import Logo from '../images/Logo';
 
@@ -50,27 +49,30 @@ export default class Header extends Component {
           </button>
 
           <nav id="navigation" className={`site-nav ${menuClass}`}>
-            <NavLink
+            <Link
+              activeClassName="active"
               to="/articles/"
               className="site-nav__item"
               onClick={this.closeMobileMenu}
             >
               Articles
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
+              activeClassName="active"
               to="/speaking/"
               className="site-nav__item"
               onClick={this.closeMobileMenu}
             >
               Speaking
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
+              activeClassName="active"
               to="/contact/"
               className="site-nav__item"
               onClick={this.closeMobileMenu}
             >
               Contact
-            </NavLink>
+            </Link>
           </nav>
         </div>
       </header>
