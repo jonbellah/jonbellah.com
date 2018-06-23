@@ -71,6 +71,8 @@ In async functions, errors are handled with `try...catch` blocks. In the sample 
 
 It's important to note that if your async function does not declare a `catch`, errors will be swallowed, meaning they will be silently disposed of unless explicitly handled.
 
+`youtube:https://www.youtube.com/embed/WvJ9fK1dqlI`
+
 ### Stuff worth noting
 
 Async functions are started synchronously, but settled asynchronously. Meaning, they're fired off in execution order, but the Promise is resolved and returned asynchronously. 

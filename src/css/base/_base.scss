@@ -1,3 +1,11 @@
+iframe {
+  border: 0;
+}
+
+.gatsby-resp-iframe-wrapper {
+  padding-bottom: 56.25% !important;
+}
+
 .flex {
 	display: flex;
 }

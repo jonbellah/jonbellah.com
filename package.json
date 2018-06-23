@@ -21,6 +21,7 @@
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-sharp": "^1.6.13",
     "gatsby-remark-copy-linked-files": "^1.5.14",
+    "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-images": "^1.5.24",
     "gatsby-remark-prismjs": "^2.0.1",
     "gatsby-remark-responsive-iframe": "^1.4.13",
@@ -40,8 +41,5 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1"
-  },
-  "keywords": [
-    "gatsby"
-  ]
+  }
 }
