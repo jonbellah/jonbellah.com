@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import get from 'lodash/get';
+
+import { getProp } from '../utils/helpers';
 
 export default class Articles extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export default class Articles extends Component {
       'December',
     ];
 
-    let posts = get(this, 'props.data.allMarkdownRemark.edges');
+    let posts = getProp(this, 'props.data.allMarkdownRemark.edges');
     posts = posts.sort(
       (a, b) =>
         new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date),

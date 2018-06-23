@@ -16,7 +16,6 @@
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-manifest": "^1.0.8",
     "gatsby-plugin-offline": "^1.0.10",
-    "gatsby-plugin-preact": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.2",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-sharp": "^1.6.13",
@@ -29,7 +28,6 @@
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "gatsby-transformer-sharp": "^1.6.13",
-    "lodash": "^4.17.4",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
     "unist-util-select": "^1.5.0"

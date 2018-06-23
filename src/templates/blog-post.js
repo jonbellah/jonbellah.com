@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import get from 'lodash/get';
+
+import { getProp } from '../utils/helpers';
 
 import Bio from '../components/Bio';
 import Subscribe from '../components/Subscribe';
@@ -8,7 +9,7 @@ import Comments from '../components/Comments';
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark;
-  const siteTitle = get(props, 'data.site.siteMetadata.title');
+  const siteTitle = getProp(props, 'data.site.siteMetadata.title');
 
   return (
     <article className="post">
