@@ -18,6 +18,8 @@ We first got a glimpse of error boundaries with React in version 15, with the `u
 
 After lots of [work and discussion](https://github.com/facebook/react/issues/2461), the React team has officially introduced the `componentDidCatch()` method, which works like a `catch {}` block, except that it's built for React components. 
 
+`youtube:https://www.youtube.com/embed/5olfAXkDVnU`
+
 ### Using error boundaries
 
 A class component becomes an error boundary when it defines the `componentDidCatch` lifecycle method. 
