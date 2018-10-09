@@ -1,6 +1,6 @@
 ---
 title: A Complete Introduction to State Machines in JavaScript
-date: "2018-10-08T20:12:16.764Z"
+date: "2018-10-09T12:33:37.986Z"
 path: "/articles/intro-state-machines/"
 excerpt: One of the most compelling changes I’ve made in my approach to web development came when I introduced state machines and statecharts in my applications. 
 ---
