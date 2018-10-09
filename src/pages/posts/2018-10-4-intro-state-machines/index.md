@@ -13,7 +13,7 @@ With each step in my evolution as a developer, I’ve learned to build increasin
 
 As front-end engineers working on the web today, building interfaces is an extraordinarily challenging undertaking. We have to account for so many variables, both controlled and uncontrolled, that weren’t really a _thing_ when I started out — accessibility, performance, shifting project requirements, accounting for different devices and browsers and operating systems and connections, the onslaught of new frameworks and technologies… just to name a few.
 
-Recently, I’ve been focusing a lot of my time on trying to simplify that process in any way I can. Tools like Prettier have helped make code formatting an afterthought, ESLint ensures I’m following good coding practices, Lighthouse gives me an easy way to check the performance and accessibility of my applications are up to snuff.
+Recently, I’ve been focusing a lot of my time on trying to simplify that process in any way I can. Tools like Prettier have helped make code formatting an afterthought, ESLint ensures I’m following good coding practices, Lighthouse gives me an easy way to check that the performance and accessibility of my applications are up to snuff.
 
 But one of the most compelling changes I’ve made in my approach came a little over a year ago when I started introducing the use of state machines and statecharts in my applications. 
 
