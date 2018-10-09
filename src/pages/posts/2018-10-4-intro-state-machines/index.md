@@ -148,7 +148,7 @@ componentDidMount() {
 ### Creating a transition method
 xstate provides us with a transition method, but xstate is a _stateless_ library — which means that it doesn’t actually keep track of the current state of our component (note: this changes with `assign()` semantics in 4.0 but we won’t be covering that here) nor does it automatically trigger any of the actions that we define in our machine. We need to provide the current state, as well as the event type, to the xstate transition method.
 
-As a result, we should create our own transition method that we can sit between our app and the xstate, where we can inject our current component state, run any actions associated with the new state, and subsequently set the new state in our component.
+As a result, we should create our own transition method that we can sit between our app and xstate, where we can inject our current component state, run any actions associated with the new state, and subsequently set the new state in our component.
 
 The following methods can be set inside our `App` component (the base code can be found in the CodePen demo above):
 
