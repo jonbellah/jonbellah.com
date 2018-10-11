@@ -57,7 +57,7 @@ Following the event-state-action paradigm, however, when the user clicks the but
 ### State machines in action
 The component-driven model of most modern frameworks — React, Vue, Angular, etc — is quite favorable for using state machines.
 
-Typically, I prefer to model each stateful component with its own state machine and colocate that code alongside my component code. That way, when someone else picks up an application that I’ve been working on and starts to read through my code, it;s clear how that component should behave.
+Typically, I prefer to model each stateful component with its own state machine and colocate that code alongside my component code. That way, when someone else picks up an application that I’ve been working on and starts to read through my code, it's clear how that component should behave.
 
 Now that we’ve covered the _what_ and _why_, let’s dive right into the _how”_ In the following examples, we’ll build the payment submission form that I mentioned earlier.
 
