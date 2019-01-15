@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
-
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import '../css/styles.scss';
 import favicon from '../images/favicon.ico';
-
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Layout = ({ children }) => (
   <div>
@@ -28,7 +26,7 @@ const Layout = ({ children }) => (
     </Helmet>
     <div className="site">
       <Header />
-      <main className="site-content">{children()}</main>
+      <main className="site-content">{children}</main>
       <Footer />
     </div>
   </div>
