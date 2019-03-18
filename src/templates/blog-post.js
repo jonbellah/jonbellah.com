@@ -1,11 +1,10 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-
-import { getProp } from '../utils/helpers';
-
 import Bio from '../components/Bio';
-import Subscribe from '../components/Subscribe';
 import Comments from '../components/Comments';
+import Subscribe from '../components/Subscribe';
+import { getProp } from '../utils/helpers';
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark;

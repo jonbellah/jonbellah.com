@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-
 import { getProp } from '../utils/helpers';
 
 export default class Articles extends Component {
