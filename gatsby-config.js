@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`alegreya:700`, `alegreya sans\:400,700`],
+        fonts: [`fira sans:400,700`]
       },
     },
     {

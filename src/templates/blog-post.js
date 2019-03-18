@@ -9,6 +9,21 @@ import { getProp } from '../utils/helpers';
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark;
   const siteTitle = getProp(props, 'data.site.siteMetadata.title');
+  const date = new Date(post.frontmatter.date);
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
 
   return (
     <article className="post">
@@ -21,7 +36,11 @@ const BlogPostTemplate = props => {
         <h1 className="post__title">{post.frontmatter.title}</h1>
         <p className="post__meta">
           Posted on
-          <time className="post__time">{post.frontmatter.date}</time>
+          <time className="post__time">
+            {`${date.getDate()} ${
+              months[date.getMonth()]
+            } ${date.getFullYear()}`}
+          </time>
         </p>
       </header>
 

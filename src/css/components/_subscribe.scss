@@ -34,7 +34,7 @@
 
 		&:focus,
 		&:hover {
-			border-bottom-color: $gold;
+			border-bottom-color: $primary;
 		}
 	}
 
@@ -96,7 +96,7 @@
 	}
 
 	.button {
-		background-color: $gold;
+		background-color: $primary;
 		border-bottom: 0;
 		border-radius: 4px;
 		color: #fff;
@@ -107,7 +107,7 @@
 		&:hover,
 		&:active,
 		&:focus {
-			background-color: darken($gold,20%);
+			background-color: darken($primary,20%);
 		}
 	}
 }

@@ -2,7 +2,6 @@ import Link from 'gatsby-link';
 import React, { Component } from 'react';
 import Logo from '../images/Logo';
 
-
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -49,6 +48,14 @@ export default class Header extends Component {
           </button>
 
           <nav id="navigation" className={`site-nav ${menuClass}`}>
+            <Link
+              activeClassName="active"
+              to="/courses/"
+              className="site-nav__item"
+              onClick={this.closeMobileMenu}
+            >
+              Courses
+            </Link>
             <Link
               activeClassName="active"
               to="/articles/"

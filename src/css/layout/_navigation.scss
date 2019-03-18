@@ -44,7 +44,7 @@
 	&:focus,
 	&:active {
 		background: transparent;
-		color: $gold;
+		color: $primary;
 	}
 
 	@include mq($from: tablet) {
@@ -53,8 +53,8 @@
 		&:active,
 		&.active {
 			background-color: transparent;
-			border-bottom: 3px solid $gold;
-			color: $gold;
+			border-bottom: 3px solid $primary;
+			color: $primary;
 		}
 	}
 }
