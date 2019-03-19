@@ -49,21 +49,20 @@ a {
   background-color: transparent;
   background-image: linear-gradient(
     180deg,
-    transparent 70%,
-    hsla(240, 95%, 76%, 0.3) 0
+    transparent 75%,
+    hsla(240, 95%, 76%, 0.35) 0
   );
   color: $mid-gray;
   outline: none;
   text-decoration: none;
-  transition: all 0.25s linear;
 
   &:hover,
   &:focus,
   &:active {
     background-image: linear-gradient(
       180deg,
-      transparent 70%,
-      hsla(240, 95%, 76%, 0.6) 0
+      transparent 75%,
+      hsla(240, 95%, 76%, 0.7) 0
     );
   }
 }
@@ -131,7 +130,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: Monaco, monospace;
   font-size: 1em;
 }
 
@@ -742,12 +741,9 @@ code,
 code[class='language-text'] {
   background-color: #fff;
   box-shadow: none;
-  color: #ef4e4e;
-  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
-    monospace;
-  font-size: 18px;
+  color: $red;
+  font-family: Monaco, monospace;
+  font-size: 0.85em;
   border-radius: 3px;
   padding: 0;
   margin: 0;
@@ -756,7 +752,7 @@ code[class='language-text'] {
 pre code {
   background: none;
   border: 0;
-  font-size: 0.85rem;
+  font-size: 0.85em;
   line-height: 1.42;
 }
 

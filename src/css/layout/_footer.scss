@@ -32,12 +32,14 @@
   }
 
   a {
+    background-image: none;
     border: 0;
 
     &:hover,
     &:focus,
     &:active {
       background-color: transparent;
+      background-image: none;
 
       svg {
         color: $primary;

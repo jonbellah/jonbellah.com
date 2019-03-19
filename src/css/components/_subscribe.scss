@@ -10,7 +10,7 @@
 }
 
 .subscribe__inner {
-  background-color: $mid-gray;
+  background-color: $primary;
   border-bottom-right-radius: 35px;
   border-top-left-radius: 35px;
   color: #fff;
@@ -44,7 +44,7 @@
 
   input {
     -webkit-appearance: none;
-    background: $mid-gray;
+    background: transparent;
     border: 0;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 0;
@@ -96,7 +96,7 @@
   }
 
   .button {
-    background-color: $primary;
+    background-color: $dark-gray;
     border-bottom: 0;
     border-radius: 4px;
     color: #fff;
