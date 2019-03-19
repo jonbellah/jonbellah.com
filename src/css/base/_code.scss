@@ -45,7 +45,7 @@ pre[class*='language-'] code {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #6f705e;
+  color: #989898;
 }
 .token.operator,
 .token.boolean,
@@ -161,7 +161,7 @@ pre[data-line] .line-highlight[data-end]:after {
   border-radius: 3px;
   border: 0;
   box-shadow: none;
-  color: #ef4e4e;
+  color: $red;
   font-size: 18px;
   line-height: 1.5;
   margin: 0;

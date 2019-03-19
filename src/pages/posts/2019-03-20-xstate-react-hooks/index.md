@@ -13,7 +13,8 @@ When I sat down to write this post, I started looking back at some reference mat
 
 So, in this post we’re going to rewrite that example payment form from scratch using hooks. Here’s a quick look at the form we’ll be wiring up:
 
-{CodePen embed: https://codepen.io/jonbellah/pen/wYBjWv}
+<iframe height='300' scrolling='no' title='State machine payment form - wired' src='//codepen.io/jonbellah/embed/oagRpX/?height=300&theme-id=515&default-tab=js,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jonbellah/pen/oagRpX/'>State machine payment form - wired</a> by Jon Bellah (<a href='https://codepen.io/jonbellah'>@jonbellah</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ### Hooks at a glance
 If you’re not familiar, hooks were released in React 16.8 and provide developers with a way to use React features  — like state and lifecycle methods — within function components. Prior to 16.8, if you needed a stateful component, you were required to write a class which [had a fair number of tradeoffs](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889#5655).
