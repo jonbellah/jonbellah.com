@@ -1,10 +1,10 @@
 .comments {
-	font-size: 18px;
-	line-height: 1.4;
-	padding: 0 0 30px;
-	text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 0 0 30px;
+  text-align: center;
 
-	@include mq($from: tablet) {
-		font-size: 21px;
-	}
+  @include mq($from: tablet) {
+    font-size: 21px;
+  }
 }

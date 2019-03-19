@@ -1,49 +1,51 @@
 /* Header
 ----------------------------*/
 .site-header {
-	background: #fff;
-	border-bottom: 1px solid $border-color;
-	left: 0;
-	padding: 8px 0.75rem;
-	top: 0;
-	width: 100%;
-	z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid $border-color;
+  left: 0;
+  padding: 8px 0.75rem;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 
-	@include mq($from: tablet) {
-		padding-top: 0;
-		padding-bottom: 0;
-		position: fixed;
-	}
+  @include mq($from: tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: fixed;
+  }
 
-	.container {
-		align-items: center;
-		display: flex;
-		justify-content: space-between;
-	}
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 
-	&.shadow {
-		box-shadow: 0 1px 3px rgba(0,0,0,0.125);
-	}
+  &.shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
+  }
 }
 
 .site-header__link {
-	border-bottom: 0;
-	color: $dark-gray;
-	display: block;
-	line-height: 0;
-	padding: 0;
-	transition: color 0.25s linear;
+  background-image: none;
+  border-bottom: 0;
+  color: $dark-gray;
+  display: block;
+  line-height: 0;
+  padding: 0;
+  transition: color 0.25s linear;
 
-	&:hover,
-	&:focus,
-	&:active {
-		background-color: transparent;
-		color: $primary;
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    background-image: none;
+    color: $primary;
+  }
 }
 
 .site-header__logo {
-	height: 30px;
-	margin-bottom: 0;
-	width: 30px;
+  height: 30px;
+  margin-bottom: 0;
+  width: 30px;
 }

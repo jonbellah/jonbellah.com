@@ -50,10 +50,9 @@ a {
   background-image: linear-gradient(
     180deg,
     transparent 70%,
-    hsla(238, 100%, 88%, 0.5) 0
+    hsla(240, 95%, 76%, 0.3) 0
   );
-  color: $dark-gray;
-  font-weight: 700;
+  color: $mid-gray;
   outline: none;
   text-decoration: none;
   transition: all 0.25s linear;
@@ -64,7 +63,7 @@ a {
     background-image: linear-gradient(
       180deg,
       transparent 70%,
-      hsla(238, 100%, 88%, 1) 0
+      hsla(240, 95%, 76%, 0.6) 0
     );
   }
 }
@@ -684,15 +683,6 @@ li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 
-code {
-  font-size: 0.9rem;
-  line-height: 1.45;
-
-  @include mq($from: tablet) {
-    font-size: 1rem;
-  }
-}
-
 kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;
@@ -750,13 +740,17 @@ td:last-child {
 tt,
 code,
 code[class='language-text'] {
-  background-color: hsla(0, 0%, 0%, 0.04);
+  background-color: #fff;
+  box-shadow: none;
+  color: #ef4e4e;
+  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    monospace;
+  font-size: 18px;
   border-radius: 3px;
-  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
-    'Liberation Mono', Menlo, Courier, monospace;
-  padding: 0.2em;
-  margin: 0 3px;
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  padding: 0;
+  margin: 0;
 }
 
 pre code {

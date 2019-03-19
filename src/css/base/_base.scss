@@ -7,25 +7,25 @@ iframe {
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 .flex-hor-center {
-	align-items: center;
+  align-items: center;
 }
 
 .no-margin-top {
-	margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .gatsby-resp-image-link {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 
-	&:hover,
-	&:focus,
-	&:active,
-	&:visited {
-		background: transparent;
-	}
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    background: transparent;
+  }
 }

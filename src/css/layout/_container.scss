@@ -1,27 +1,27 @@
 /* Container
 ----------------------------*/
 .site {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
-	width: 100%;
+  width: 100%;
 
-	@include mq( $from: tabLarge ) {
-		margin: 0 auto;
-		max-width: 1200px;
-		width: 92%;
-	}
+  @include mq($from: tabLarge) {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 92%;
+  }
 }
 
 .container--narrow {
-	width: 100%;
+  width: 100%;
 
-	@include mq( $from: tabLarge ) {
-		margin: 0 auto;
-		max-width: 800px;
-		width: 75%;
-	}
+  @include mq($from: tabLarge) {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 75%;
+  }
 }

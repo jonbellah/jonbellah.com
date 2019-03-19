@@ -1,51 +1,51 @@
 /* Author
 ----------------------------*/
 .author {
-	border-bottom: 1px solid $border-color;
-	border-top: 1px solid $border-color;
-	padding: 30px 0;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  padding: 30px 0;
 
-	@include mq($from: tablet) {
-		display: flex;
-	}
+  @include mq($from: tablet) {
+    display: flex;
+  }
 }
 
 .author__avatar {
-	width: 60px;
+  width: 60px;
 
-	@include mq($from: tablet) {
-		width: 80px;
-	}
+  @include mq($from: tablet) {
+    width: 80px;
+  }
 
-	.avatar {
-		border-radius: 50%;
-		float: left;
-		margin: 0 1em 0 0;
-	}
+  .avatar {
+    border-radius: 50%;
+    float: left;
+    margin: 0 1em 0 0;
+  }
 }
 
 .author__info {
-	width: 100%;
+  width: 100%;
 
-	@include mq($from: tablet) {
-		padding-left: 1.5em;
-		width: calc(100% - 80px);
-	}
+  @include mq($from: tablet) {
+    padding-left: 1.5em;
+    width: calc(100% - 80px);
+  }
 }
 
 .author__name {
-	display: block;
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 8px;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .author__bio {
-	color: $mid-gray;
-	font-size: 1em;
-	line-height: 1.5;
+  color: $mid-gray;
+  font-size: 1em;
+  line-height: 1.5;
 
-	@include mq($from: tablet) {
-		font-size: 1.1em;
-	}
+  @include mq($from: tablet) {
+    font-size: 1.1em;
+  }
 }

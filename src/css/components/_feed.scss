@@ -1,58 +1,59 @@
 .feed {
-	padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .feed__link {
-	border-bottom: 1px solid $border-color;
-	color: $mid-gray;
-	display: block;
-	padding: 1.25em 0;
+  background-image: none;
+  border-bottom: 1px solid $border-color;
+  color: $mid-gray;
+  display: block;
+  padding: 1.25em 0;
 
-	@include mq($from:tablet) {
-		display: flex;
-		padding: 1.5em;
-	}
+  @include mq($from: tablet) {
+    display: flex;
+    padding: 1.5em;
+  }
 
-	&:hover,
-	&:focus,
-	&:active {
-		background-color: transparent;
-		
-		.feed__title {
-			color: $primary;
-		}
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    background-image: none;
 
-		.feed__time {
-			color: $mid-gray;
-		}
-	}
+    .feed__title {
+      color: $primary;
+    }
+
+    .feed__time {
+      color: $mid-gray;
+    }
+  }
 }
 
 .feed__title {
-	border-bottom: 0;
-	color: $dark-gray;
-	flex: 1;
-	font-weight: bold;
-	line-height: 1.35;
-	margin: 0;
-	width: 100%;
-	transition: color 0.25s linear;
+  border-bottom: 0;
+  color: $dark-gray;
+  flex: 1;
+  font-weight: bold;
+  line-height: 1.35;
+  margin: 0;
+  width: 100%;
+  transition: color 0.25s linear;
 
-	@include mq($from: tablet) {
-		font-size: 1.5rem;
-		max-width: calc(100% - 150px);
-	}
+  @include mq($from: tablet) {
+    font-size: 1.5rem;
+    max-width: calc(100% - 150px);
+  }
 }
 
 .feed__time {
-	color: $mid-gray;
-	width: 100%;
+  color: $mid-gray;
+  width: 100%;
 
-	@include mq($from: tablet) {
-		align-items: center;
-		display: flex;
-		justify-content: flex-end;
-		width: 160px;
-	}
+  @include mq($from: tablet) {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 160px;
+  }
 }
-
