@@ -17,6 +17,7 @@ const Layout = ({ children }) => (
         },
       ]}
     >
+      <html lang="en" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Jon Bellah" />

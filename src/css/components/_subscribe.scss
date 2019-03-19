@@ -46,7 +46,7 @@
     -webkit-appearance: none;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #8888FC;
+    border-bottom: 2px solid #fff;
     border-radius: 0;
     color: #fff;
     float: left;
@@ -75,7 +75,7 @@
 }
 
 .subscribe__content {
-  color: #fff;
+  color: rgba(255,255,255,0.85);
   font-size: 1em;
   text-align: center;
 
@@ -107,7 +107,7 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: darken($primary, 20%);
+      background-color: $primary-dark;
     }
   }
 }

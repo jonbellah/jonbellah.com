@@ -1,9 +1,8 @@
 import React from 'react';
-
-import TwitterIcon from '../images/TwitterIcon';
 import GithubIcon from '../images/GithubIcon';
-import YouTubeIcon from '../images/YouTubeIcon';
 import RssIcon from '../images/RssIcon';
+import TwitterIcon from '../images/TwitterIcon';
+import YouTubeIcon from '../images/YouTubeIcon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,18 +16,22 @@ const Footer = () => {
 
         <div className="site-footer__social">
           <a href="https://youtube.com/jonbellah">
+            <span className="screen-reader-text">YouTube</span>
             <YouTubeIcon />
           </a>
 
           <a href="https://twitter.com/jonbellah">
+            <span className="screen-reader-text">Twitter</span>
             <TwitterIcon />
           </a>
 
           <a href="https://github.com/jonbellah">
+            <span className="screen-reader-text">GitHub</span>
             <GithubIcon />
           </a>
 
           <a href="/rss.xml">
+            <span className="screen-reader-text">RSS</span>
             <RssIcon />
           </a>
         </div>

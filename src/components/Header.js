@@ -33,6 +33,7 @@ export default class Header extends Component {
       <header id="header" className="site-header animated fadeInDown">
         <div className="container">
           <Link to="/" className="site-header__link">
+            <span className="screen-reader-text">Home</span>
             <Logo className="site-header__logo" />
           </Link>
           <button

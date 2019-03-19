@@ -44,19 +44,21 @@ export default class Subscribe extends Component {
                   className="flex subscribe__fields"
                 >
                   <div className="mc-field-group subscribe__email">
-                    <label className="screen-reader-text" htmlFor="mce-EMAIL">
-                      Email Address <span className="asterisk">*</span>
+                    <label htmlFor="mcemail">
+                      <span className="screen-reader-text">
+                        Email Address <span className="asterisk">*</span>
+                      </span>
+                      <input
+                        autoComplete="off"
+                        className="required email"
+                        id="mcemail"
+                        name="mcemail"
+                        onChange={this.handleInput}
+                        placeholder="Email Address"
+                        type="email"
+                        value={this.state.email}
+                      />
                     </label>
-                    <input
-                      type="email"
-                      value={this.state.email}
-                      onChange={this.handleInput}
-                      placeholder="Email Address"
-                      autoComplete="off"
-                      name="EMAIL"
-                      className="required email"
-                      id="mce-EMAIL"
-                    />
                   </div>
                   <div id="mce-responses" className="clear">
                     <div
