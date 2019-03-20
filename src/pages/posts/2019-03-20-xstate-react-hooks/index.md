@@ -326,4 +326,4 @@ And now, here’s the final payment form:
 
 <iframe src="https://codesandbox.io/embed/vmzllz0yp0?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-> *Hey, as I mentioned earlier in this post, I actually made a course about building JavaScript applications with state machines and statecharts. Version 2 is on its way! If you want to check out the course, you can find it at  .* [learnstatemachines.com](https://learnstatemachines.com/) 
+> *Hey, as I mentioned earlier in this post, I actually made a course about building JavaScript applications with state machines and statecharts. Version 2 is on its way! If you want to check out the course, you can find it at [learnstatemachines.com](https://learnstatemachines.com/).
