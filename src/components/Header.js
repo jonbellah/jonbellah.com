@@ -59,7 +59,7 @@ export default class Header extends Component {
             </Link>
             <Link
               activeClassName="active"
-              to="/articles/"
+              to="articles"
               className="site-nav__item"
               onClick={this.closeMobileMenu}
             >

@@ -95,7 +95,7 @@ const stateMachine = Machine({
 
 If we jump over to the [XState Visualizer](https://statecharts.github.io/xstate-viz/), we can drop the above definition in and see a visualization of the state machine.
 
-[image:BA74907A-63D3-49B2-AEB1-0F20345DBA8B-41752-000070CEEE7EBC7B/Screen Shot 2019-03-14 at 8.55.54 PM.png]
+![](stateviz.png)
 
 Looks like we nailed this one! We start in the _idle_ state, when the user submits the form, we enter the _loading_ state. From there, we’ll fire off a request and if the payment fails we transition to the _error_ state; and if it succeeds, we transition into the _success_ state. From the _error_ state, the user can submit the form again and be transitioned back into the _loading_ state.
 
@@ -324,6 +324,6 @@ When the user submits the form, we will call `preventDefault()` so that the brow
 
 And now, here’s the final payment form:
 
-{CodePen Embed: need to finish this one}
+<iframe src="https://codesandbox.io/embed/vmzllz0yp0?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 > *Hey, as I mentioned earlier in this post, I actually made a course about building JavaScript applications with state machines and statecharts. Version 2 is on its way! If you want to check out the course, you can find it at  .* [learnstatemachines.com](https://learnstatemachines.com/) 
