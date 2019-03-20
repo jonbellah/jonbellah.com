@@ -7,7 +7,7 @@ excerpt: "Over the last few months, I have become incredibly fond of using state
 
 Over the last few months, I’ve been working on a ground-up rewrite of my [state machines course](https://learnstatemachines.com). Despite the fact that it’s only a few months old — originally launched in August 2018 — there have been some pretty major developments in the both of the main libraries that the course relies upon heavily: XState and React.
 
-As part of the rewrite, I’ve been doing a ton of tinkering with all the new features —  trying to find places where I can make code quality improvements in the app that the course is centered on. In the process of that exploration, I have become incredibly fond of using statecharts with hooks.
+As part of the rewrite, I’ve been doing a ton of tinkering with all the new features in both, trying to find places where I can make code quality improvements in the app that the course is centered on. In the process of that exploration, I have become incredibly fond of using statecharts with hooks.
 
 When I sat down to write this post, I started looking back at some reference material and ended up looking at the code example in [my last post](https://jonbellah.com/articles/intro-state-machines/), which was published just a couple of weeks before hooks were announced. All of a sudden, that example started looking really dated to me… it’s amazing how patterns can change so much, so quickly.
 
