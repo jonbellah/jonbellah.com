@@ -42,6 +42,8 @@ const Contact = () => (
         expect to find in apps today: authentication, data fetching, CRUD
         actions, automated tests, and more.
       </p>
+
+      <a href="https://learnstatemachines.com">LearnStateMachines.com</a>
     </div>
 
     <Subscribe
