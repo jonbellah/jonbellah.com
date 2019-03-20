@@ -18,17 +18,23 @@ export default class Subscribe extends Component {
   }
 
   render() {
+    const heading = this.props.heading
+      ? this.props.heading
+      : `Like what you've read?`;
+    const content = this.props.content
+      ? this.props.content
+      : `If so, consider joining literally tens of other developers who
+    receive regular tips and tutorials right in their inbox. No spam.
+    Ever.`;
     return (
       <div className="subscribe container--narrow">
         <div className="subscribe__inner">
           <header className="subscribe__header">
-            <h3>Like what you've read?</h3>
+            <h3>{heading}</h3>
           </header>
 
           <div className="subscribe__content">
-            If so, consider joining literally tens of other developers who
-            receive regular tips and tutorials right in their inbox. No spam.
-            Ever.
+            {content}
             <div id="mc_embed_signup" className="subscribe__mailchimp">
               <form
                 action="//jonbellah.us4.list-manage.com/subscribe/post?u=cd903cc3fde462d23ad126e77&amp;id=7e4d3d0c6a"

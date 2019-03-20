@@ -1,8 +1,8 @@
 ---
 title: Use XState with React Hooks
-date: "2019-03-20T00:21:44.375Z"
+date: "2019-03-20T12:00:56.029Z"
 path: "/articles/xstate-react-hooks/"
-excerpt: "A few months ago, I announced that I was working on my first ever online course. Since then, I’ve been working hard to bring that course to life, so I wanted to take time to share some thoughts on the process so far."
+excerpt: "Over the last few months, I have become incredibly fond of using statecharts with React Hooks. In this post, we'll build a payment form with XState and React Hooks."
 ---
 
 Over the last few months, I’ve been working on a ground-up rewrite of my [state machines course](https://learnstatemachines.com). Despite the fact that it’s only a few months old — originally launched in August 2018 — there have been some pretty major developments in the both of the main libraries that the course relies upon heavily: XState and React.
