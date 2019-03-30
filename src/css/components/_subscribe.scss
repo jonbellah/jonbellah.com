@@ -34,7 +34,7 @@
 
     &:focus,
     &:hover {
-      border-bottom-color: $primary;
+      border-bottom-color: $secondary-300;
     }
   }
 
@@ -75,7 +75,7 @@
 }
 
 .subscribe__content {
-  color: rgba(255,255,255,0.85);
+  color: #BCCCDC;
   font-size: 1em;
   text-align: center;
 
@@ -96,7 +96,7 @@
   }
 
   .button {
-    background-color: $primary;
+    background-color: $secondary-500;
     border-bottom: 0;
     border-radius: 4px;
     color: #fff;
@@ -107,7 +107,7 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: $primary-dark;
+      background-color: $secondary-300;
     }
   }
 }
