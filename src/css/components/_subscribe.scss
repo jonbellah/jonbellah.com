@@ -19,6 +19,23 @@
   @include mq($from: tablet) {
     padding: 25px 50px 50px;
   }
+
+  ::-webkit-input-placeholder {
+    color: #bcccdc;
+    opacity: 1;
+  }
+  ::-moz-placeholder {
+    color: #bcccdc;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    color: #bcccdc;
+    opacity: 1;
+  }
+  :-moz-placeholder {
+    color: #bcccdc;
+    opacity: 1;
+  }
 }
 
 .subscribe__mailchimp {
@@ -75,7 +92,7 @@
 }
 
 .subscribe__content {
-  color: #BCCCDC;
+  color: #bcccdc;
   font-size: 1em;
   text-align: center;
 
