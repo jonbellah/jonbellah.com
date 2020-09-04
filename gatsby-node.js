@@ -28,7 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('src/templates/blog-post.js');
+    const blogPostTemplate = path.resolve('src/templates/blog-post.tsx');
     // Query for markdown nodes to use in creating pages.
     resolve(
       graphql(
