@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Slides = props => (
-  <div className="slides">
+interface Props {
+  id: string;
+}
+
+const Slides: React.FC<Props> = ({ id }) => (
+  <div>
     <iframe
       title="Conference slides"
-      src={`https://speakerdeck.com/player/${props.id}`}
+      src={`https://speakerdeck.com/player/${id}`}
     />
   </div>
 );

@@ -1,12 +1,18 @@
+import 'assets/css/styles.css';
+
 import React from 'react';
 import Helmet from 'react-helmet';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import '../css/styles.scss';
-import favicon from '../images/favicon.ico';
 
-const Layout = ({ children }) => (
-  <div>
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import Subscribe from 'components/Subscribe';
+
+interface Props {
+  children: React.ReactChild;
+}
+
+const Layout: React.FC<Props> = ({ children }) => (
+  <div className="bg-white">
     <Helmet
       title="JonBellah.com"
       meta={[
@@ -22,12 +28,14 @@ const Layout = ({ children }) => (
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Jon Bellah" />
       <meta name="theme-color" content="#EAB75C" />
-      <link rel="icon" href={favicon} type="x-icon/image" />
+      <link rel="icon" href="/favicon.ico" type="x-icon/image" />
       <link rel="manifest" href="/manifest.json" />
     </Helmet>
-    <div className="site">
+
+    <div>
       <Header />
-      <main className="site-content">{children}</main>
+      <main>{children}</main>
+      <Subscribe />
       <Footer />
     </div>
   </div>

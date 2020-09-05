@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Slides from '../../../components/Slides';
+import Slides from 'components/Slides';
 
-const JsSummit = () => {
+const JsSummit: React.FC = () => {
   return (
-    <div className="container">
-      <header className="page__header">
-        <h1 className="page__title">JavaScript Summit 2016</h1>
+    <div>
+      <header>
+        <h1>JavaScript Summit 2016</h1>
       </header>
 
-      <div className="page__content container--narrow">
+      <div>
         <Slides id="c3ba6d7a9d604894a78f186ebf3717f4" />
 
         <strong>Relevant Links</strong>

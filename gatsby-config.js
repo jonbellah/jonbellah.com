@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`fira sans:400,700`]
+        fonts: [`fira sans:400,700`],
       },
     },
     {
@@ -45,6 +45,7 @@ module.exports = {
           'gatsby-remark-vscode',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
+          'gatsby-remark-reading-time',
         ],
       },
     },
@@ -99,8 +100,17 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     'gatsby-plugin-layout',
     'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: { tailwind: true },
+    },
   ],
 };

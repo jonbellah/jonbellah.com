@@ -1,7 +1,21 @@
 const Shell = require('child_process');
 const path = require('path');
 
-exports.onCreateNode = function({ node, actions, getNode }) {
+exports.onCreateWebpackConfig = function ({ actions }) {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, 'src/components'),
+        pages: path.resolve(__dirname, 'src/pages'),
+        layouts: path.resolve(__dirname, 'src/layouts'),
+        assets: path.resolve(__dirname, 'src/assets'),
+        lib: path.resolve(__dirname, 'src/lib'),
+      },
+    },
+  });
+};
+
+exports.onCreateNode = function ({ node, actions, getNode }) {
   const { createNodeField } = actions;
 
   let slug;
@@ -28,7 +42,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('src/templates/blog-post.tsx');
+    const blogPostTemplate = path.resolve('src/templates/BlogPost/index.tsx');
     // Query for markdown nodes to use in creating pages.
     resolve(
       graphql(
@@ -45,7 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         `,
-      ).then(result => {
+      ).then((result) => {
         if (result.errors) {
           reject(result.errors);
         }
@@ -56,7 +70,6 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path,
             component: blogPostTemplate,
-            
           });
         });
       }),
@@ -65,10 +78,7 @@ exports.createPages = ({ graphql, actions }) => {
 };
 
 // Copy redirects on build
-exports.onPostBuild = function() {
+exports.onPostBuild = function () {
   Shell.execSync('cp src/_redirects public');
   Shell.execSync('cp src/_headers public');
-  Shell.execSync('cp src/manifest.json public');
-  Shell.execSync('cp -R src/images/icons public/icons');
-  Shell.execSync('cp src/images/favicon.ico public');
 };

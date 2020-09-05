@@ -1,15 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import talks from '../data/talks';
+import talks from 'assets/data/talks';
+import PageHeader from 'components/PageHeader';
+import Talk from 'components/Talk';
 
-import Talk from '../components/Talk';
-
-const Speaking = () => {
-  const talkList = talks.map(item => <Talk key={item.index} {...item} />);
+const Speaking: React.FC = () => {
+  const talkList = talks.map((item, i) => <Talk key={i} {...item} />);
 
   return (
-    <div className="container">
+    <div>
       <Helmet
         title="Speaking | JonBellah.com"
         meta={[
@@ -21,12 +21,9 @@ const Speaking = () => {
         ]}
       />
 
-      <header className="page__header">
-        <h1 className="page__title">Speaking</h1>
-      </header>
-
-      <div className="page__content container--narrow">
-        <p className="page__subhead">
+      <div className="prose prose-lg text-gray-500 mx-auto pb-24">
+        <PageHeader>Speaking</PageHeader>
+        <p>
           I am an enthusiastic and experienced speaker who enjoys presenting
           talks and workshops on front-end web development. These days, I
           primarily focus on JavaScript with a particular interest in React,
@@ -34,7 +31,8 @@ const Speaking = () => {
           event, please{' '}
           <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">
             get in touch
-          </a>.
+          </a>
+          .
         </p>
 
         <h3>Biography</h3>
@@ -54,7 +52,7 @@ const Speaking = () => {
         </p>
 
         <h3>Previous Talks</h3>
-        <div className="talks">{talkList}</div>
+        <div>{talkList}</div>
       </div>
     </div>
   );

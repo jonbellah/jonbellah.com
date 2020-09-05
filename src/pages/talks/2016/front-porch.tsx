@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Slides from '../../../components/Slides';
+import Slides from 'components/Slides';
 
-const FrontPorch = () => {
+const FrontPorch: React.FC = () => {
   return (
-    <div className="container">
-      <header className="page__header">
-        <h1 className="page__title">Front Porch 2016</h1>
+    <div>
+      <header>
+        <h1>Front Porch 2016</h1>
       </header>
 
-      <div className="page__content container--narrow">
+      <div>
         <Slides id="6d135a7b56b34e248ddf5a5c4132b2ab" />
 
         <strong>Relevant Links</strong>

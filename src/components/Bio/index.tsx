@@ -1,28 +1,43 @@
 import React from 'react';
-import avatar from '../images/avatar.jpg';
 
-const Bio = () => (
-  <div
-    className="author container--narrow"
-    itemProp="author"
-    itemScope
-    itemType="http://schema.org/Person"
-  >
-    <div className="author__avatar">
-      <img className="avatar" itemProp="image" src={avatar} alt="Jon Bellah" />
-    </div>
+{
+  /* <div itemProp="author" itemScope itemType="http://schema.org/Person" className="max-w-3xl mx-auto">
+<div>
+  <img itemProp="image" src="/avatar.jpg" alt="Jon Bellah" />
+</div>
 
-    <div className="author__info">
-      <span className="author__name" itemProp="name">
-        Jon Bellah
-      </span>
-      <div className="author__bio" itemProp="description">
-        I am a front-end web developer, speaker, and occasional writer. I
+<div>
+  <span itemProp="name">Jon Bellah</span>
+  <div itemProp="description">
+    
+  </div>
+</div>
+</div> */
+}
+
+const Bio: React.FC = () => (
+  <div className="flex flex-wrap items-center justify-center sm:justify-left border-t border-gray-200 w-full mt-10 pt-10 sm:px-1 max-w-3xl mx-auto">
+    <figure className="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center">
+      <img
+        itemProp="image"
+        src="/avatar.jpg"
+        alt="Jon Bellah"
+        className="rounded-full p-4 sm:p-0"
+      />
+    </figure>
+    <div className="px-4 sm:w-4/5 text-center sm:text-left">
+      <h4 className="font-sans font-bold text-lg sm:text-xl mb-2">
+        <span className="text-black hover:text-gray-600 capitalize border-b-2 border-transparent transition-colors duration-300">
+          Jon Bellah
+        </span>
+      </h4>
+      <p className="text-gray-500 prose">
+        I am a software engineer, teacher, speaker, and occasional writer. I
         currently work with the amazing team at{' '}
         <a href="https://ted.com">TED</a> as a front-end engineer. I live in the
         beautiful city of Denver, Colorado. You can follow me on Twitter at{' '}
         <a href="https://twitter.com/jonbellah">@jonbellah</a>.
-      </div>
+      </p>
     </div>
   </div>
 );
