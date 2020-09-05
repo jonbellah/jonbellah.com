@@ -28,7 +28,7 @@ const Layout: React.FC<Props> = ({ children }) => (
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Jon Bellah" />
       <meta name="theme-color" content="#EAB75C" />
-      <link rel="icon" href="/favicon.ico" type="x-icon/image" />
+      <link rel="icon" href="/images/favicon.ico" type="x-icon/image" />
       <link rel="manifest" href="/manifest.json" />
     </Helmet>
 
