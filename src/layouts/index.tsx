@@ -19,7 +19,7 @@ const Layout: React.FC<Props> = ({ children }) => (
         {
           name: 'description',
           content:
-            'Jon is a full-stack web developer, speaker, and occasional writer',
+            'Jon is a software engineer, teacher, speaker, and occasional writer from Denver, Colorado.',
         },
       ]}
     >
