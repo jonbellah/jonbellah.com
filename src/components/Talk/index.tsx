@@ -20,18 +20,36 @@ const Talk: React.FC<Props> = ({
   slides,
   video,
 }) => {
-  const talkLink = link ? <a href={link}>Link</a> : false;
-  const slidesLink = slides ? <Link to={slides}>Slides</Link> : false;
-  const videoLink = video ? <a href={video}>Video</a> : false;
+  const talkLink = link ? (
+    <a href={link} className="inline-block text-sm mr-4">
+      Link
+    </a>
+  ) : (
+    false
+  );
+  const slidesLink = slides ? (
+    <Link to={slides} className="inline-block text-sm mr-4">
+      Slides
+    </Link>
+  ) : (
+    false
+  );
+  const videoLink = video ? (
+    <a href={video} className="inline-block text-sm mr-4">
+      Video
+    </a>
+  ) : (
+    false
+  );
 
   return (
-    <div>
+    <div className="flex flex-col leading-snug">
       <strong>{conf}</strong>
-      <span>{date}</span>
-      <span>{location}</span>
-      <span>{talk}</span>
+      <span className="text-sm">{date}</span>
+      <span className="text-sm">{location}</span>
+      <span className="text-sm italic pb-3">{talk}</span>
 
-      <div>
+      <div className="flex flex-row">
         {talkLink}
         {slidesLink}
         {videoLink}

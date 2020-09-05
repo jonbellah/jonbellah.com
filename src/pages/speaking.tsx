@@ -27,8 +27,8 @@ const Speaking: React.FC = () => {
           I am an enthusiastic and experienced speaker who enjoys presenting
           talks and workshops on front-end web development. These days, I
           primarily focus on JavaScript with a particular interest in React,
-          Redux, and Jest. If you&#8217;re interested in having me speak at your
-          event, please{' '}
+          State Machines, GraphQL, Node.js, and web performance. If you&#8217;re
+          interested in having me speak at your event, please{' '}
           <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">
             get in touch
           </a>
@@ -52,7 +52,9 @@ const Speaking: React.FC = () => {
         </p>
 
         <h3>Previous Talks</h3>
-        <div>{talkList}</div>
+        <div className="mt-12 grid gap-16 border-t-2 border-gray-100 pt-12 lg:grid-cols-3 lg:col-gap-5 lg:row-gap-12">
+          {talkList}
+        </div>
       </div>
     </div>
   );
