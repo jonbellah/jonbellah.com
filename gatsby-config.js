@@ -73,6 +73,17 @@ module.exports = {
         `,
         feeds: [
           {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                });
+              });
+            },
             query: `
               {
                 allMarkdownRemark(
@@ -93,6 +104,7 @@ module.exports = {
                 }
               }
             `,
+            title: 'JonBellah.com',
             output: '/rss.xml',
           },
         ],
