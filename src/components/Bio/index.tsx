@@ -16,7 +16,7 @@ import React from 'react';
 }
 
 const Bio: React.FC = () => (
-  <div className="flex flex-wrap items-center justify-center sm:justify-left border-t border-gray-200 w-full mt-10 pt-10 sm:px-1 max-w-3xl mx-auto">
+  <div className="flex flex-wrap items-center justify-center sm:justify-left border-t border-gray-200 w-full pt-10 sm:px-1 max-w-3xl mx-auto">
     <figure className="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center">
       <img
         itemProp="image"

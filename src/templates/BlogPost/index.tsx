@@ -1,9 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import dayjs from 'dayjs';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import Bio from 'components/Bio';
+import Button from 'components/Button';
 import Pill from 'components/Pill';
 import { BlogPost, CategoryColors } from 'lib/types';
 import { getCategoryColor } from 'lib/utils';
@@ -90,6 +91,11 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
       </div>
 
       <Bio />
+      <div className="text-center pt-24">
+        <Link to="/articles">
+          <Button variant="secondary">&larr; Back to articles</Button>
+        </Link>
+      </div>
     </article>
   );
 };
