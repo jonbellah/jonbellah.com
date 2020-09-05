@@ -1,18 +1,17 @@
 import React from 'react';
 
+import PageHeader from 'components/PageHeader';
 import Slides from 'components/Slides';
 
 const FrontPorch: React.FC = () => {
   return (
-    <div>
-      <header>
-        <h1>Front Porch 2016</h1>
-      </header>
+    <div className="prose prose-lg text-gray-500 mx-auto pb-24">
+      <PageHeader>Front Porch 2016</PageHeader>
 
       <div>
         <Slides id="6d135a7b56b34e248ddf5a5c4132b2ab" />
 
-        <strong>Relevant Links</strong>
+        <h2>Relevant Links</h2>
         <ul>
           <li>
             <a href="https://github.com/JonBellah/visual-regression-testing-demo">

@@ -1,18 +1,17 @@
 import React from 'react';
 
+import PageHeader from 'components/PageHeader';
 import Slides from 'components/Slides';
 
 const JsSummit: React.FC = () => {
   return (
-    <div>
-      <header>
-        <h1>JavaScript Summit 2016</h1>
-      </header>
+    <div className="prose prose-lg text-gray-500 mx-auto pb-24">
+      <PageHeader>JavaScript Summit 2016</PageHeader>
 
       <div>
         <Slides id="c3ba6d7a9d604894a78f186ebf3717f4" />
 
-        <strong>Relevant Links</strong>
+        <h2>Relevant Links</h2>
         <ul>
           <li>
             <a href="https://github.com/JonBellah/visual-regression-testing-demo">
