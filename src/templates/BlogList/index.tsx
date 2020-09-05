@@ -4,7 +4,8 @@ import { graphql } from 'gatsby';
 
 import ArticlePreview from 'components/ArticlePreview';
 import PageHeader from 'components/PageHeader';
-import { BlogPostNode } from 'lib/types';
+import Pagination from 'components/Pagination';
+import { BlogPostNode, PaginationContext } from 'lib/types';
 
 export const pageQuery = graphql`
   query BlogQuery($skip: Int!, $limit: Int!) {
@@ -49,16 +50,10 @@ interface Props {
       edges: BlogPostNode[];
     };
   };
-  pageContext: {
-    currentPage: number;
-    limit: number;
-    numPages: number;
-    skip: number;
-  };
+  pageContext: PaginationContext;
 }
 
 const Article: React.FC<Props> = ({ data, pageContext }) => {
-  console.log(pageContext);
   const posts = data.allMarkdownRemark.edges;
 
   const postList = posts
@@ -72,7 +67,7 @@ const Article: React.FC<Props> = ({ data, pageContext }) => {
     ));
 
   return (
-    <div className="pb-24">
+    <div className="pb-24 p-4">
       <Helmet
         title="Articles | JonBellah.com"
         meta={[
@@ -87,7 +82,11 @@ const Article: React.FC<Props> = ({ data, pageContext }) => {
         <PageHeader>Articles</PageHeader>
       </div>
 
-      <div className="max-w-3xl text-gray-500 mx-auto pb-24">{postList}</div>
+      <div className="max-w-3xl text-gray-500 mx-auto">
+        {postList}
+      </div>
+
+      <Pagination pageContext={pageContext} />
     </div>
   );
 };

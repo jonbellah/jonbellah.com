@@ -20,7 +20,7 @@ const Products: React.FC = () => {
           <div className="lg:col-span-2">
             <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:col-gap-6 sm:row-gap-12 sm:space-y-0 lg:col-gap-8">
               <li>
-                <div className="space-y-4 p-6">
+                <div className="space-y-4 sm:p-6">
                   <a
                     href="https://jsfoundry.dev"
                     className="block rounded bg-gray-200 text-gray-600 relative py-16 px-8 flex items-center justify-center hover:text-indigo-600 transition duration-500 ease-in-out"
@@ -70,7 +70,7 @@ const Products: React.FC = () => {
               </li>
 
               <li>
-                <div className="space-y-4 p-6">
+                <div className="space-y-4 sm:p-6">
                   <a
                     href="https://bugcatcher.io"
                     className="block rounded bg-gray-200 text-gray-600 relative py-16 px-8 flex items-center justify-center hover:text-indigo-600 transition duration-500 ease-in-out"

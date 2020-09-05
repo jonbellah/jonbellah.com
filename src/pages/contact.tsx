@@ -13,7 +13,7 @@ const Contact: React.FC = () => (
     <div className="prose prose-lg text-gray-500 mx-auto pb-24 text-center">
       <PageHeader>Contact</PageHeader>
 
-      <p className="text-center">
+      <p className="text-center max-w-xl mx-auto">
         The best way to get in touch is to hit me up on Twitter at{' '}
         <a href="https://twitter.com/jonbellah">@jonbellah</a>. If you&#8217;d
         rather send an email, though, you can reach me at:

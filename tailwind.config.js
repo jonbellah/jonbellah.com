@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: {},
+  variants: {
+    borderWidth: ['last'],
+  },
   plugins: [require('@tailwindcss/ui')],
 };

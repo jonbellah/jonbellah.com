@@ -32,3 +32,10 @@ export interface BlogPost {
 export interface BlogPostNode {
   node: BlogPost;
 }
+
+export interface PaginationContext {
+  currentPage: number;
+  limit: number;
+  numPages: number;
+  skip: number;
+}

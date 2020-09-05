@@ -74,7 +74,7 @@ console.log(data);
       <Hero />
       <Products />
       <div className="bg-white pb-24 px-4 pt-8 sm:px-6 lg:pt-8 lg:pb-28 lg:px-8">
-        <div className="relative max-w-5xl mx-auto lg:max-w-7xl px-4 py-6 sm:px-6">
+        <div className="relative max-w-5xl mx-auto lg:max-w-7xl py-6 sm:px-6">
           <div>
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-center text-gray-900 sm:text-4xl sm:leading-10">
               Recent Articles

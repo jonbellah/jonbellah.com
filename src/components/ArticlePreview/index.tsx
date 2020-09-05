@@ -10,7 +10,7 @@ const ArticlePreview: React.FC<BlogPost> = ({ frontmatter, fields }) => {
   return (
     <article
       key={frontmatter.path}
-      className="pb-16 mb-16 border-b border-gray-200"
+      className="pb-16 mb-16 border-b border-gray-200 last:border-b-0 last:mb-0"
     >
       <Pill
         color={getCategoryColor(frontmatter.category.slug) as CategoryColors}
@@ -18,7 +18,7 @@ const ArticlePreview: React.FC<BlogPost> = ({ frontmatter, fields }) => {
         {frontmatter.category.label}
       </Pill>
       <Link to={frontmatter.path}>
-        <h2 className="text-xl lg:text-3xl font-extrabold pt-3 pb-3 text-gray-900 leading-tight">
+        <h2 className="text-2xl lg:text-3xl font-extrabold pt-3 pb-3 text-gray-900 leading-tight">
           {frontmatter.title}
         </h2>
         <div className="text-gray-400 text-md leading-tight pb-6">
