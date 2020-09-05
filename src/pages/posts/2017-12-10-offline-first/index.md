@@ -3,6 +3,9 @@ title: Building Offline First Applications
 date: "2017-12-10T15:00:03.149Z"
 path: "/articles/offline-first/"
 excerpt: "It took more than 25 years for the first three billion people to come online, but over the next decade that number is expected to double. It's with these people and problems in mind that developers have begun shifting towards an offline first approach for websites and applications."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 Have you ever tried reading your email while riding the subway? Checked your Twitter feed while connected to in-flight wifi? Attempted to pull up a map while wandering around in a foreign country?

@@ -4,7 +4,9 @@ import dayjs from 'dayjs';
 import { graphql } from 'gatsby';
 
 import Bio from 'components/Bio';
-import { BlogPost } from 'lib/types';
+import Pill from 'components/Pill';
+import { BlogPost, CategoryColors } from 'lib/types';
+import { getCategoryColor } from 'lib/utils';
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -21,6 +23,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         excerpt
+        category {
+          label
+          slug
+        }
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }
@@ -40,7 +51,6 @@ interface Props {
 const BlogPostTemplate: React.FC<Props> = ({ data }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const date = new Date(post.frontmatter.date);
 
   return (
     <article className="pb-24">
@@ -52,13 +62,25 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
       <div className="relative py-16 bg-white overflow-hidden max-w-5xl mx-auto">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto pb-12 text-center">
-            <p className="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-              category
-            </p>
+            <Pill
+              color={
+                getCategoryColor(
+                  post.frontmatter.category?.slug,
+                ) as CategoryColors
+              }
+            >
+              {post.frontmatter.category.label}
+            </Pill>
             <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
               {post.frontmatter.title}
             </h1>
-            <time className="text-gray-500 text-md">{dayjs(date).format('MMMM D, YYYY')}</time>
+            <div className="text-gray-400 text-md leading-tight pb-6">
+              <time dateTime="2020-03-16">
+                {dayjs(post.frontmatter.date).format('MMM D, YYYY')}
+              </time>
+              <span className="mx-1">&middot;</span>
+              <span>{post.fields?.readingTime?.text}</span>
+            </div>
           </div>
           <div
             className="prose prose-lg text-gray-500 mx-auto"

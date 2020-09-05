@@ -3,6 +3,9 @@ title: How to Create a Simple CSS Dropdown Menu
 date: "2013-08-12T07:00:00.000Z"
 path: "/articles/create-a-simple-css-dropdown/"
 excerpt: "Dropdown menus provide a nice hierarchical view of your menu structure, allowing you to help narrow the visitors focus and find exactly what they're looking for and reducing navigation clutter."
+category:
+  label: 'Frontend'
+  slug: 'frontend'
 ---
 
 Dropdown menus provide a nice hierarchical view of your menu structure, allowing you to help narrow the visitors focus and find exactly what they're looking for and reducing navigation clutter. Today, we'll take a look at how to create a CSS dropdown menu. This is a very simple implementation that is ideal for just about any situation.

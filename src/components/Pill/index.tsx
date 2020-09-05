@@ -1,17 +1,9 @@
 import React from 'react';
 
+import { CategoryColors } from 'lib/types';
+
 interface Props {
-  color?:
-    | 'gray'
-    | 'red'
-    | 'orange'
-    | 'yellow'
-    | 'green'
-    | 'teal'
-    | 'blue'
-    | 'indigo'
-    | 'purple'
-    | 'pink';
+  color?: CategoryColors;
   children: React.ReactChild;
 }
 

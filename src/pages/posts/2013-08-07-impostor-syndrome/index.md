@@ -1,8 +1,11 @@
 ---
 title: Impostor Syndrome
-date: "2013-08-07T07:00:00.000Z"
-path: "/articles/impostor-syndrome/"
+date: '2013-08-07T07:00:00.000Z'
+path: '/articles/impostor-syndrome/'
 excerpt: "Impostor syndrome is a psychological phenomenon where people aren't able to internalize or accept their accomplishments."
+category:
+  label: 'General'
+  slug: 'general'
 ---
 
 Impostor syndrome is a psychological phenomenon where people aren't able to internalize or accept their accomplishments. Regardless of evidence to the contrary, there's always a feeling that you don't quite belong or that you've fooled everyone into believing you're smarter than you actually are. You're an impostor. A fraud.

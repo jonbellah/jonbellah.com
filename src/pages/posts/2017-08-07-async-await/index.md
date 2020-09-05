@@ -2,7 +2,10 @@
 title: A Look at Async/Await in ES2017
 date: "2017-08-09T14:17:39.475Z"
 path: "/articles/async-await/"
-excerpt: ""
+excerpt: "Writing asynchronous code in JavaScript has traditionally been a pretty messy endeavor. It usually meant writing callbacks on top of callbacks, handling errors multiple levels deep, resulting in the infamous pyramid of doom."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 Writing asynchronous code in JavaScript has traditionally been a pretty messy endeavor. It usually meant writing callbacks on top of callbacks, handling errors multiple levels deep, resulting in the infamous [pyramid of doom](https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)).

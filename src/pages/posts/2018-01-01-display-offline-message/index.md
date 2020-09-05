@@ -3,6 +3,9 @@ title: Online and Offline Events with JavaScript
 date: "2018-01-01T19:15:28.100Z"
 path: "/articles/online-offline-events/"
 excerpt: "Let's say we want to display a message to our users when they're offline. Unfortunately, navigator.onLine is considered an unreliable API."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 In my last post, I wrote about [building offline first applications](https://jonbellah.com/articles/offline-first/). One thing I did not cover was how to detect when a user is online or offline, so that your application can respond accordingly -- such as when you need to display connectivity status to a user or check whether a user is online before performing an action in your application.

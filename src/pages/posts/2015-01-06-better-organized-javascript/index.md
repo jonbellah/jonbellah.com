@@ -3,6 +3,9 @@ title: Writing Better Organized Front-End JavaScript
 date: "2015-01-06T07:00:00.000Z"
 path: "/articles/better-organized-javascript/"
 excerpt: "Creating organized and easily maintainable front-end related JavaScript files is something that took me a long time to figure out. It's also something that I've noticed a lot of other people struggling with."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 Creating organized and easily maintainable front-end related JavaScript files is something that took me a long time to figure out. It's also something that I've noticed a lot of other people struggling with; by way of code reviews and just looking through other peoples projects, I've noticed just how easy it is to end up with spaghetti-like JavaScript.

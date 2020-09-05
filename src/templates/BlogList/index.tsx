@@ -7,13 +7,17 @@ import PageHeader from 'components/PageHeader';
 import { BlogPostNode } from 'lib/types';
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           frontmatter {
@@ -23,6 +27,15 @@ export const pageQuery = graphql`
             title
             date
             excerpt
+            category {
+              label
+              slug
+            }
+          }
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }
@@ -36,9 +49,16 @@ interface Props {
       edges: BlogPostNode[];
     };
   };
+  pageContext: {
+    currentPage: number;
+    limit: number;
+    numPages: number;
+    skip: number;
+  };
 }
 
-const Article: React.FC<Props> = ({ data }) => {
+const Article: React.FC<Props> = ({ data, pageContext }) => {
+  console.log(pageContext);
   const posts = data.allMarkdownRemark.edges;
 
   const postList = posts

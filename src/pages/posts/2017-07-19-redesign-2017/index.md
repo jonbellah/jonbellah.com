@@ -3,6 +3,9 @@ title: Introducing a Fresh New Look
 date: "2017-07-19T04:11:28.533Z"
 path: "/articles/fresh-new-look/"
 excerpt: "This past weekend, I finally decided it was time to refresh things around here. Despite the fact that I still felt the old design looked pretty good, I didn't feel that the underlying technology and overall feel were particularly reflective of how I (or, increasingly, anyone) build sites these days."
+category:
+  label: 'General'
+  slug: 'general'
 ---
 
 Welcome to the new digs!

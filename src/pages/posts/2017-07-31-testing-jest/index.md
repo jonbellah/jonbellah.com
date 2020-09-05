@@ -3,6 +3,9 @@ title: Intro to Testing React Applications with Jest and Enzyme
 date: "2017-07-31T13:51:03.719Z"
 path: "/articles/intro-react-testing/"
 excerpt: "React testing (and JS testing, in general) is an incredibly broad topic with a lot of nuance. In this post, I primarily want to focus on exploring some of the basic what's and why's of, as well as a few best practices for, testing React applications."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 Automated testing is something that I've always found particularly interesting. In fact, it's a topic that I've even done a few [talks](https://jonbellah.com/speaking/) and written a few [articles](https://css-tricks.com/visual-regression-testing-with-phantomcss/) on in the past.

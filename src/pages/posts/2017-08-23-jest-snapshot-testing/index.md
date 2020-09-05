@@ -3,6 +3,9 @@ title: Snapshot Testing with Jest
 date: "2017-08-23T12:32:24.389Z"
 path: "/articles/jest-snapshot-testing/"
 excerpt: "Snapshot testing is a form of regression testing that verifies that your UI does not change unexpectedly."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 

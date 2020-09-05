@@ -3,6 +3,9 @@ title: Managing Critical CSS
 date: "2016-03-01T07:00:00.000Z"
 path: "/articles/managing-critical-css/"
 excerpt: "When it comes to optimizing performance, there are a ton of little things that we, as developers, can do to squeeze every last ounce of speed out of our sites. One of these methods involves inlining the CSS for elements that appear."
+category:
+  label: 'Frontend'
+  slug: 'frontend'
 ---
 
 Performance is critical. [Seriously](https://wpostats.com/). When it comes to optimizing performance, there are a ton of little things that we, as developers, can do to squeeze every last ounce of speed out of our sites. One of these methods involves inlining the CSS for elements that appear, for lack of a better term, "above the fold." This is known as the critical CSS.

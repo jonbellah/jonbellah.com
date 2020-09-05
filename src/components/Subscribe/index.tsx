@@ -83,8 +83,8 @@ const Subscribe: React.FC<Props> = () => {
 
   return (
     <div className="bg-gray-800">
-      <div className="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center">
-        <div className="lg:w-0 lg:flex-1">
+      <div className="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:px-8 flex flex-col lg:items-center">
+        <div className="text-center pb-8">
           <h2
             className="text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10"
             id="newsletter-headline"

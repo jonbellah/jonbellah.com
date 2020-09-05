@@ -3,6 +3,9 @@ title: Building Faster, More Scalable WordPress Sites Using the Transients API
 date: "2014-10-20T07:00:00.000Z"
 path: "/articles/wordpress-transients-api/"
 excerpt: "The WordPress Transients API is a super useful way to temporarily store cached data. It was introduced in WordPress 2.8 (all the way back in 2009, so it's pretty much an antique or something now), but I've only recently become more aware of it and started using it heavily in production."
+category:
+  label: 'WordPress'
+  slug: 'wordpress'
 ---
 
 The WordPress Transients API is a super useful way to temporarily store cached data. It was introduced in WordPress 2.8 (all the way back in 2009, so it's pretty much an antique or something now), but I've only recently become more aware of it and started using it heavily in production... as always, I find myself late to the party.

@@ -3,6 +3,9 @@ title: Thoughts on Building My First Online Course
 date: "2018-05-15T13:03:36.811Z"
 path: "/articles/building-my-first-course/"
 excerpt: "A few months ago, I announced that I was working on my first ever online course. Since then, I’ve been working hard to bring that course to life, so I wanted to take time to share some thoughts on the process so far."
+category:
+  label: 'Courses'
+  slug: 'courses'
 ---
 
 A few months ago, I announced that I was working on my first ever online course — [Learn State Machines](https://learnstatemachines.com). Since then I’ve been working hard to bring that course to life, so I wanted to take some time to share some thoughts on the process so far.

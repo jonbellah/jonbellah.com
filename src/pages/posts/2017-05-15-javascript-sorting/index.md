@@ -3,6 +3,9 @@ title: JavaScript Sorting Algorithms
 date: "2017-05-15T09:42:00.000Z"
 path: "/articles/sorting-algorithms/"
 excerpt: "I had the privilege of attending jsDay last week in Verona, Italy. One of my favorite talks during the two-day event was titled..."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 I had the privilege of attending [jsDay](https://2017.jsday.it/) last week in Verona, Italy. One of my favorite talks during the two-day event was titled "CS101 Intro to Computational Complexity: The Sorting Problem" by [Claudia Hernández](https://twitter.com/koste4).

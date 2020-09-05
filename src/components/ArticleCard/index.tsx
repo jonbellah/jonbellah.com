@@ -2,18 +2,18 @@ import React from 'react';
 import dayjs from 'dayjs';
 import { Link } from 'gatsby';
 
-import { BlogPost } from 'lib/types';
+import Pill from 'components/Pill';
+import { BlogPost, CategoryColors } from 'lib/types';
+import { getCategoryColor } from 'lib/utils';
 
 const ArticleCard: React.FC<BlogPost> = ({ frontmatter, fields }) => {
   return (
     <div>
-      <div>
-        <div className="inline-block">
-          <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800">
-            Article
-          </span>
-        </div>
-      </div>
+      <Pill
+        color={getCategoryColor(frontmatter.category.slug) as CategoryColors}
+      >
+        {frontmatter.category.label}
+      </Pill>
       <Link to={frontmatter.path} className="block">
         <h3 className="mt-4 text-xl leading-7 font-semibold text-gray-900">
           {frontmatter.title}

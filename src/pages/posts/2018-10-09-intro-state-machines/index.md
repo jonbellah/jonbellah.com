@@ -2,7 +2,10 @@
 title: A Complete Introduction to State Machines in JavaScript
 date: "2018-10-09T12:33:37.986Z"
 path: "/articles/intro-state-machines/"
-excerpt: One of the most compelling changes I’ve made in my approach to web development came when I introduced state machines and statecharts in my applications. 
+excerpt: "One of the most compelling changes I’ve made in my approach to web development came when I introduced state machines and statecharts in my applications."
+category:
+  label: 'JavaScript'
+  slug: 'javascript'
 ---
 
 I first started building things for the web in the late 90s, when I was about 11 or 12 years old. For the first several years, I mostly spent my time building sites dedicated to videogames that I was playing. At the time, Microsoft FrontPage was my tool of choice.

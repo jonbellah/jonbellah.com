@@ -26,6 +26,10 @@ export const pageQuery = graphql`
             excerpt
             title
             date
+            category {
+              label
+              slug
+            }
           }
           fields {
             readingTime {
@@ -54,7 +58,7 @@ interface Props {
 
 const Index: React.FC<Props> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
-
+console.log(data);
   return (
     <div>
       <Helmet

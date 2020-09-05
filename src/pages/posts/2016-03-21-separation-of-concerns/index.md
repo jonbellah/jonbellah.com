@@ -3,6 +3,9 @@ title: Separation of Concerns
 date: "2016-03-21T06:00:00.000Z"
 path: "/articles/separation-of-concerns/"
 excerpt: "In short, separation of concerns is a guiding principal in software development centered on the idea that programs should have distinct sections, with each section being responsible for its own concern."
+category:
+  label: 'Frontend'
+  slug: 'frontend'
 ---
 
 I review a _lot_ of code. That experience has given me an interesting insight into the approach and thought process of many, many other developers. I often run across code where developers are mixing the responsibilities of their HTML, CSS, and JavaScript, making their code difficult to update or build upon. 
