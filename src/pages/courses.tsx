@@ -15,7 +15,7 @@ const Contact: React.FC = () => (
       ]}
     />
 
-    <div className="prose prose-lg text-gray-500 mx-auto pb-24">
+    <div className="prose prose-lg text-gray-500 mx-auto pb-24 p-4">
       <PageHeader>Courses</PageHeader>
       <p>
         If you&apos;re a front-end developer interested in leveling up your

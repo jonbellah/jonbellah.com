@@ -21,7 +21,7 @@ const Speaking: React.FC = () => {
         ]}
       />
 
-      <div className="prose prose-lg text-gray-500 mx-auto pb-24">
+      <div className="prose prose-lg text-gray-500 mx-auto pb-24 p-4">
         <PageHeader>Speaking</PageHeader>
         <p>
           I am an enthusiastic and experienced speaker who enjoys presenting
