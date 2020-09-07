@@ -9,3 +9,13 @@ html {
 .prose .font-bold {
   font-weight: 700;
 }
+
+.prose a {
+  color: #3182CE !important;
+}
+
+.prose a:hover,
+.prose a:focus,
+.prose a:active {
+  color: #4299E1 !important;
+}

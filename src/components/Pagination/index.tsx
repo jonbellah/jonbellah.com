@@ -18,7 +18,7 @@ const Pagination: React.FC<Props> = ({ pageContext }) => {
   const nextPage = `/articles/${(currentPage + 1).toString()}`;
   const numberClass = (page: number): string =>
     currentPage === page
-      ? '-mt-px border-t-2 border-indigo-500 pt-4 px-4 inline-flex items-center text-sm leading-5 font-medium text-indigo-600 focus:outline-none focus:text-indigo-800 focus:border-indigo-700 transition ease-in-out duration-150'
+      ? '-mt-px border-t-2 border-blue-500 pt-4 px-4 inline-flex items-center text-sm leading-5 font-medium text-blue-600 focus:outline-none focus:text-blue-800 focus:border-blue-700 transition ease-in-out duration-150'
       : '-mt-px border-t-2 border-transparent pt-4 px-4 inline-flex items-center text-md leading-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-400 transition ease-in-out duration-150';
 
   return (

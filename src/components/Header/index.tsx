@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <div>
           <Link
             to="/"
-            className="flex text-gray-800 hover:text-indigo-600 transition duration-500 ease-in-out"
+            className="flex text-gray-800 hover:text-blue-600 transition duration-500 ease-in-out"
           >
             <Logo className="h-10 w-10" />
           </Link>
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
             <div className="rounded-lg shadow-xs divide-y-2 divide-gray-50">
               <div className="pt-4 pb-6 px-4 space-y-6">
                 <div className="flex items-center justify-between">
-                  <div className="text-gray-800 hover:text-indigo-600"></div>
+                  <div className="text-gray-800 hover:text-blue-600"></div>
                   <div className="-mr-2">
                     <button
                       onClick={() => setExpanded(!expanded)}

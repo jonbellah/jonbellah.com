@@ -23,7 +23,7 @@ const Products: React.FC = () => {
                 <div className="space-y-4 sm:p-6">
                   <a
                     href="https://jsfoundry.dev"
-                    className="block rounded bg-gray-200 text-gray-600 relative py-16 px-8 flex items-center justify-center hover:text-indigo-600 transition duration-500 ease-in-out"
+                    className="block rounded bg-gray-200 text-gray-600 relative py-16 px-8 flex items-center justify-center hover:text-blue-600 transition duration-500 ease-in-out"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -33,7 +33,7 @@ const Products: React.FC = () => {
                     <h4>JSFoundry</h4>
                     <a
                       href="https://jsfoundry.dev"
-                      className="text-indigo-600"
+                      className="text-blue-600"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -73,7 +73,7 @@ const Products: React.FC = () => {
                 <div className="space-y-4 sm:p-6">
                   <a
                     href="https://bugcatcher.io"
-                    className="block rounded bg-gray-200 text-gray-600 relative py-16 px-8 flex items-center justify-center hover:text-indigo-600 transition duration-500 ease-in-out"
+                    className="block rounded bg-gray-200 text-gray-600 relative py-16 px-8 flex items-center justify-center hover:text-blue-600 transition duration-500 ease-in-out"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -83,7 +83,7 @@ const Products: React.FC = () => {
                     <h4>BugCatcher</h4>
                     <a
                       href="https://bugcatcher.io"
-                      className="text-indigo-600"
+                      className="text-blue-600"
                       target="_blank"
                       rel="noreferrer"
                     >
