@@ -2,7 +2,7 @@ import React from 'react';
 
 const JSFLogo: React.FC = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2330 666" className="w-1/2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2330 666" className="h-10">
       <g fillRule="nonzero" fill="none">
         <g>
           <rect fill="currentColor" width="630" height="630" rx="32" />
