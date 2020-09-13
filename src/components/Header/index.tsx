@@ -134,7 +134,7 @@ const Header: React.FC = () => {
                     </Link>
 
                     <Link
-                      to="/articles"
+                      to="/contact"
                       onClick={() => setExpanded(false)}
                       className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
                     >
