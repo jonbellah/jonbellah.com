@@ -58,7 +58,7 @@ interface Props {
 
 const Index: React.FC<Props> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
-console.log(data);
+
   return (
     <div>
       <Helmet

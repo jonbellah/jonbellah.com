@@ -18,10 +18,8 @@ const Bio: React.FC = () => (
       </h4>
       <p className="text-gray-500 prose">
         I am a software engineer, teacher, speaker, and occasional writer. I
-        currently work with the amazing team at{' '}
-        <a href="https://ted.com">TED</a> as a front-end engineer. I live in the
-        beautiful city of Denver, Colorado. You can follow me on Twitter at{' '}
-        <a href="https://twitter.com/jonbellah">@jonbellah</a>.
+        live in the beautiful city of Denver, Colorado. You can follow me on
+        Twitter at <a href="https://twitter.com/jonbellah">@jonbellah</a>.
       </p>
     </div>
   </div>

@@ -26,9 +26,9 @@ const Speaking: React.FC = () => {
         <p>
           I am an enthusiastic and experienced speaker who enjoys presenting
           talks and workshops on front-end web development. These days, I
-          primarily focus on JavaScript with a particular interest in React,
-          State Machines, GraphQL, Node.js, and web performance. If you&#8217;re
-          interested in having me speak at your event, please{' '}
+          primarily focus on JavaScript/TypeScript with a particular interest in
+          React, State Machines, GraphQL, Node.js, and web performance. If
+          you&#8217;re interested in having me speak at your event, please{' '}
           <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#111;&#110;&#098;&#101;&#108;&#108;&#097;&#104;&#046;&#099;&#111;&#109;">
             get in touch
           </a>
@@ -37,11 +37,11 @@ const Speaking: React.FC = () => {
 
         <h3>Biography</h3>
         <p>
-          Jon is a Front-end Engineer at <a href="https://ted.com">TED</a>,
-          living in the beautiful city of Denver, Colorado. He began writing
-          code when he was 10 years old; with the help of Geocities, Microsoft
-          FrontPage, and a little bit of HTML Goodies, he started on the journey
-          that&#8217;s led him to where he is today.
+          Jon is a Front-end Engineer, living in the beautiful city of Denver,
+          Colorado. He began writing code when he was 10 years old; with the
+          help of Geocities, Microsoft FrontPage, and a little bit of HTML
+          Goodies, he started on the journey that&#8217;s led him to where he is
+          today.
         </p>
 
         <p>
