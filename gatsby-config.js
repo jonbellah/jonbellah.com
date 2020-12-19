@@ -42,7 +42,12 @@ module.exports = {
               wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
-          'gatsby-remark-vscode',
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: 'Monokai',
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-reading-time',
@@ -119,10 +124,6 @@ module.exports = {
       options: {
         postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
       },
-    },
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: { tailwind: true },
     },
   ],
 };
