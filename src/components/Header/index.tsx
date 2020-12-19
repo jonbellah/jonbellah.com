@@ -63,6 +63,12 @@ const Header: React.FC = () => {
                 Speaking
               </Link>
               <Link
+                to="/uses"
+                className="inline-block px-5 py-2 text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              >
+                Uses
+              </Link>
+              <Link
                 to="/contact"
                 className="inline-block px-5 py-2 text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
               >
@@ -140,6 +146,16 @@ const Header: React.FC = () => {
                     >
                       <div className="text-base text-right w-full leading-6 font-medium text-gray-900">
                         Contact
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="/uses"
+                      onClick={() => setExpanded(false)}
+                      className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                    >
+                      <div className="text-base text-right w-full leading-6 font-medium text-gray-900">
+                        Uses
                       </div>
                     </Link>
                   </nav>

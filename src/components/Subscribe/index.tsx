@@ -60,7 +60,7 @@ const Subscribe: React.FC<Props> = () => {
               >
                 Like what you&apos;ve read?
               </h2>
-              <p className="mt-3 max-w-xl text-lg leading-6 text-gray-300 mx-auto">
+              <p className="mt-3 max-w-xl text-lg leading-6 text-blue-200 mx-auto">
                 If so, consider joining literally tens of other developers who
                 receive regular tips and tutorials right in their inbox. No
                 spam. Ever.
