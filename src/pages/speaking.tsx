@@ -37,7 +37,7 @@ const Speaking: React.FC = () => {
 
         <h3>Biography</h3>
         <p>
-          Jon is a Front-end Engineer, living in the beautiful city of Denver,
+          Jon is a software engineer, living in the beautiful city of Denver,
           Colorado. He began writing code when he was 10 years old; with the
           help of Geocities, Microsoft FrontPage, and a little bit of HTML
           Goodies, he started on the journey that&#8217;s led him to where he is

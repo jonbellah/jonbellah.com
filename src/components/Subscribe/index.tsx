@@ -51,7 +51,7 @@ const Subscribe: React.FC<Props> = () => {
     <MailchimpSubscribe
       url="https://jonbellah.us4.list-manage.com/subscribe/post?u=cd903cc3fde462d23ad126e77&amp;id=7e4d3d0c6a"
       render={({ subscribe, status, message }) => (
-        <div className="bg-gray-800">
+        <div className="bg-gray-800 bg-circuit">
           <div className="max-w-3xl mx-auto pt-20 pb-10 px-4 sm:px-6 lg:px-8 flex flex-col lg:items-center">
             <div className="text-center pb-8">
               <h2

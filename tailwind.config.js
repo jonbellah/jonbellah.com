@@ -11,4 +11,15 @@ module.exports = {
     borderWidth: ['last'],
   },
   plugins: [require('@tailwindcss/ui')],
+  typography: {
+    default: {
+      css: {
+        pre: false,
+        code: false,
+        'pre code': false,
+        'code::before': false,
+        'code::after': false,
+      },
+    },
+  },
 };

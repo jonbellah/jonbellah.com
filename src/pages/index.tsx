@@ -67,7 +67,7 @@ const Index: React.FC<Props> = ({ data }) => {
           {
             name: 'description',
             content:
-              'Jon is a front-end web developer, speaker, and occasional writer living in the beautiful city of Denver, Colorado.',
+              'Jon is a software engineer, speaker, and occasional writer living in the beautiful city of Denver, Colorado.',
           },
         ]}
       />

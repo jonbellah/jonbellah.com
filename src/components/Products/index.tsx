@@ -13,7 +13,7 @@ const Products: React.FC = () => {
               Here&apos;s what I&apos;m working on
             </h2>
             <p className="text-xl leading-7 text-gray-500">
-              When I&apos;m not slingin&apos; code at my day job, I&apos;m
+              When I&apos;m not slingin&apos; code at work, I&apos;m
               usually working on one of these two projects.
             </p>
           </div>
