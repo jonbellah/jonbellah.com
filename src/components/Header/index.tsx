@@ -140,22 +140,22 @@ const Header: React.FC = () => {
                     </Link>
 
                     <Link
-                      to="/contact"
-                      onClick={() => setExpanded(false)}
-                      className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                    >
-                      <div className="text-base text-right w-full leading-6 font-medium text-gray-900">
-                        Contact
-                      </div>
-                    </Link>
-
-                    <Link
                       to="/uses"
                       onClick={() => setExpanded(false)}
                       className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
                     >
                       <div className="text-base text-right w-full leading-6 font-medium text-gray-900">
                         Uses
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="/contact"
+                      onClick={() => setExpanded(false)}
+                      className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                    >
+                      <div className="text-base text-right w-full leading-6 font-medium text-gray-900">
+                        Contact
                       </div>
                     </Link>
                   </nav>
