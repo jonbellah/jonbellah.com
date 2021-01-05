@@ -45,7 +45,7 @@
       "error",
       { "argsIgnorePattern": "^_", "varsIgnorePattern": "nah" }
     ],
-    "simple-import-sort/sort": [
+    "simple-import-sort/imports": [
       "error",
       {
         "groups": [
